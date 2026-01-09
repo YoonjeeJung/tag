@@ -1,0 +1,7245 @@
+{
+"## 문항 소주제-개념\nSELECT pku.problem_id,  cku2.unit_id, cku2.id AS knowledge_id,cku2.name AS knowledge_name  FROM problem_knowledge_unit pku \nJOIN custom_code cc ON pku.problem_id = cc.problem_id\nJOIN problem p ON p.id = pku.problem_id \nJOIN code_knowledge_unit cku ON pku.code_knowledge_unit_id = cku.id\nJOIN code_knowledge_unit cku2 ON cku.id = cku2.parent_code_knowledge_unit_id AND cku2.DEPTH = 2\nWHERE cc.custom_code REGEXP '^K_'\n\tAND p.lab_difficulty >= 5": [
+	{
+		"problem_id" : 14952,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 14952,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 14953,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 14953,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 14953,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 14953,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 14953,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 14953,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 15903,
+		"unit_id" : 295,
+		"knowledge_id" : 933,
+		"knowledge_name" : "산술평균과 기하평균의 관계"
+	},
+	{
+		"problem_id" : 15909,
+		"unit_id" : 295,
+		"knowledge_id" : 933,
+		"knowledge_name" : "산술평균과 기하평균의 관계"
+	},
+	{
+		"problem_id" : 15910,
+		"unit_id" : 295,
+		"knowledge_id" : 933,
+		"knowledge_name" : "산술평균과 기하평균의 관계"
+	},
+	{
+		"problem_id" : 15911,
+		"unit_id" : 295,
+		"knowledge_id" : 933,
+		"knowledge_name" : "산술평균과 기하평균의 관계"
+	},
+	{
+		"problem_id" : 15912,
+		"unit_id" : 295,
+		"knowledge_id" : 933,
+		"knowledge_name" : "산술평균과 기하평균의 관계"
+	},
+	{
+		"problem_id" : 15914,
+		"unit_id" : 298,
+		"knowledge_id" : 952,
+		"knowledge_name" : "합성함수"
+	},
+	{
+		"problem_id" : 15914,
+		"unit_id" : 298,
+		"knowledge_id" : 953,
+		"knowledge_name" : "합성함수의 성질"
+	},
+	{
+		"problem_id" : 15918,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 15918,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 15918,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 15918,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 15918,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 15918,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 15918,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 15919,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 15919,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 15919,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 15919,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 15919,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 15919,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 15919,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 15920,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 15920,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 15920,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 15920,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 15920,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 15920,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 15920,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 15921,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 15921,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 15921,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 15921,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 15921,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 15921,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 15921,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 15922,
+		"unit_id" : 296,
+		"knowledge_id" : 943,
+		"knowledge_name" : "대응"
+	},
+	{
+		"problem_id" : 15922,
+		"unit_id" : 296,
+		"knowledge_id" : 944,
+		"knowledge_name" : "함수"
+	},
+	{
+		"problem_id" : 15922,
+		"unit_id" : 296,
+		"knowledge_id" : 945,
+		"knowledge_name" : "정의역, 공역, 치역"
+	},
+	{
+		"problem_id" : 15922,
+		"unit_id" : 296,
+		"knowledge_id" : 946,
+		"knowledge_name" : "서로 같은 함수"
+	},
+	{
+		"problem_id" : 15922,
+		"unit_id" : 296,
+		"knowledge_id" : 947,
+		"knowledge_name" : "함수의 그래프"
+	},
+	{
+		"problem_id" : 15926,
+		"unit_id" : 299,
+		"knowledge_id" : 954,
+		"knowledge_name" : "역함수"
+	},
+	{
+		"problem_id" : 15926,
+		"unit_id" : 299,
+		"knowledge_id" : 955,
+		"knowledge_name" : "역함수 구하기"
+	},
+	{
+		"problem_id" : 15926,
+		"unit_id" : 299,
+		"knowledge_id" : 956,
+		"knowledge_name" : "역함수의 성질"
+	},
+	{
+		"problem_id" : 15926,
+		"unit_id" : 299,
+		"knowledge_id" : 957,
+		"knowledge_name" : "역함수의 그래프"
+	},
+	{
+		"problem_id" : 15926,
+		"unit_id" : 298,
+		"knowledge_id" : 952,
+		"knowledge_name" : "합성함수"
+	},
+	{
+		"problem_id" : 15926,
+		"unit_id" : 298,
+		"knowledge_id" : 953,
+		"knowledge_name" : "합성함수의 성질"
+	},
+	{
+		"problem_id" : 15930,
+		"unit_id" : 295,
+		"knowledge_id" : 933,
+		"knowledge_name" : "산술평균과 기하평균의 관계"
+	},
+	{
+		"problem_id" : 15934,
+		"unit_id" : 289,
+		"knowledge_id" : 903,
+		"knowledge_name" : "부분집합의 개수"
+	},
+	{
+		"problem_id" : 15934,
+		"unit_id" : 289,
+		"knowledge_id" : 904,
+		"knowledge_name" : "특정한 원소를 갖거나 갖지 않는 부분집합의 개수"
+	},
+	{
+		"problem_id" : 15938,
+		"unit_id" : 299,
+		"knowledge_id" : 954,
+		"knowledge_name" : "역함수"
+	},
+	{
+		"problem_id" : 15938,
+		"unit_id" : 299,
+		"knowledge_id" : 955,
+		"knowledge_name" : "역함수 구하기"
+	},
+	{
+		"problem_id" : 15938,
+		"unit_id" : 299,
+		"knowledge_id" : 956,
+		"knowledge_name" : "역함수의 성질"
+	},
+	{
+		"problem_id" : 15938,
+		"unit_id" : 299,
+		"knowledge_id" : 957,
+		"knowledge_name" : "역함수의 그래프"
+	},
+	{
+		"problem_id" : 15938,
+		"unit_id" : 298,
+		"knowledge_id" : 952,
+		"knowledge_name" : "합성함수"
+	},
+	{
+		"problem_id" : 15938,
+		"unit_id" : 298,
+		"knowledge_id" : 953,
+		"knowledge_name" : "합성함수의 성질"
+	},
+	{
+		"problem_id" : 15942,
+		"unit_id" : 299,
+		"knowledge_id" : 954,
+		"knowledge_name" : "역함수"
+	},
+	{
+		"problem_id" : 15942,
+		"unit_id" : 299,
+		"knowledge_id" : 955,
+		"knowledge_name" : "역함수 구하기"
+	},
+	{
+		"problem_id" : 15942,
+		"unit_id" : 299,
+		"knowledge_id" : 956,
+		"knowledge_name" : "역함수의 성질"
+	},
+	{
+		"problem_id" : 15942,
+		"unit_id" : 299,
+		"knowledge_id" : 957,
+		"knowledge_name" : "역함수의 그래프"
+	},
+	{
+		"problem_id" : 15943,
+		"unit_id" : 292,
+		"knowledge_id" : 922,
+		"knowledge_name" : "'모든'이나 '어떤'을 포함한 명제"
+	},
+	{
+		"problem_id" : 15943,
+		"unit_id" : 292,
+		"knowledge_id" : 923,
+		"knowledge_name" : "'모든'이나 '어떤'을 포함한 명제의 부정"
+	},
+	{
+		"problem_id" : 15947,
+		"unit_id" : 299,
+		"knowledge_id" : 954,
+		"knowledge_name" : "역함수"
+	},
+	{
+		"problem_id" : 15947,
+		"unit_id" : 299,
+		"knowledge_id" : 955,
+		"knowledge_name" : "역함수 구하기"
+	},
+	{
+		"problem_id" : 15947,
+		"unit_id" : 299,
+		"knowledge_id" : 956,
+		"knowledge_name" : "역함수의 성질"
+	},
+	{
+		"problem_id" : 15947,
+		"unit_id" : 299,
+		"knowledge_id" : 957,
+		"knowledge_name" : "역함수의 그래프"
+	},
+	{
+		"problem_id" : 15948,
+		"unit_id" : 299,
+		"knowledge_id" : 954,
+		"knowledge_name" : "역함수"
+	},
+	{
+		"problem_id" : 15948,
+		"unit_id" : 299,
+		"knowledge_id" : 955,
+		"knowledge_name" : "역함수 구하기"
+	},
+	{
+		"problem_id" : 15948,
+		"unit_id" : 299,
+		"knowledge_id" : 956,
+		"knowledge_name" : "역함수의 성질"
+	},
+	{
+		"problem_id" : 15948,
+		"unit_id" : 299,
+		"knowledge_id" : 957,
+		"knowledge_name" : "역함수의 그래프"
+	},
+	{
+		"problem_id" : 15951,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 15951,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 15951,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 15951,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 15951,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 15951,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 15951,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 15956,
+		"unit_id" : 301,
+		"knowledge_id" : 962,
+		"knowledge_name" : "유리함수"
+	},
+	{
+		"problem_id" : 15956,
+		"unit_id" : 301,
+		"knowledge_id" : 963,
+		"knowledge_name" : "유리함수 y=k\/x 의 그래프"
+	},
+	{
+		"problem_id" : 15956,
+		"unit_id" : 301,
+		"knowledge_id" : 964,
+		"knowledge_name" : "유리함수 y=k\/(x-p) + q의 그래프"
+	},
+	{
+		"problem_id" : 15956,
+		"unit_id" : 301,
+		"knowledge_id" : 965,
+		"knowledge_name" : "유리함수 y=(ax+b)\/(cx+d)의 그래프"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 289,
+		"knowledge_id" : 903,
+		"knowledge_name" : "부분집합의 개수"
+	},
+	{
+		"problem_id" : 15960,
+		"unit_id" : 289,
+		"knowledge_id" : 904,
+		"knowledge_name" : "특정한 원소를 갖거나 갖지 않는 부분집합의 개수"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 289,
+		"knowledge_id" : 903,
+		"knowledge_name" : "부분집합의 개수"
+	},
+	{
+		"problem_id" : 15962,
+		"unit_id" : 289,
+		"knowledge_id" : 904,
+		"knowledge_name" : "특정한 원소를 갖거나 갖지 않는 부분집합의 개수"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 289,
+		"knowledge_id" : 903,
+		"knowledge_name" : "부분집합의 개수"
+	},
+	{
+		"problem_id" : 15963,
+		"unit_id" : 289,
+		"knowledge_id" : 904,
+		"knowledge_name" : "특정한 원소를 갖거나 갖지 않는 부분집합의 개수"
+	},
+	{
+		"problem_id" : 15964,
+		"unit_id" : 298,
+		"knowledge_id" : 952,
+		"knowledge_name" : "합성함수"
+	},
+	{
+		"problem_id" : 15964,
+		"unit_id" : 298,
+		"knowledge_id" : 953,
+		"knowledge_name" : "합성함수의 성질"
+	},
+	{
+		"problem_id" : 15968,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15968,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15969,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15969,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15970,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15970,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15971,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15971,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15972,
+		"unit_id" : 298,
+		"knowledge_id" : 952,
+		"knowledge_name" : "합성함수"
+	},
+	{
+		"problem_id" : 15972,
+		"unit_id" : 298,
+		"knowledge_id" : 953,
+		"knowledge_name" : "합성함수의 성질"
+	},
+	{
+		"problem_id" : 15976,
+		"unit_id" : 301,
+		"knowledge_id" : 962,
+		"knowledge_name" : "유리함수"
+	},
+	{
+		"problem_id" : 15976,
+		"unit_id" : 301,
+		"knowledge_id" : 963,
+		"knowledge_name" : "유리함수 y=k\/x 의 그래프"
+	},
+	{
+		"problem_id" : 15976,
+		"unit_id" : 301,
+		"knowledge_id" : 964,
+		"knowledge_name" : "유리함수 y=k\/(x-p) + q의 그래프"
+	},
+	{
+		"problem_id" : 15976,
+		"unit_id" : 301,
+		"knowledge_id" : 965,
+		"knowledge_name" : "유리함수 y=(ax+b)\/(cx+d)의 그래프"
+	},
+	{
+		"problem_id" : 15980,
+		"unit_id" : 299,
+		"knowledge_id" : 954,
+		"knowledge_name" : "역함수"
+	},
+	{
+		"problem_id" : 15980,
+		"unit_id" : 299,
+		"knowledge_id" : 955,
+		"knowledge_name" : "역함수 구하기"
+	},
+	{
+		"problem_id" : 15980,
+		"unit_id" : 299,
+		"knowledge_id" : 956,
+		"knowledge_name" : "역함수의 성질"
+	},
+	{
+		"problem_id" : 15980,
+		"unit_id" : 299,
+		"knowledge_id" : 957,
+		"knowledge_name" : "역함수의 그래프"
+	},
+	{
+		"problem_id" : 15984,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15984,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15985,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15985,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15987,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15987,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 15988,
+		"unit_id" : 298,
+		"knowledge_id" : 952,
+		"knowledge_name" : "합성함수"
+	},
+	{
+		"problem_id" : 15988,
+		"unit_id" : 298,
+		"knowledge_id" : 953,
+		"knowledge_name" : "합성함수의 성질"
+	},
+	{
+		"problem_id" : 15992,
+		"unit_id" : 301,
+		"knowledge_id" : 962,
+		"knowledge_name" : "유리함수"
+	},
+	{
+		"problem_id" : 15992,
+		"unit_id" : 301,
+		"knowledge_id" : 963,
+		"knowledge_name" : "유리함수 y=k\/x 의 그래프"
+	},
+	{
+		"problem_id" : 15992,
+		"unit_id" : 301,
+		"knowledge_id" : 964,
+		"knowledge_name" : "유리함수 y=k\/(x-p) + q의 그래프"
+	},
+	{
+		"problem_id" : 15992,
+		"unit_id" : 301,
+		"knowledge_id" : 965,
+		"knowledge_name" : "유리함수 y=(ax+b)\/(cx+d)의 그래프"
+	},
+	{
+		"problem_id" : 15992,
+		"unit_id" : 299,
+		"knowledge_id" : 954,
+		"knowledge_name" : "역함수"
+	},
+	{
+		"problem_id" : 15992,
+		"unit_id" : 299,
+		"knowledge_id" : 955,
+		"knowledge_name" : "역함수 구하기"
+	},
+	{
+		"problem_id" : 15992,
+		"unit_id" : 299,
+		"knowledge_id" : 956,
+		"knowledge_name" : "역함수의 성질"
+	},
+	{
+		"problem_id" : 15992,
+		"unit_id" : 299,
+		"knowledge_id" : 957,
+		"knowledge_name" : "역함수의 그래프"
+	},
+	{
+		"problem_id" : 15996,
+		"unit_id" : 298,
+		"knowledge_id" : 952,
+		"knowledge_name" : "합성함수"
+	},
+	{
+		"problem_id" : 15996,
+		"unit_id" : 298,
+		"knowledge_id" : 953,
+		"knowledge_name" : "합성함수의 성질"
+	},
+	{
+		"problem_id" : 17603,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 17603,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 17607,
+		"unit_id" : 290,
+		"knowledge_id" : 905,
+		"knowledge_name" : "합집합과 교집합"
+	},
+	{
+		"problem_id" : 17607,
+		"unit_id" : 290,
+		"knowledge_id" : 906,
+		"knowledge_name" : "합집합과 교집합의 성질"
+	},
+	{
+		"problem_id" : 17607,
+		"unit_id" : 290,
+		"knowledge_id" : 907,
+		"knowledge_name" : "여집합과 차집합"
+	},
+	{
+		"problem_id" : 17607,
+		"unit_id" : 290,
+		"knowledge_id" : 908,
+		"knowledge_name" : "여집합과 차집합의 성질"
+	},
+	{
+		"problem_id" : 17607,
+		"unit_id" : 290,
+		"knowledge_id" : 909,
+		"knowledge_name" : "집합의 연산을 이용한 여러 가지 표현"
+	},
+	{
+		"problem_id" : 17607,
+		"unit_id" : 290,
+		"knowledge_id" : 910,
+		"knowledge_name" : "집합의 연산 법칙 (교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 17607,
+		"unit_id" : 290,
+		"knowledge_id" : 911,
+		"knowledge_name" : "드모르간의 법칙"
+	},
+	{
+		"problem_id" : 17613,
+		"unit_id" : 292,
+		"knowledge_id" : 920,
+		"knowledge_name" : "명제 p -> q"
+	},
+	{
+		"problem_id" : 17613,
+		"unit_id" : 292,
+		"knowledge_id" : 921,
+		"knowledge_name" : "명제 p -> q의 참, 거짓"
+	},
+	{
+		"problem_id" : 17617,
+		"unit_id" : 291,
+		"knowledge_id" : 912,
+		"knowledge_name" : "합집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 17617,
+		"unit_id" : 291,
+		"knowledge_id" : 913,
+		"knowledge_name" : "여집합과 차집합의 원소의 개수"
+	},
+	{
+		"problem_id" : 17621,
+		"unit_id" : 289,
+		"knowledge_id" : 903,
+		"knowledge_name" : "부분집합의 개수"
+	},
+	{
+		"problem_id" : 17621,
+		"unit_id" : 289,
+		"knowledge_id" : 904,
+		"knowledge_name" : "특정한 원소를 갖거나 갖지 않는 부분집합의 개수"
+	},
+	{
+		"problem_id" : 17625,
+		"unit_id" : 301,
+		"knowledge_id" : 962,
+		"knowledge_name" : "유리함수"
+	},
+	{
+		"problem_id" : 17625,
+		"unit_id" : 301,
+		"knowledge_id" : 963,
+		"knowledge_name" : "유리함수 y=k\/x 의 그래프"
+	},
+	{
+		"problem_id" : 17625,
+		"unit_id" : 301,
+		"knowledge_id" : 964,
+		"knowledge_name" : "유리함수 y=k\/(x-p) + q의 그래프"
+	},
+	{
+		"problem_id" : 17625,
+		"unit_id" : 301,
+		"knowledge_id" : 965,
+		"knowledge_name" : "유리함수 y=(ax+b)\/(cx+d)의 그래프"
+	},
+	{
+		"problem_id" : 17649,
+		"unit_id" : 303,
+		"knowledge_id" : 968,
+		"knowledge_name" : "무리함수"
+	},
+	{
+		"problem_id" : 17649,
+		"unit_id" : 303,
+		"knowledge_id" : 969,
+		"knowledge_name" : "무리함수 y=√x의 그래프"
+	},
+	{
+		"problem_id" : 17649,
+		"unit_id" : 303,
+		"knowledge_id" : 970,
+		"knowledge_name" : "무리함수 y=√(ax)와 y=-√(ax)의 그래프"
+	},
+	{
+		"problem_id" : 17649,
+		"unit_id" : 303,
+		"knowledge_id" : 971,
+		"knowledge_name" : "무리함수 y=√{a(x-p)} + q의 그래프"
+	},
+	{
+		"problem_id" : 17649,
+		"unit_id" : 303,
+		"knowledge_id" : 972,
+		"knowledge_name" : "무리함수 y=√(ax+b) + c의 그래프"
+	},
+	{
+		"problem_id" : 17653,
+		"unit_id" : 306,
+		"knowledge_id" : 981,
+		"knowledge_name" : "조합"
+	},
+	{
+		"problem_id" : 17653,
+		"unit_id" : 306,
+		"knowledge_id" : 982,
+		"knowledge_name" : "조합의 수의 성질"
+	},
+	{
+		"problem_id" : 17657,
+		"unit_id" : 305,
+		"knowledge_id" : 979,
+		"knowledge_name" : "순열"
+	},
+	{
+		"problem_id" : 17657,
+		"unit_id" : 305,
+		"knowledge_id" : 980,
+		"knowledge_name" : "nPr의 계산"
+	},
+	{
+		"problem_id" : 17661,
+		"unit_id" : 304,
+		"knowledge_id" : 976,
+		"knowledge_name" : "사건과 경우의 수"
+	},
+	{
+		"problem_id" : 17661,
+		"unit_id" : 304,
+		"knowledge_id" : 977,
+		"knowledge_name" : "합의 법칙"
+	},
+	{
+		"problem_id" : 17661,
+		"unit_id" : 304,
+		"knowledge_id" : 978,
+		"knowledge_name" : "곱의 법칙"
+	},
+	{
+		"problem_id" : 17665,
+		"unit_id" : 306,
+		"knowledge_id" : 981,
+		"knowledge_name" : "조합"
+	},
+	{
+		"problem_id" : 17665,
+		"unit_id" : 306,
+		"knowledge_id" : 982,
+		"knowledge_name" : "조합의 수의 성질"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 303,
+		"knowledge_id" : 968,
+		"knowledge_name" : "무리함수"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 303,
+		"knowledge_id" : 969,
+		"knowledge_name" : "무리함수 y=√x의 그래프"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 303,
+		"knowledge_id" : 970,
+		"knowledge_name" : "무리함수 y=√(ax)와 y=-√(ax)의 그래프"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 303,
+		"knowledge_id" : 971,
+		"knowledge_name" : "무리함수 y=√{a(x-p)} + q의 그래프"
+	},
+	{
+		"problem_id" : 17669,
+		"unit_id" : 303,
+		"knowledge_id" : 972,
+		"knowledge_name" : "무리함수 y=√(ax+b) + c의 그래프"
+	},
+	{
+		"problem_id" : 17673,
+		"unit_id" : 306,
+		"knowledge_id" : 981,
+		"knowledge_name" : "조합"
+	},
+	{
+		"problem_id" : 17673,
+		"unit_id" : 306,
+		"knowledge_id" : 982,
+		"knowledge_name" : "조합의 수의 성질"
+	},
+	{
+		"problem_id" : 17676,
+		"unit_id" : 305,
+		"knowledge_id" : 979,
+		"knowledge_name" : "순열"
+	},
+	{
+		"problem_id" : 17676,
+		"unit_id" : 305,
+		"knowledge_id" : 980,
+		"knowledge_name" : "nPr의 계산"
+	},
+	{
+		"problem_id" : 18369,
+		"unit_id" : 452,
+		"knowledge_id" : 692,
+		"knowledge_name" : "원주각의 성질"
+	},
+	{
+		"problem_id" : 18369,
+		"unit_id" : 446,
+		"knowledge_id" : 675,
+		"knowledge_name" : "삼각비"
+	},
+	{
+		"problem_id" : 18371,
+		"unit_id" : 452,
+		"knowledge_id" : 692,
+		"knowledge_name" : "원주각의 성질"
+	},
+	{
+		"problem_id" : 18373,
+		"unit_id" : 447,
+		"knowledge_id" : 676,
+		"knowledge_name" : "30°, 45°, 60°의 삼각비의 값"
+	},
+	{
+		"problem_id" : 18389,
+		"unit_id" : 444,
+		"knowledge_id" : 669,
+		"knowledge_name" : "이차함수 y=ax²+bx+c의 그래프"
+	},
+	{
+		"problem_id" : 18399,
+		"unit_id" : 439,
+		"knowledge_id" : 653,
+		"knowledge_name" : "제곱근을 이용한 이차방정식의 풀이"
+	},
+	{
+		"problem_id" : 18399,
+		"unit_id" : 439,
+		"knowledge_id" : 654,
+		"knowledge_name" : "완전제곱식을 이용한 이차방정식의 풀이"
+	},
+	{
+		"problem_id" : 23469,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23469,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 32090,
+		"unit_id" : 277,
+		"knowledge_id" : 840,
+		"knowledge_name" : "이차부등식이 항상 성립할 조건"
+	},
+	{
+		"problem_id" : 73336,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73336,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 73477,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73477,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 73498,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73498,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 73498,
+		"unit_id" : 327,
+		"knowledge_id" : 1102,
+		"knowledge_name" : "등비수열의 합"
+	},
+	{
+		"problem_id" : 27816,
+		"unit_id" : 267,
+		"knowledge_id" : 792,
+		"knowledge_name" : "i의 거듭제곱"
+	},
+	{
+		"problem_id" : 27816,
+		"unit_id" : 266,
+		"knowledge_id" : 789,
+		"knowledge_name" : "복소수의 사칙연산"
+	},
+	{
+		"problem_id" : 27816,
+		"unit_id" : 266,
+		"knowledge_id" : 790,
+		"knowledge_name" : "복소수의 사칙연산에 대한 성질(교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 42206,
+		"unit_id" : 344,
+		"knowledge_id" : 1175,
+		"knowledge_name" : "방정식의 실근의 개수"
+	},
+	{
+		"problem_id" : 42206,
+		"unit_id" : 344,
+		"knowledge_id" : 1176,
+		"knowledge_name" : "삼차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 73524,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 73640,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73640,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 33511,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 42260,
+		"unit_id" : 338,
+		"knowledge_id" : 1159,
+		"knowledge_name" : "함수의 실수배, 합, 차의 미분법"
+	},
+	{
+		"problem_id" : 42260,
+		"unit_id" : 338,
+		"knowledge_id" : 1160,
+		"knowledge_name" : "함수의 곱의 미분법"
+	},
+	{
+		"problem_id" : 73282,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 73282,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 73734,
+		"unit_id" : 427,
+		"knowledge_id" : 611,
+		"knowledge_name" : "확률"
+	},
+	{
+		"problem_id" : 73734,
+		"unit_id" : 458,
+		"knowledge_id" : 1235,
+		"knowledge_name" : "중복순열"
+	},
+	{
+		"problem_id" : 27049,
+		"unit_id" : 275,
+		"knowledge_id" : 828,
+		"knowledge_name" : "실수 조건의 부정방정식"
+	},
+	{
+		"problem_id" : 73523,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 30730,
+		"unit_id" : 309,
+		"knowledge_id" : 1009,
+		"knowledge_name" : "로그의 성질"
+	},
+	{
+		"problem_id" : 30730,
+		"unit_id" : 309,
+		"knowledge_id" : 1010,
+		"knowledge_name" : "밑의 변환 공식"
+	},
+	{
+		"problem_id" : 30730,
+		"unit_id" : 309,
+		"knowledge_id" : 1011,
+		"knowledge_name" : "로그의 여러 가지 성질"
+	},
+	{
+		"problem_id" : 30730,
+		"unit_id" : 329,
+		"knowledge_id" : 1109,
+		"knowledge_name" : "분수 꼴로 된 수열의 합"
+	},
+	{
+		"problem_id" : 30730,
+		"unit_id" : 329,
+		"knowledge_id" : 1110,
+		"knowledge_name" : "부분분수로의 변형"
+	},
+	{
+		"problem_id" : 30730,
+		"unit_id" : 329,
+		"knowledge_id" : 1111,
+		"knowledge_name" : "무리식을 포함한 수열의 합"
+	},
+	{
+		"problem_id" : 30730,
+		"unit_id" : 329,
+		"knowledge_id" : 1112,
+		"knowledge_name" : "(등차수열)X(등비수열) 꼴의 수열의 합: 멱급수"
+	},
+	{
+		"problem_id" : 73339,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73339,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 73497,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73497,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 73504,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73504,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 73504,
+		"unit_id" : 327,
+		"knowledge_id" : 1102,
+		"knowledge_name" : "등비수열의 합"
+	},
+	{
+		"problem_id" : 30938,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 30938,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 32096,
+		"unit_id" : 278,
+		"knowledge_id" : 841,
+		"knowledge_name" : "연립이차부등식"
+	},
+	{
+		"problem_id" : 32096,
+		"unit_id" : 278,
+		"knowledge_id" : 842,
+		"knowledge_name" : "연립이차부등식의 풀이"
+	},
+	{
+		"problem_id" : 42141,
+		"unit_id" : 338,
+		"knowledge_id" : 1159,
+		"knowledge_name" : "함수의 실수배, 합, 차의 미분법"
+	},
+	{
+		"problem_id" : 42141,
+		"unit_id" : 338,
+		"knowledge_id" : 1160,
+		"knowledge_name" : "함수의 곱의 미분법"
+	},
+	{
+		"problem_id" : 73273,
+		"unit_id" : 461,
+		"knowledge_id" : 1249,
+		"knowledge_name" : "확률의 덧셈정리"
+	},
+	{
+		"problem_id" : 73332,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73332,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 73507,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73507,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 73507,
+		"unit_id" : 325,
+		"knowledge_id" : 1098,
+		"knowledge_name" : "수열의 합과 일반항 사이의 관계"
+	},
+	{
+		"problem_id" : 73816,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73816,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 23637,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23637,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 31065,
+		"unit_id" : 320,
+		"knowledge_id" : 1072,
+		"knowledge_name" : "삼각함수가 포함된 방정식"
+	},
+	{
+		"problem_id" : 32808,
+		"unit_id" : 280,
+		"knowledge_id" : 847,
+		"knowledge_name" : "선분의 내분점"
+	},
+	{
+		"problem_id" : 32808,
+		"unit_id" : 280,
+		"knowledge_id" : 848,
+		"knowledge_name" : "수직선 위의 선분의 내분점"
+	},
+	{
+		"problem_id" : 32808,
+		"unit_id" : 280,
+		"knowledge_id" : 849,
+		"knowledge_name" : "좌표평면 위의 선분의 내분점"
+	},
+	{
+		"problem_id" : 33101,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33101,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33101,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 23475,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23475,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 31001,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 31001,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 32760,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 33218,
+		"unit_id" : 286,
+		"knowledge_id" : 874,
+		"knowledge_name" : "평행이동"
+	},
+	{
+		"problem_id" : 33218,
+		"unit_id" : 286,
+		"knowledge_id" : 875,
+		"knowledge_name" : "점의 평행이동"
+	},
+	{
+		"problem_id" : 33218,
+		"unit_id" : 286,
+		"knowledge_id" : 876,
+		"knowledge_name" : "도형의 평행이동"
+	},
+	{
+		"problem_id" : 33523,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33523,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33523,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33523,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 73369,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 73369,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 30869,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 30869,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 33344,
+		"unit_id" : 287,
+		"knowledge_id" : 880,
+		"knowledge_name" : "점에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33344,
+		"unit_id" : 287,
+		"knowledge_id" : 881,
+		"knowledge_name" : "직선에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33344,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 73379,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 73379,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 73474,
+		"unit_id" : 468,
+		"knowledge_id" : 1267,
+		"knowledge_name" : "연속확률변수와 확률밀도함수"
+	},
+	{
+		"problem_id" : 27054,
+		"unit_id" : 274,
+		"knowledge_id" : 821,
+		"knowledge_name" : "미지수가 2개인 연립이차방정식"
+	},
+	{
+		"problem_id" : 27054,
+		"unit_id" : 274,
+		"knowledge_id" : 822,
+		"knowledge_name" : "일차방정식과 이차방정식으로 이루어진 연립이차방정식의 풀이"
+	},
+	{
+		"problem_id" : 30886,
+		"unit_id" : 324,
+		"knowledge_id" : 1093,
+		"knowledge_name" : "수열"
+	},
+	{
+		"problem_id" : 30886,
+		"unit_id" : 324,
+		"knowledge_id" : 1094,
+		"knowledge_name" : "수열의 일반항"
+	},
+	{
+		"problem_id" : 30886,
+		"unit_id" : 324,
+		"knowledge_id" : 1095,
+		"knowledge_name" : "등차수열"
+	},
+	{
+		"problem_id" : 30886,
+		"unit_id" : 324,
+		"knowledge_id" : 1096,
+		"knowledge_name" : "등차중항"
+	},
+	{
+		"problem_id" : 41993,
+		"unit_id" : 350,
+		"knowledge_id" : 1205,
+		"knowledge_name" : "곡선과 x축 사이의 넓이"
+	},
+	{
+		"problem_id" : 41993,
+		"unit_id" : 350,
+		"knowledge_id" : 1206,
+		"knowledge_name" : "곡선과 직선 사이의 넓이"
+	},
+	{
+		"problem_id" : 41993,
+		"unit_id" : 350,
+		"knowledge_id" : 1207,
+		"knowledge_name" : "두 곡선 사이의 넓이"
+	},
+	{
+		"problem_id" : 42174,
+		"unit_id" : 344,
+		"knowledge_id" : 1175,
+		"knowledge_name" : "방정식의 실근의 개수"
+	},
+	{
+		"problem_id" : 42174,
+		"unit_id" : 344,
+		"knowledge_id" : 1176,
+		"knowledge_name" : "삼차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 73243,
+		"unit_id" : 469,
+		"knowledge_id" : 1275,
+		"knowledge_name" : "모평균, 모분산, 모표준편차"
+	},
+	{
+		"problem_id" : 73243,
+		"unit_id" : 469,
+		"knowledge_id" : 1276,
+		"knowledge_name" : "표본평균, 표본분산, 표본표준편차"
+	},
+	{
+		"problem_id" : 73243,
+		"unit_id" : 469,
+		"knowledge_id" : 1277,
+		"knowledge_name" : "표본평균의 평균, 분산, 표준편차"
+	},
+	{
+		"problem_id" : 73243,
+		"unit_id" : 469,
+		"knowledge_id" : 1278,
+		"knowledge_name" : "표본평균의 분포"
+	},
+	{
+		"problem_id" : 73243,
+		"unit_id" : 466,
+		"knowledge_id" : 1261,
+		"knowledge_name" : "이산확률변수의 평균(기댓값)"
+	},
+	{
+		"problem_id" : 73243,
+		"unit_id" : 466,
+		"knowledge_id" : 1262,
+		"knowledge_name" : "이산확률변수의 분산과 표준편차"
+	},
+	{
+		"problem_id" : 73243,
+		"unit_id" : 466,
+		"knowledge_id" : 1263,
+		"knowledge_name" : "이산확률변수 aX+b의 평균, 분산, 표준편차"
+	},
+	{
+		"problem_id" : 73262,
+		"unit_id" : 461,
+		"knowledge_id" : 1249,
+		"knowledge_name" : "확률의 덧셈정리"
+	},
+	{
+		"problem_id" : 73338,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73338,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 33089,
+		"unit_id" : 281,
+		"knowledge_id" : 857,
+		"knowledge_name" : "정점을 지나는 직선"
+	},
+	{
+		"problem_id" : 33089,
+		"unit_id" : 281,
+		"knowledge_id" : 858,
+		"knowledge_name" : "두 직선의 교점을 지나는 직선"
+	},
+	{
+		"problem_id" : 42134,
+		"unit_id" : 335,
+		"knowledge_id" : 1135,
+		"knowledge_name" : "함수의 연속과 불연속"
+	},
+	{
+		"problem_id" : 42134,
+		"unit_id" : 335,
+		"knowledge_id" : 1136,
+		"knowledge_name" : "구간과 연속함수"
+	},
+	{
+		"problem_id" : 73333,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 73741,
+		"unit_id" : 306,
+		"knowledge_id" : 981,
+		"knowledge_name" : "조합"
+	},
+	{
+		"problem_id" : 73741,
+		"unit_id" : 306,
+		"knowledge_id" : 982,
+		"knowledge_name" : "조합의 수의 성질"
+	},
+	{
+		"problem_id" : 73741,
+		"unit_id" : 427,
+		"knowledge_id" : 611,
+		"knowledge_name" : "확률"
+	},
+	{
+		"problem_id" : 30764,
+		"unit_id" : 326,
+		"knowledge_id" : 1099,
+		"knowledge_name" : "등비수열"
+	},
+	{
+		"problem_id" : 30764,
+		"unit_id" : 326,
+		"knowledge_id" : 1100,
+		"knowledge_name" : "등비수열의 일반항"
+	},
+	{
+		"problem_id" : 30764,
+		"unit_id" : 326,
+		"knowledge_id" : 1101,
+		"knowledge_name" : "등비중항"
+	},
+	{
+		"problem_id" : 30832,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 30832,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 31063,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 31063,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 32948,
+		"unit_id" : 281,
+		"knowledge_id" : 854,
+		"knowledge_name" : "직선의 방정식 구하기"
+	},
+	{
+		"problem_id" : 32948,
+		"unit_id" : 281,
+		"knowledge_id" : 855,
+		"knowledge_name" : "좌표축에 평행 또는 수직인 직선의 방정식"
+	},
+	{
+		"problem_id" : 32948,
+		"unit_id" : 281,
+		"knowledge_id" : 856,
+		"knowledge_name" : "일차방정식 ax+by+c=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 73356,
+		"unit_id" : 325,
+		"knowledge_id" : 1097,
+		"knowledge_name" : "등차수열의 합"
+	},
+	{
+		"problem_id" : 27367,
+		"unit_id" : 272,
+		"knowledge_id" : 808,
+		"knowledge_name" : "함수의 최댓값과 최솟값"
+	},
+	{
+		"problem_id" : 27367,
+		"unit_id" : 272,
+		"knowledge_id" : 809,
+		"knowledge_name" : "이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 31925,
+		"unit_id" : 278,
+		"knowledge_id" : 841,
+		"knowledge_name" : "연립이차부등식"
+	},
+	{
+		"problem_id" : 31925,
+		"unit_id" : 278,
+		"knowledge_id" : 842,
+		"knowledge_name" : "연립이차부등식의 풀이"
+	},
+	{
+		"problem_id" : 33167,
+		"unit_id" : 286,
+		"knowledge_id" : 874,
+		"knowledge_name" : "평행이동"
+	},
+	{
+		"problem_id" : 33167,
+		"unit_id" : 286,
+		"knowledge_id" : 875,
+		"knowledge_name" : "점의 평행이동"
+	},
+	{
+		"problem_id" : 33167,
+		"unit_id" : 286,
+		"knowledge_id" : 876,
+		"knowledge_name" : "도형의 평행이동"
+	},
+	{
+		"problem_id" : 73340,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 73518,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 27409,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27409,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27409,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27409,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27409,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27409,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 27660,
+		"unit_id" : 438,
+		"knowledge_id" : 648,
+		"knowledge_name" : "이차방정식"
+	},
+	{
+		"problem_id" : 42039,
+		"unit_id" : 333,
+		"knowledge_id" : 1131,
+		"knowledge_name" : "함수의 극한에 대한 성질"
+	},
+	{
+		"problem_id" : 42039,
+		"unit_id" : 333,
+		"knowledge_id" : 1132,
+		"knowledge_name" : "함수의 극한값 구하는 방법"
+	},
+	{
+		"problem_id" : 42039,
+		"unit_id" : 333,
+		"knowledge_id" : 1133,
+		"knowledge_name" : "미정계수의 결정"
+	},
+	{
+		"problem_id" : 30976,
+		"unit_id" : 320,
+		"knowledge_id" : 1072,
+		"knowledge_name" : "삼각함수가 포함된 방정식"
+	},
+	{
+		"problem_id" : 73444,
+		"unit_id" : 463,
+		"knowledge_id" : 1251,
+		"knowledge_name" : "조건부확률"
+	},
+	{
+		"problem_id" : 23634,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23634,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 27280,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27280,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27280,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27280,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27280,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27280,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 31002,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 31002,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 31982,
+		"unit_id" : 277,
+		"knowledge_id" : 840,
+		"knowledge_name" : "이차부등식이 항상 성립할 조건"
+	},
+	{
+		"problem_id" : 42256,
+		"unit_id" : 337,
+		"knowledge_id" : 1156,
+		"knowledge_name" : "미분가능성과 연속성"
+	},
+	{
+		"problem_id" : 73357,
+		"unit_id" : 325,
+		"knowledge_id" : 1097,
+		"knowledge_name" : "등차수열의 합"
+	},
+	{
+		"problem_id" : 23574,
+		"unit_id" : 437,
+		"knowledge_id" : 644,
+		"knowledge_name" : "공통부분이 있는 식의 인수분해"
+	},
+	{
+		"problem_id" : 23574,
+		"unit_id" : 437,
+		"knowledge_id" : 645,
+		"knowledge_name" : "항이 4개인 식의 인수분해"
+	},
+	{
+		"problem_id" : 23574,
+		"unit_id" : 437,
+		"knowledge_id" : 646,
+		"knowledge_name" : "( )( )( )( )+k 꼴의 식의 인수분해"
+	},
+	{
+		"problem_id" : 23574,
+		"unit_id" : 437,
+		"knowledge_id" : 647,
+		"knowledge_name" : "항이 5개 이상인 식의 인수분해"
+	},
+	{
+		"problem_id" : 23628,
+		"unit_id" : 265,
+		"knowledge_id" : 784,
+		"knowledge_name" : "인수정리를 이용한 인수분해"
+	},
+	{
+		"problem_id" : 32063,
+		"unit_id" : 278,
+		"knowledge_id" : 841,
+		"knowledge_name" : "연립이차부등식"
+	},
+	{
+		"problem_id" : 32063,
+		"unit_id" : 278,
+		"knowledge_id" : 842,
+		"knowledge_name" : "연립이차부등식의 풀이"
+	},
+	{
+		"problem_id" : 42187,
+		"unit_id" : 333,
+		"knowledge_id" : 1131,
+		"knowledge_name" : "함수의 극한에 대한 성질"
+	},
+	{
+		"problem_id" : 42187,
+		"unit_id" : 333,
+		"knowledge_id" : 1132,
+		"knowledge_name" : "함수의 극한값 구하는 방법"
+	},
+	{
+		"problem_id" : 42187,
+		"unit_id" : 333,
+		"knowledge_id" : 1133,
+		"knowledge_name" : "미정계수의 결정"
+	},
+	{
+		"problem_id" : 73528,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 42202,
+		"unit_id" : 349,
+		"knowledge_id" : 1201,
+		"knowledge_name" : "정적분으로 정의된 함수"
+	},
+	{
+		"problem_id" : 42202,
+		"unit_id" : 349,
+		"knowledge_id" : 1202,
+		"knowledge_name" : "정적분으로 정의된 함수의 미분"
+	},
+	{
+		"problem_id" : 42202,
+		"unit_id" : 349,
+		"knowledge_id" : 1203,
+		"knowledge_name" : "정적분으로 정의된 함수의 극한 (lim+∫의 꼴)"
+	},
+	{
+		"problem_id" : 42202,
+		"unit_id" : 343,
+		"knowledge_id" : 1174,
+		"knowledge_name" : "함수의 최댓값과 최솟값"
+	},
+	{
+		"problem_id" : 73271,
+		"unit_id" : 306,
+		"knowledge_id" : 981,
+		"knowledge_name" : "조합"
+	},
+	{
+		"problem_id" : 73271,
+		"unit_id" : 306,
+		"knowledge_id" : 982,
+		"knowledge_name" : "조합의 수의 성질"
+	},
+	{
+		"problem_id" : 73271,
+		"unit_id" : 427,
+		"knowledge_id" : 611,
+		"knowledge_name" : "확률"
+	},
+	{
+		"problem_id" : 27834,
+		"unit_id" : 269,
+		"knowledge_id" : 797,
+		"knowledge_name" : "판별식"
+	},
+	{
+		"problem_id" : 27834,
+		"unit_id" : 269,
+		"knowledge_id" : 798,
+		"knowledge_name" : "이차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 27834,
+		"unit_id" : 269,
+		"knowledge_id" : 799,
+		"knowledge_name" : "이차식이 완전제곱식이 되기 위한 조건"
+	},
+	{
+		"problem_id" : 31056,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 31056,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 32910,
+		"unit_id" : 280,
+		"knowledge_id" : 850,
+		"knowledge_name" : "선분의 외분점"
+	},
+	{
+		"problem_id" : 32910,
+		"unit_id" : 280,
+		"knowledge_id" : 851,
+		"knowledge_name" : "수직선 위의 선분의 외분점"
+	},
+	{
+		"problem_id" : 32910,
+		"unit_id" : 280,
+		"knowledge_id" : 852,
+		"knowledge_name" : "좌표평면 위의 선분의 외분점"
+	},
+	{
+		"problem_id" : 33371,
+		"unit_id" : 287,
+		"knowledge_id" : 880,
+		"knowledge_name" : "점에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33371,
+		"unit_id" : 287,
+		"knowledge_id" : 881,
+		"knowledge_name" : "직선에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33371,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 33598,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 23418,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23418,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 23592,
+		"unit_id" : 437,
+		"knowledge_id" : 644,
+		"knowledge_name" : "공통부분이 있는 식의 인수분해"
+	},
+	{
+		"problem_id" : 23592,
+		"unit_id" : 437,
+		"knowledge_id" : 645,
+		"knowledge_name" : "항이 4개인 식의 인수분해"
+	},
+	{
+		"problem_id" : 23592,
+		"unit_id" : 437,
+		"knowledge_id" : 646,
+		"knowledge_name" : "( )( )( )( )+k 꼴의 식의 인수분해"
+	},
+	{
+		"problem_id" : 23592,
+		"unit_id" : 437,
+		"knowledge_id" : 647,
+		"knowledge_name" : "항이 5개 이상인 식의 인수분해"
+	},
+	{
+		"problem_id" : 23592,
+		"unit_id" : 265,
+		"knowledge_id" : 784,
+		"knowledge_name" : "인수정리를 이용한 인수분해"
+	},
+	{
+		"problem_id" : 27364,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27364,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27364,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27364,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27364,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27364,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 30770,
+		"unit_id" : 325,
+		"knowledge_id" : 1097,
+		"knowledge_name" : "등차수열의 합"
+	},
+	{
+		"problem_id" : 33505,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33505,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33505,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33505,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 73700,
+		"unit_id" : 460,
+		"knowledge_id" : 1240,
+		"knowledge_name" : "이항정리와 이항계수"
+	},
+	{
+		"problem_id" : 73700,
+		"unit_id" : 460,
+		"knowledge_id" : 1241,
+		"knowledge_name" : "이항계수의 성질"
+	},
+	{
+		"problem_id" : 73700,
+		"unit_id" : 460,
+		"knowledge_id" : 1242,
+		"knowledge_name" : "파스칼의 삼각형"
+	},
+	{
+		"problem_id" : 23107,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 23107,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 73517,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 33487,
+		"unit_id" : 285,
+		"knowledge_id" : 871,
+		"knowledge_name" : "기울기가 주어진 원의 접선의 방정식"
+	},
+	{
+		"problem_id" : 33487,
+		"unit_id" : 285,
+		"knowledge_id" : 872,
+		"knowledge_name" : "원 위의 점에서의 접선의 방정식"
+	},
+	{
+		"problem_id" : 33487,
+		"unit_id" : 285,
+		"knowledge_id" : 873,
+		"knowledge_name" : "원 밖의 한 점에서 원에 그은 접선의 방정식"
+	},
+	{
+		"problem_id" : 73460,
+		"unit_id" : 464,
+		"knowledge_id" : 1255,
+		"knowledge_name" : "독립시행"
+	},
+	{
+		"problem_id" : 73460,
+		"unit_id" : 464,
+		"knowledge_id" : 1256,
+		"knowledge_name" : "독립시행의 확률"
+	},
+	{
+		"problem_id" : 27594,
+		"unit_id" : 267,
+		"knowledge_id" : 792,
+		"knowledge_name" : "i의 거듭제곱"
+	},
+	{
+		"problem_id" : 27594,
+		"unit_id" : 266,
+		"knowledge_id" : 789,
+		"knowledge_name" : "복소수의 사칙연산"
+	},
+	{
+		"problem_id" : 27594,
+		"unit_id" : 266,
+		"knowledge_id" : 790,
+		"knowledge_name" : "복소수의 사칙연산에 대한 성질(교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 27828,
+		"unit_id" : 438,
+		"knowledge_id" : 648,
+		"knowledge_name" : "이차방정식"
+	},
+	{
+		"problem_id" : 33134,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33134,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33134,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33538,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33538,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33538,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33538,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 73335,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 73479,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73479,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 31055,
+		"unit_id" : 316,
+		"knowledge_id" : 1034,
+		"knowledge_name" : "로그의 진수에 미지수가 있는 부등식과 로그함수의 관계"
+	},
+	{
+		"problem_id" : 31055,
+		"unit_id" : 316,
+		"knowledge_id" : 1035,
+		"knowledge_name" : "로그의 진수 또는 밑에 미지수가 있는 부등식의 풀이"
+	},
+	{
+		"problem_id" : 32907,
+		"unit_id" : 422,
+		"knowledge_id" : 595,
+		"knowledge_name" : "삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 32907,
+		"unit_id" : 422,
+		"knowledge_id" : 596,
+		"knowledge_name" : "삼각형의 무게중심과 넓이"
+	},
+	{
+		"problem_id" : 32907,
+		"unit_id" : 422,
+		"knowledge_id" : 597,
+		"knowledge_name" : "평행사변형에서 삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 73386,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 73386,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 73616,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73616,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 31955,
+		"unit_id" : 277,
+		"knowledge_id" : 836,
+		"knowledge_name" : "판별식 D>0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 31955,
+		"unit_id" : 277,
+		"knowledge_id" : 837,
+		"knowledge_name" : "판별식 D=0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 31955,
+		"unit_id" : 277,
+		"knowledge_id" : 838,
+		"knowledge_name" : "판별식 D<0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 42257,
+		"unit_id" : 336,
+		"knowledge_id" : 1137,
+		"knowledge_name" : "연속함수의 성질"
+	},
+	{
+		"problem_id" : 73393,
+		"unit_id" : 314,
+		"knowledge_id" : 1029,
+		"knowledge_name" : "로그함수 y=log_a x의 그래프의 평행이동과 대칭이동"
+	},
+	{
+		"problem_id" : 27229,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 31054,
+		"unit_id" : 313,
+		"knowledge_id" : 1025,
+		"knowledge_name" : "지수에 미지수가 있는 부등식과 지수함수의 관계"
+	},
+	{
+		"problem_id" : 31054,
+		"unit_id" : 313,
+		"knowledge_id" : 1026,
+		"knowledge_name" : "지수 또는 밑에 미지수가 있는 부등식의 풀이"
+	},
+	{
+		"problem_id" : 32021,
+		"unit_id" : 278,
+		"knowledge_id" : 841,
+		"knowledge_name" : "연립이차부등식"
+	},
+	{
+		"problem_id" : 32021,
+		"unit_id" : 278,
+		"knowledge_id" : 842,
+		"knowledge_name" : "연립이차부등식의 풀이"
+	},
+	{
+		"problem_id" : 73254,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 73254,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 73515,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73515,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 73515,
+		"unit_id" : 327,
+		"knowledge_id" : 1102,
+		"knowledge_name" : "등비수열의 합"
+	},
+	{
+		"problem_id" : 42194,
+		"unit_id" : 335,
+		"knowledge_id" : 1135,
+		"knowledge_name" : "함수의 연속과 불연속"
+	},
+	{
+		"problem_id" : 42194,
+		"unit_id" : 335,
+		"knowledge_id" : 1136,
+		"knowledge_name" : "구간과 연속함수"
+	},
+	{
+		"problem_id" : 73496,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73496,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 73496,
+		"unit_id" : 327,
+		"knowledge_id" : 1102,
+		"knowledge_name" : "등비수열의 합"
+	},
+	{
+		"problem_id" : 73653,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 23631,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23631,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 27370,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 27618,
+		"unit_id" : 267,
+		"knowledge_id" : 792,
+		"knowledge_name" : "i의 거듭제곱"
+	},
+	{
+		"problem_id" : 27618,
+		"unit_id" : 266,
+		"knowledge_id" : 789,
+		"knowledge_name" : "복소수의 사칙연산"
+	},
+	{
+		"problem_id" : 27618,
+		"unit_id" : 266,
+		"knowledge_id" : 790,
+		"knowledge_name" : "복소수의 사칙연산에 대한 성질(교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 30910,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 30910,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 73347,
+		"unit_id" : 325,
+		"knowledge_id" : 1097,
+		"knowledge_name" : "등차수열의 합"
+	},
+	{
+		"problem_id" : 73462,
+		"unit_id" : 464,
+		"knowledge_id" : 1255,
+		"knowledge_name" : "독립시행"
+	},
+	{
+		"problem_id" : 73462,
+		"unit_id" : 464,
+		"knowledge_id" : 1256,
+		"knowledge_name" : "독립시행의 확률"
+	},
+	{
+		"problem_id" : 23685,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23685,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 27855,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 27855,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 42227,
+		"unit_id" : 347,
+		"knowledge_id" : 1192,
+		"knowledge_name" : "함수 y=x^n의 부정적분"
+	},
+	{
+		"problem_id" : 42227,
+		"unit_id" : 347,
+		"knowledge_id" : 1193,
+		"knowledge_name" : "함수의 실수배, 합, 차의 부정적분"
+	},
+	{
+		"problem_id" : 73480,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73480,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 27819,
+		"unit_id" : 267,
+		"knowledge_id" : 792,
+		"knowledge_name" : "i의 거듭제곱"
+	},
+	{
+		"problem_id" : 27819,
+		"unit_id" : 266,
+		"knowledge_id" : 789,
+		"knowledge_name" : "복소수의 사칙연산"
+	},
+	{
+		"problem_id" : 27819,
+		"unit_id" : 266,
+		"knowledge_id" : 790,
+		"knowledge_name" : "복소수의 사칙연산에 대한 성질(교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 32847,
+		"unit_id" : 422,
+		"knowledge_id" : 595,
+		"knowledge_name" : "삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 32847,
+		"unit_id" : 422,
+		"knowledge_id" : 596,
+		"knowledge_name" : "삼각형의 무게중심과 넓이"
+	},
+	{
+		"problem_id" : 32847,
+		"unit_id" : 422,
+		"knowledge_id" : 597,
+		"knowledge_name" : "평행사변형에서 삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 73489,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73489,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 23218,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 23218,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 73281,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 73281,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 23625,
+		"unit_id" : 265,
+		"knowledge_id" : 784,
+		"knowledge_name" : "인수정리를 이용한 인수분해"
+	},
+	{
+		"problem_id" : 30830,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 30830,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 33131,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33131,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33131,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 42221,
+		"unit_id" : 333,
+		"knowledge_id" : 1131,
+		"knowledge_name" : "함수의 극한에 대한 성질"
+	},
+	{
+		"problem_id" : 42221,
+		"unit_id" : 333,
+		"knowledge_id" : 1132,
+		"knowledge_name" : "함수의 극한값 구하는 방법"
+	},
+	{
+		"problem_id" : 42221,
+		"unit_id" : 333,
+		"knowledge_id" : 1133,
+		"knowledge_name" : "미정계수의 결정"
+	},
+	{
+		"problem_id" : 73358,
+		"unit_id" : 325,
+		"knowledge_id" : 1097,
+		"knowledge_name" : "등차수열의 합"
+	},
+	{
+		"problem_id" : 73482,
+		"unit_id" : 468,
+		"knowledge_id" : 1267,
+		"knowledge_name" : "연속확률변수와 확률밀도함수"
+	},
+	{
+		"problem_id" : 73534,
+		"unit_id" : 331,
+		"knowledge_id" : 1117,
+		"knowledge_name" : "수학적 귀납법"
+	},
+	{
+		"problem_id" : 73804,
+		"unit_id" : 466,
+		"knowledge_id" : 1261,
+		"knowledge_name" : "이산확률변수의 평균(기댓값)"
+	},
+	{
+		"problem_id" : 73804,
+		"unit_id" : 466,
+		"knowledge_id" : 1262,
+		"knowledge_name" : "이산확률변수의 분산과 표준편차"
+	},
+	{
+		"problem_id" : 73804,
+		"unit_id" : 466,
+		"knowledge_id" : 1263,
+		"knowledge_name" : "이산확률변수 aX+b의 평균, 분산, 표준편차"
+	},
+	{
+		"problem_id" : 73804,
+		"unit_id" : 462,
+		"knowledge_id" : 1245,
+		"knowledge_name" : "수학적 확률"
+	},
+	{
+		"problem_id" : 73804,
+		"unit_id" : 462,
+		"knowledge_id" : 1246,
+		"knowledge_name" : "통계적 확률"
+	},
+	{
+		"problem_id" : 73804,
+		"unit_id" : 462,
+		"knowledge_id" : 1247,
+		"knowledge_name" : "기하적 확률"
+	},
+	{
+		"problem_id" : 73804,
+		"unit_id" : 462,
+		"knowledge_id" : 1248,
+		"knowledge_name" : "확률의 기본 성질"
+	},
+	{
+		"problem_id" : 27066,
+		"unit_id" : 273,
+		"knowledge_id" : 820,
+		"knowledge_name" : "방정식 x^3=1의 허근 w의 성질"
+	},
+	{
+		"problem_id" : 27066,
+		"unit_id" : 266,
+		"knowledge_id" : 789,
+		"knowledge_name" : "복소수의 사칙연산"
+	},
+	{
+		"problem_id" : 27066,
+		"unit_id" : 266,
+		"knowledge_id" : 790,
+		"knowledge_name" : "복소수의 사칙연산에 대한 성질(교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 32856,
+		"unit_id" : 422,
+		"knowledge_id" : 595,
+		"knowledge_name" : "삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 32856,
+		"unit_id" : 422,
+		"knowledge_id" : 596,
+		"knowledge_name" : "삼각형의 무게중심과 넓이"
+	},
+	{
+		"problem_id" : 32856,
+		"unit_id" : 422,
+		"knowledge_id" : 597,
+		"knowledge_name" : "평행사변형에서 삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 33098,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33098,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33098,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 42182,
+		"unit_id" : 338,
+		"knowledge_id" : 1159,
+		"knowledge_name" : "함수의 실수배, 합, 차의 미분법"
+	},
+	{
+		"problem_id" : 42182,
+		"unit_id" : 338,
+		"knowledge_id" : 1160,
+		"knowledge_name" : "함수의 곱의 미분법"
+	},
+	{
+		"problem_id" : 73355,
+		"unit_id" : 326,
+		"knowledge_id" : 1099,
+		"knowledge_name" : "등비수열"
+	},
+	{
+		"problem_id" : 73355,
+		"unit_id" : 326,
+		"knowledge_id" : 1100,
+		"knowledge_name" : "등비수열의 일반항"
+	},
+	{
+		"problem_id" : 73355,
+		"unit_id" : 326,
+		"knowledge_id" : 1101,
+		"knowledge_name" : "등비중항"
+	},
+	{
+		"problem_id" : 73458,
+		"unit_id" : 464,
+		"knowledge_id" : 1255,
+		"knowledge_name" : "독립시행"
+	},
+	{
+		"problem_id" : 73458,
+		"unit_id" : 464,
+		"knowledge_id" : 1256,
+		"knowledge_name" : "독립시행의 확률"
+	},
+	{
+		"problem_id" : 73516,
+		"unit_id" : 330,
+		"knowledge_id" : 1114,
+		"knowledge_name" : "수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 73516,
+		"unit_id" : 330,
+		"knowledge_id" : 1115,
+		"knowledge_name" : "등차수열과 등비수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 26915,
+		"unit_id" : 273,
+		"knowledge_id" : 820,
+		"knowledge_name" : "방정식 x^3=1의 허근 w의 성질"
+	},
+	{
+		"problem_id" : 26915,
+		"unit_id" : 266,
+		"knowledge_id" : 789,
+		"knowledge_name" : "복소수의 사칙연산"
+	},
+	{
+		"problem_id" : 26915,
+		"unit_id" : 266,
+		"knowledge_id" : 790,
+		"knowledge_name" : "복소수의 사칙연산에 대한 성질(교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 33332,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33332,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33332,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 33445,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 41997,
+		"unit_id" : 344,
+		"knowledge_id" : 1177,
+		"knowledge_name" : "부등식에의 활용"
+	},
+	{
+		"problem_id" : 73252,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 73252,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 73342,
+		"unit_id" : 321,
+		"knowledge_id" : 1074,
+		"knowledge_name" : "사인법칙"
+	},
+	{
+		"problem_id" : 73342,
+		"unit_id" : 321,
+		"knowledge_id" : 1075,
+		"knowledge_name" : "사인법칙의 변형"
+	},
+	{
+		"problem_id" : 73483,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73483,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 73527,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 73527,
+		"unit_id" : 325,
+		"knowledge_id" : 1098,
+		"knowledge_name" : "수열의 합과 일반항 사이의 관계"
+	},
+	{
+		"problem_id" : 42299,
+		"unit_id" : 336,
+		"knowledge_id" : 1137,
+		"knowledge_name" : "연속함수의 성질"
+	},
+	{
+		"problem_id" : 26895,
+		"unit_id" : 273,
+		"knowledge_id" : 814,
+		"knowledge_name" : "삼차방정식과 사차방정식"
+	},
+	{
+		"problem_id" : 26895,
+		"unit_id" : 273,
+		"knowledge_id" : 815,
+		"knowledge_name" : "인수정리를 이용한 삼, 사차방정식의 풀이"
+	},
+	{
+		"problem_id" : 26895,
+		"unit_id" : 269,
+		"knowledge_id" : 797,
+		"knowledge_name" : "판별식"
+	},
+	{
+		"problem_id" : 26895,
+		"unit_id" : 269,
+		"knowledge_id" : 798,
+		"knowledge_name" : "이차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 26895,
+		"unit_id" : 269,
+		"knowledge_id" : 799,
+		"knowledge_name" : "이차식이 완전제곱식이 되기 위한 조건"
+	},
+	{
+		"problem_id" : 33565,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73343,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73343,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 23613,
+		"unit_id" : 263,
+		"knowledge_id" : 772,
+		"knowledge_name" : "항등식의 성질"
+	},
+	{
+		"problem_id" : 23613,
+		"unit_id" : 263,
+		"knowledge_id" : 773,
+		"knowledge_name" : "미정계수법 (계수비교법, 수치대입법)"
+	},
+	{
+		"problem_id" : 30955,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 30955,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 42233,
+		"unit_id" : 336,
+		"knowledge_id" : 1137,
+		"knowledge_name" : "연속함수의 성질"
+	},
+	{
+		"problem_id" : 27729,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27729,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 30840,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 30840,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 41992,
+		"unit_id" : 342,
+		"knowledge_id" : 1172,
+		"knowledge_name" : "함수의 그래프"
+	},
+	{
+		"problem_id" : 41992,
+		"unit_id" : 342,
+		"knowledge_id" : 1173,
+		"knowledge_name" : "다항함수가 극값을 가질 조건"
+	},
+	{
+		"problem_id" : 41992,
+		"unit_id" : 269,
+		"knowledge_id" : 797,
+		"knowledge_name" : "판별식"
+	},
+	{
+		"problem_id" : 41992,
+		"unit_id" : 269,
+		"knowledge_id" : 798,
+		"knowledge_name" : "이차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 41992,
+		"unit_id" : 269,
+		"knowledge_id" : 799,
+		"knowledge_name" : "이차식이 완전제곱식이 되기 위한 조건"
+	},
+	{
+		"problem_id" : 42150,
+		"unit_id" : 336,
+		"knowledge_id" : 1137,
+		"knowledge_name" : "연속함수의 성질"
+	},
+	{
+		"problem_id" : 42180,
+		"unit_id" : 350,
+		"knowledge_id" : 1205,
+		"knowledge_name" : "곡선과 x축 사이의 넓이"
+	},
+	{
+		"problem_id" : 42180,
+		"unit_id" : 350,
+		"knowledge_id" : 1206,
+		"knowledge_name" : "곡선과 직선 사이의 넓이"
+	},
+	{
+		"problem_id" : 42180,
+		"unit_id" : 350,
+		"knowledge_id" : 1207,
+		"knowledge_name" : "두 곡선 사이의 넓이"
+	},
+	{
+		"problem_id" : 42180,
+		"unit_id" : 339,
+		"knowledge_id" : 1161,
+		"knowledge_name" : "접선의 방정식"
+	},
+	{
+		"problem_id" : 42180,
+		"unit_id" : 339,
+		"knowledge_id" : 1162,
+		"knowledge_name" : "접선의 방정식을 구하는 방법"
+	},
+	{
+		"problem_id" : 42180,
+		"unit_id" : 339,
+		"knowledge_id" : 1163,
+		"knowledge_name" : "접선에 수직인 직선의 방정식"
+	},
+	{
+		"problem_id" : 73459,
+		"unit_id" : 464,
+		"knowledge_id" : 1255,
+		"knowledge_name" : "독립시행"
+	},
+	{
+		"problem_id" : 73459,
+		"unit_id" : 464,
+		"knowledge_id" : 1256,
+		"knowledge_name" : "독립시행의 확률"
+	},
+	{
+		"problem_id" : 31004,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 31004,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 33323,
+		"unit_id" : 286,
+		"knowledge_id" : 874,
+		"knowledge_name" : "평행이동"
+	},
+	{
+		"problem_id" : 33323,
+		"unit_id" : 286,
+		"knowledge_id" : 875,
+		"knowledge_name" : "점의 평행이동"
+	},
+	{
+		"problem_id" : 33323,
+		"unit_id" : 286,
+		"knowledge_id" : 876,
+		"knowledge_name" : "도형의 평행이동"
+	},
+	{
+		"problem_id" : 73485,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73485,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 73772,
+		"unit_id" : 464,
+		"knowledge_id" : 1255,
+		"knowledge_name" : "독립시행"
+	},
+	{
+		"problem_id" : 73772,
+		"unit_id" : 464,
+		"knowledge_id" : 1256,
+		"knowledge_name" : "독립시행의 확률"
+	},
+	{
+		"problem_id" : 30799,
+		"unit_id" : 330,
+		"knowledge_id" : 1114,
+		"knowledge_name" : "수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 30799,
+		"unit_id" : 330,
+		"knowledge_id" : 1115,
+		"knowledge_name" : "등차수열과 등비수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 73803,
+		"unit_id" : 466,
+		"knowledge_id" : 1261,
+		"knowledge_name" : "이산확률변수의 평균(기댓값)"
+	},
+	{
+		"problem_id" : 73803,
+		"unit_id" : 466,
+		"knowledge_id" : 1262,
+		"knowledge_name" : "이산확률변수의 분산과 표준편차"
+	},
+	{
+		"problem_id" : 73803,
+		"unit_id" : 466,
+		"knowledge_id" : 1263,
+		"knowledge_name" : "이산확률변수 aX+b의 평균, 분산, 표준편차"
+	},
+	{
+		"problem_id" : 73803,
+		"unit_id" : 462,
+		"knowledge_id" : 1245,
+		"knowledge_name" : "수학적 확률"
+	},
+	{
+		"problem_id" : 73803,
+		"unit_id" : 462,
+		"knowledge_id" : 1246,
+		"knowledge_name" : "통계적 확률"
+	},
+	{
+		"problem_id" : 73803,
+		"unit_id" : 462,
+		"knowledge_id" : 1247,
+		"knowledge_name" : "기하적 확률"
+	},
+	{
+		"problem_id" : 73803,
+		"unit_id" : 462,
+		"knowledge_id" : 1248,
+		"knowledge_name" : "확률의 기본 성질"
+	},
+	{
+		"problem_id" : 23248,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 23248,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 31029,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 31029,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 31029,
+		"unit_id" : 321,
+		"knowledge_id" : 1074,
+		"knowledge_name" : "사인법칙"
+	},
+	{
+		"problem_id" : 31029,
+		"unit_id" : 321,
+		"knowledge_id" : 1075,
+		"knowledge_name" : "사인법칙의 변형"
+	},
+	{
+		"problem_id" : 33143,
+		"unit_id" : 283,
+		"knowledge_id" : 862,
+		"knowledge_name" : "점과 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 33143,
+		"unit_id" : 283,
+		"knowledge_id" : 863,
+		"knowledge_name" : "평행한 두 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 73263,
+		"unit_id" : 461,
+		"knowledge_id" : 1250,
+		"knowledge_name" : "여사건의 확률"
+	},
+	{
+		"problem_id" : 73359,
+		"unit_id" : 325,
+		"knowledge_id" : 1097,
+		"knowledge_name" : "등차수열의 합"
+	},
+	{
+		"problem_id" : 33104,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33104,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33104,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27109,
+		"unit_id" : 442,
+		"knowledge_id" : 664,
+		"knowledge_name" : "이차함수 y=x²의 그래프"
+	},
+	{
+		"problem_id" : 27109,
+		"unit_id" : 442,
+		"knowledge_id" : 665,
+		"knowledge_name" : "이차함수 y=ax²의 그래프"
+	},
+	{
+		"problem_id" : 27837,
+		"unit_id" : 267,
+		"knowledge_id" : 792,
+		"knowledge_name" : "i의 거듭제곱"
+	},
+	{
+		"problem_id" : 27837,
+		"unit_id" : 266,
+		"knowledge_id" : 789,
+		"knowledge_name" : "복소수의 사칙연산"
+	},
+	{
+		"problem_id" : 27837,
+		"unit_id" : 266,
+		"knowledge_id" : 790,
+		"knowledge_name" : "복소수의 사칙연산에 대한 성질(교환법칙, 결합법칙, 분배법칙)"
+	},
+	{
+		"problem_id" : 33484,
+		"unit_id" : 285,
+		"knowledge_id" : 871,
+		"knowledge_name" : "기울기가 주어진 원의 접선의 방정식"
+	},
+	{
+		"problem_id" : 33484,
+		"unit_id" : 285,
+		"knowledge_id" : 872,
+		"knowledge_name" : "원 위의 점에서의 접선의 방정식"
+	},
+	{
+		"problem_id" : 33484,
+		"unit_id" : 285,
+		"knowledge_id" : 873,
+		"knowledge_name" : "원 밖의 한 점에서 원에 그은 접선의 방정식"
+	},
+	{
+		"problem_id" : 23640,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23640,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 27292,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27292,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27292,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27292,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27292,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27292,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 27346,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 27822,
+		"unit_id" : 438,
+		"knowledge_id" : 648,
+		"knowledge_name" : "이차방정식"
+	},
+	{
+		"problem_id" : 73484,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73484,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 73540,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73540,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 27340,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27340,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 30894,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 30894,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 73503,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73503,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 30745,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 30745,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 30950,
+		"unit_id" : 309,
+		"knowledge_id" : 1009,
+		"knowledge_name" : "로그의 성질"
+	},
+	{
+		"problem_id" : 30950,
+		"unit_id" : 309,
+		"knowledge_id" : 1010,
+		"knowledge_name" : "밑의 변환 공식"
+	},
+	{
+		"problem_id" : 30950,
+		"unit_id" : 309,
+		"knowledge_id" : 1011,
+		"knowledge_name" : "로그의 여러 가지 성질"
+	},
+	{
+		"problem_id" : 73657,
+		"unit_id" : 331,
+		"knowledge_id" : 1117,
+		"knowledge_name" : "수학적 귀납법"
+	},
+	{
+		"problem_id" : 27214,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 30949,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 30949,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 33550,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33550,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33550,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33550,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 32874,
+		"unit_id" : 410,
+		"knowledge_id" : 557,
+		"knowledge_name" : "각의 이등분선의 성질"
+	},
+	{
+		"problem_id" : 32874,
+		"unit_id" : 280,
+		"knowledge_id" : 847,
+		"knowledge_name" : "선분의 내분점"
+	},
+	{
+		"problem_id" : 32874,
+		"unit_id" : 280,
+		"knowledge_id" : 848,
+		"knowledge_name" : "수직선 위의 선분의 내분점"
+	},
+	{
+		"problem_id" : 32874,
+		"unit_id" : 280,
+		"knowledge_id" : 849,
+		"knowledge_name" : "좌표평면 위의 선분의 내분점"
+	},
+	{
+		"problem_id" : 32880,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 33451,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73739,
+		"unit_id" : 461,
+		"knowledge_id" : 1250,
+		"knowledge_name" : "여사건의 확률"
+	},
+	{
+		"problem_id" : 27783,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27783,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 41989,
+		"unit_id" : 344,
+		"knowledge_id" : 1175,
+		"knowledge_name" : "방정식의 실근의 개수"
+	},
+	{
+		"problem_id" : 41989,
+		"unit_id" : 344,
+		"knowledge_id" : 1176,
+		"knowledge_name" : "삼차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 42159,
+		"unit_id" : 348,
+		"knowledge_id" : 1197,
+		"knowledge_name" : "구간에 따라 함수가 다를 때의 정적분"
+	},
+	{
+		"problem_id" : 42159,
+		"unit_id" : 348,
+		"knowledge_id" : 1198,
+		"knowledge_name" : "절댓값 기호가 포함된 함수의 정적분"
+	},
+	{
+		"problem_id" : 42159,
+		"unit_id" : 348,
+		"knowledge_id" : 1199,
+		"knowledge_name" : "우함수와 기함수의 정적분"
+	},
+	{
+		"problem_id" : 42159,
+		"unit_id" : 348,
+		"knowledge_id" : 1200,
+		"knowledge_name" : "주기함수의 정적분"
+	},
+	{
+		"problem_id" : 73313,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 73313,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 73354,
+		"unit_id" : 326,
+		"knowledge_id" : 1099,
+		"knowledge_name" : "등비수열"
+	},
+	{
+		"problem_id" : 73354,
+		"unit_id" : 326,
+		"knowledge_id" : 1100,
+		"knowledge_name" : "등비수열의 일반항"
+	},
+	{
+		"problem_id" : 73354,
+		"unit_id" : 326,
+		"knowledge_id" : 1101,
+		"knowledge_name" : "등비중항"
+	},
+	{
+		"problem_id" : 27286,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27286,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27286,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27286,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27286,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27286,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 31092,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 31092,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 31092,
+		"unit_id" : 321,
+		"knowledge_id" : 1074,
+		"knowledge_name" : "사인법칙"
+	},
+	{
+		"problem_id" : 31092,
+		"unit_id" : 321,
+		"knowledge_id" : 1075,
+		"knowledge_name" : "사인법칙의 변형"
+	},
+	{
+		"problem_id" : 73320,
+		"unit_id" : 320,
+		"knowledge_id" : 1072,
+		"knowledge_name" : "삼각함수가 포함된 방정식"
+	},
+	{
+		"problem_id" : 73353,
+		"unit_id" : 325,
+		"knowledge_id" : 1098,
+		"knowledge_name" : "수열의 합과 일반항 사이의 관계"
+	},
+	{
+		"problem_id" : 73353,
+		"unit_id" : 325,
+		"knowledge_id" : 1097,
+		"knowledge_name" : "등차수열의 합"
+	},
+	{
+		"problem_id" : 27226,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 27867,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27867,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 32883,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 33083,
+		"unit_id" : 283,
+		"knowledge_id" : 862,
+		"knowledge_name" : "점과 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 33083,
+		"unit_id" : 283,
+		"knowledge_id" : 863,
+		"knowledge_name" : "평행한 두 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 33113,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33113,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33113,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33559,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33559,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33559,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33559,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 73308,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 73308,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 33568,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33568,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33568,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33568,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 73531,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 27376,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27376,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27376,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27376,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 32814,
+		"unit_id" : 280,
+		"knowledge_id" : 847,
+		"knowledge_name" : "선분의 내분점"
+	},
+	{
+		"problem_id" : 32814,
+		"unit_id" : 280,
+		"knowledge_id" : 848,
+		"knowledge_name" : "수직선 위의 선분의 내분점"
+	},
+	{
+		"problem_id" : 32814,
+		"unit_id" : 280,
+		"knowledge_id" : 849,
+		"knowledge_name" : "좌표평면 위의 선분의 내분점"
+	},
+	{
+		"problem_id" : 33092,
+		"unit_id" : 283,
+		"knowledge_id" : 862,
+		"knowledge_name" : "점과 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 33092,
+		"unit_id" : 283,
+		"knowledge_id" : 863,
+		"knowledge_name" : "평행한 두 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 73360,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 73360,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 73492,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73492,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 73492,
+		"unit_id" : 325,
+		"knowledge_id" : 1098,
+		"knowledge_name" : "수열의 합과 일반항 사이의 관계"
+	},
+	{
+		"problem_id" : 23478,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23478,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 27220,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 31035,
+		"unit_id" : 320,
+		"knowledge_id" : 1072,
+		"knowledge_name" : "삼각함수가 포함된 방정식"
+	},
+	{
+		"problem_id" : 73445,
+		"unit_id" : 463,
+		"knowledge_id" : 1251,
+		"knowledge_name" : "조건부확률"
+	},
+	{
+		"problem_id" : 73532,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 30868,
+		"unit_id" : 319,
+		"knowledge_id" : 1064,
+		"knowledge_name" : "평행이동한 삼각함수의 그래프"
+	},
+	{
+		"problem_id" : 30868,
+		"unit_id" : 319,
+		"knowledge_id" : 1065,
+		"knowledge_name" : "절댓값 기호가 포함된 삼각함수의 주기와 최대, 최소"
+	},
+	{
+		"problem_id" : 31012,
+		"unit_id" : 321,
+		"knowledge_id" : 1074,
+		"knowledge_name" : "사인법칙"
+	},
+	{
+		"problem_id" : 31012,
+		"unit_id" : 321,
+		"knowledge_id" : 1075,
+		"knowledge_name" : "사인법칙의 변형"
+	},
+	{
+		"problem_id" : 73610,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73610,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 30985,
+		"unit_id" : 320,
+		"knowledge_id" : 1072,
+		"knowledge_name" : "삼각함수가 포함된 방정식"
+	},
+	{
+		"problem_id" : 30985,
+		"unit_id" : 319,
+		"knowledge_id" : 1068,
+		"knowledge_name" : "두 종류의 삼각함수를 포함하는 일차식 꼴인 경우"
+	},
+	{
+		"problem_id" : 30985,
+		"unit_id" : 319,
+		"knowledge_id" : 1069,
+		"knowledge_name" : "절댓값 기호를 포함하는 일차식 꼴인 경우"
+	},
+	{
+		"problem_id" : 30985,
+		"unit_id" : 319,
+		"knowledge_id" : 1070,
+		"knowledge_name" : "이차식 꼴인 경우"
+	},
+	{
+		"problem_id" : 30985,
+		"unit_id" : 319,
+		"knowledge_id" : 1071,
+		"knowledge_name" : "유리함수 꼴인 경우"
+	},
+	{
+		"problem_id" : 30985,
+		"unit_id" : 319,
+		"knowledge_id" : 1066,
+		"knowledge_name" : "일반각에 대한 삼각함수의 성질"
+	},
+	{
+		"problem_id" : 30985,
+		"unit_id" : 319,
+		"knowledge_id" : 1067,
+		"knowledge_name" : "삼각함수표의 사용"
+	},
+	{
+		"problem_id" : 33424,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33424,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33424,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33424,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 23466,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23466,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 32832,
+		"unit_id" : 280,
+		"knowledge_id" : 850,
+		"knowledge_name" : "선분의 외분점"
+	},
+	{
+		"problem_id" : 32832,
+		"unit_id" : 280,
+		"knowledge_id" : 851,
+		"knowledge_name" : "수직선 위의 선분의 외분점"
+	},
+	{
+		"problem_id" : 32832,
+		"unit_id" : 280,
+		"knowledge_id" : 852,
+		"knowledge_name" : "좌표평면 위의 선분의 외분점"
+	},
+	{
+		"problem_id" : 73452,
+		"unit_id" : 464,
+		"knowledge_id" : 1255,
+		"knowledge_name" : "독립시행"
+	},
+	{
+		"problem_id" : 73452,
+		"unit_id" : 464,
+		"knowledge_id" : 1256,
+		"knowledge_name" : "독립시행의 확률"
+	},
+	{
+		"problem_id" : 73699,
+		"unit_id" : 460,
+		"knowledge_id" : 1240,
+		"knowledge_name" : "이항정리와 이항계수"
+	},
+	{
+		"problem_id" : 73699,
+		"unit_id" : 460,
+		"knowledge_id" : 1241,
+		"knowledge_name" : "이항계수의 성질"
+	},
+	{
+		"problem_id" : 73699,
+		"unit_id" : 460,
+		"knowledge_id" : 1242,
+		"knowledge_name" : "파스칼의 삼각형"
+	},
+	{
+		"problem_id" : 23649,
+		"unit_id" : 263,
+		"knowledge_id" : 774,
+		"knowledge_name" : "다항식의 나눗셈과 항등식"
+	},
+	{
+		"problem_id" : 27193,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 31085,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 31085,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 32042,
+		"unit_id" : 277,
+		"knowledge_id" : 836,
+		"knowledge_name" : "판별식 D>0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 32042,
+		"unit_id" : 277,
+		"knowledge_id" : 837,
+		"knowledge_name" : "판별식 D=0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 32042,
+		"unit_id" : 277,
+		"knowledge_id" : 838,
+		"knowledge_name" : "판별식 D<0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 73255,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 73255,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 30929,
+		"unit_id" : 309,
+		"knowledge_id" : 1009,
+		"knowledge_name" : "로그의 성질"
+	},
+	{
+		"problem_id" : 30929,
+		"unit_id" : 309,
+		"knowledge_id" : 1010,
+		"knowledge_name" : "밑의 변환 공식"
+	},
+	{
+		"problem_id" : 30929,
+		"unit_id" : 309,
+		"knowledge_id" : 1011,
+		"knowledge_name" : "로그의 여러 가지 성질"
+	},
+	{
+		"problem_id" : 30929,
+		"unit_id" : 329,
+		"knowledge_id" : 1109,
+		"knowledge_name" : "분수 꼴로 된 수열의 합"
+	},
+	{
+		"problem_id" : 30929,
+		"unit_id" : 329,
+		"knowledge_id" : 1110,
+		"knowledge_name" : "부분분수로의 변형"
+	},
+	{
+		"problem_id" : 30929,
+		"unit_id" : 329,
+		"knowledge_id" : 1111,
+		"knowledge_name" : "무리식을 포함한 수열의 합"
+	},
+	{
+		"problem_id" : 30929,
+		"unit_id" : 329,
+		"knowledge_id" : 1112,
+		"knowledge_name" : "(등차수열)X(등비수열) 꼴의 수열의 합: 멱급수"
+	},
+	{
+		"problem_id" : 33430,
+		"unit_id" : 450,
+		"knowledge_id" : 686,
+		"knowledge_name" : "현의 수직이등분선"
+	},
+	{
+		"problem_id" : 33430,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73475,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73475,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 23472,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23472,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 33326,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33326,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33326,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 33589,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73511,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73511,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 23215,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 23215,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 23427,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23427,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 31084,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 31084,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 30984,
+		"unit_id" : 316,
+		"knowledge_id" : 1034,
+		"knowledge_name" : "로그의 진수에 미지수가 있는 부등식과 로그함수의 관계"
+	},
+	{
+		"problem_id" : 30984,
+		"unit_id" : 316,
+		"knowledge_id" : 1035,
+		"knowledge_name" : "로그의 진수 또는 밑에 미지수가 있는 부등식의 풀이"
+	},
+	{
+		"problem_id" : 33074,
+		"unit_id" : 283,
+		"knowledge_id" : 862,
+		"knowledge_name" : "점과 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 33074,
+		"unit_id" : 283,
+		"knowledge_id" : 863,
+		"knowledge_name" : "평행한 두 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 73329,
+		"unit_id" : 319,
+		"knowledge_id" : 1064,
+		"knowledge_name" : "평행이동한 삼각함수의 그래프"
+	},
+	{
+		"problem_id" : 73329,
+		"unit_id" : 319,
+		"knowledge_id" : 1065,
+		"knowledge_name" : "절댓값 기호가 포함된 삼각함수의 주기와 최대, 최소"
+	},
+	{
+		"problem_id" : 33146,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33574,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33574,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33574,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33574,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 27187,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 30930,
+		"unit_id" : 320,
+		"knowledge_id" : 1072,
+		"knowledge_name" : "삼각함수가 포함된 방정식"
+	},
+	{
+		"problem_id" : 73244,
+		"unit_id" : 470,
+		"knowledge_id" : 1279,
+		"knowledge_name" : "추정"
+	},
+	{
+		"problem_id" : 73244,
+		"unit_id" : 470,
+		"knowledge_id" : 1280,
+		"knowledge_name" : "모평균의 신뢰구간"
+	},
+	{
+		"problem_id" : 73244,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73244,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 33290,
+		"unit_id" : 287,
+		"knowledge_id" : 880,
+		"knowledge_name" : "점에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33290,
+		"unit_id" : 287,
+		"knowledge_id" : 881,
+		"knowledge_name" : "직선에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33290,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 33374,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33374,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33374,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 33374,
+		"unit_id" : 286,
+		"knowledge_id" : 874,
+		"knowledge_name" : "평행이동"
+	},
+	{
+		"problem_id" : 33374,
+		"unit_id" : 286,
+		"knowledge_id" : 875,
+		"knowledge_name" : "점의 평행이동"
+	},
+	{
+		"problem_id" : 33374,
+		"unit_id" : 286,
+		"knowledge_id" : 876,
+		"knowledge_name" : "도형의 평행이동"
+	},
+	{
+		"problem_id" : 33493,
+		"unit_id" : 285,
+		"knowledge_id" : 871,
+		"knowledge_name" : "기울기가 주어진 원의 접선의 방정식"
+	},
+	{
+		"problem_id" : 33493,
+		"unit_id" : 285,
+		"knowledge_id" : 872,
+		"knowledge_name" : "원 위의 점에서의 접선의 방정식"
+	},
+	{
+		"problem_id" : 33493,
+		"unit_id" : 285,
+		"knowledge_id" : 873,
+		"knowledge_name" : "원 밖의 한 점에서 원에 그은 접선의 방정식"
+	},
+	{
+		"problem_id" : 42131,
+		"unit_id" : 336,
+		"knowledge_id" : 1137,
+		"knowledge_name" : "연속함수의 성질"
+	},
+	{
+		"problem_id" : 33095,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33095,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33095,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33541,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33541,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33541,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33541,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 27358,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 42144,
+		"unit_id" : 348,
+		"knowledge_id" : 1197,
+		"knowledge_name" : "구간에 따라 함수가 다를 때의 정적분"
+	},
+	{
+		"problem_id" : 42144,
+		"unit_id" : 348,
+		"knowledge_id" : 1198,
+		"knowledge_name" : "절댓값 기호가 포함된 함수의 정적분"
+	},
+	{
+		"problem_id" : 42144,
+		"unit_id" : 348,
+		"knowledge_id" : 1199,
+		"knowledge_name" : "우함수와 기함수의 정적분"
+	},
+	{
+		"problem_id" : 42144,
+		"unit_id" : 348,
+		"knowledge_id" : 1200,
+		"knowledge_name" : "주기함수의 정적분"
+	},
+	{
+		"problem_id" : 73451,
+		"unit_id" : 463,
+		"knowledge_id" : 1251,
+		"knowledge_name" : "조건부확률"
+	},
+	{
+		"problem_id" : 27283,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27283,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27283,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27283,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27283,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27283,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 27373,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27373,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27373,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27373,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27373,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27373,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 30737,
+		"unit_id" : 325,
+		"knowledge_id" : 1098,
+		"knowledge_name" : "수열의 합과 일반항 사이의 관계"
+	},
+	{
+		"problem_id" : 30737,
+		"unit_id" : 325,
+		"knowledge_id" : 1097,
+		"knowledge_name" : "등차수열의 합"
+	},
+	{
+		"problem_id" : 73454,
+		"unit_id" : 463,
+		"knowledge_id" : 1252,
+		"knowledge_name" : "확률의 곱셈정리"
+	},
+	{
+		"problem_id" : 73521,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 73253,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 73253,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 73341,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 73533,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 27352,
+		"unit_id" : 283,
+		"knowledge_id" : 862,
+		"knowledge_name" : "점과 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 27352,
+		"unit_id" : 283,
+		"knowledge_id" : 863,
+		"knowledge_name" : "평행한 두 직선 사이의 거리"
+	},
+	{
+		"problem_id" : 23622,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23622,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 33553,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27382,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27382,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27382,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27382,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27382,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27382,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 33272,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33272,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33272,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 42223,
+		"unit_id" : 349,
+		"knowledge_id" : 1201,
+		"knowledge_name" : "정적분으로 정의된 함수"
+	},
+	{
+		"problem_id" : 42223,
+		"unit_id" : 349,
+		"knowledge_id" : 1202,
+		"knowledge_name" : "정적분으로 정의된 함수의 미분"
+	},
+	{
+		"problem_id" : 42223,
+		"unit_id" : 349,
+		"knowledge_id" : 1203,
+		"knowledge_name" : "정적분으로 정의된 함수의 극한 (lim+∫의 꼴)"
+	},
+	{
+		"problem_id" : 42223,
+		"unit_id" : 342,
+		"knowledge_id" : 1169,
+		"knowledge_name" : "함수의 극대와 극소"
+	},
+	{
+		"problem_id" : 42223,
+		"unit_id" : 342,
+		"knowledge_id" : 1170,
+		"knowledge_name" : "극값과 미분계수"
+	},
+	{
+		"problem_id" : 42223,
+		"unit_id" : 342,
+		"knowledge_id" : 1171,
+		"knowledge_name" : "미분가능한 함수의 극대와 극소의 판정"
+	},
+	{
+		"problem_id" : 33164,
+		"unit_id" : 286,
+		"knowledge_id" : 874,
+		"knowledge_name" : "평행이동"
+	},
+	{
+		"problem_id" : 33164,
+		"unit_id" : 286,
+		"knowledge_id" : 875,
+		"knowledge_name" : "점의 평행이동"
+	},
+	{
+		"problem_id" : 33164,
+		"unit_id" : 286,
+		"knowledge_id" : 876,
+		"knowledge_name" : "도형의 평행이동"
+	},
+	{
+		"problem_id" : 33499,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33499,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33499,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33499,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 73501,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73501,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 30887,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 30887,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 31083,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 42142,
+		"unit_id" : 342,
+		"knowledge_id" : 1169,
+		"knowledge_name" : "함수의 극대와 극소"
+	},
+	{
+		"problem_id" : 42142,
+		"unit_id" : 342,
+		"knowledge_id" : 1170,
+		"knowledge_name" : "극값과 미분계수"
+	},
+	{
+		"problem_id" : 42142,
+		"unit_id" : 342,
+		"knowledge_id" : 1171,
+		"knowledge_name" : "미분가능한 함수의 극대와 극소의 판정"
+	},
+	{
+		"problem_id" : 27334,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27334,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27334,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27334,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27334,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27334,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 33535,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73337,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73337,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 33514,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33514,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33514,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33514,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 42271,
+		"unit_id" : 344,
+		"knowledge_id" : 1175,
+		"knowledge_name" : "방정식의 실근의 개수"
+	},
+	{
+		"problem_id" : 42271,
+		"unit_id" : 344,
+		"knowledge_id" : 1176,
+		"knowledge_name" : "삼차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 23619,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23619,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 33601,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 42163,
+		"unit_id" : 343,
+		"knowledge_id" : 1174,
+		"knowledge_name" : "함수의 최댓값과 최솟값"
+	},
+	{
+		"problem_id" : 31937,
+		"unit_id" : 277,
+		"knowledge_id" : 836,
+		"knowledge_name" : "판별식 D>0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 31937,
+		"unit_id" : 277,
+		"knowledge_id" : 837,
+		"knowledge_name" : "판별식 D=0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 31937,
+		"unit_id" : 277,
+		"knowledge_id" : 838,
+		"knowledge_name" : "판별식 D<0인 경우의 이차부등식의 해"
+	},
+	{
+		"problem_id" : 33059,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33059,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33059,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 42226,
+		"unit_id" : 339,
+		"knowledge_id" : 1161,
+		"knowledge_name" : "접선의 방정식"
+	},
+	{
+		"problem_id" : 42226,
+		"unit_id" : 339,
+		"knowledge_id" : 1162,
+		"knowledge_name" : "접선의 방정식을 구하는 방법"
+	},
+	{
+		"problem_id" : 42226,
+		"unit_id" : 339,
+		"knowledge_id" : 1163,
+		"knowledge_name" : "접선에 수직인 직선의 방정식"
+	},
+	{
+		"problem_id" : 23209,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 23209,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 27196,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 27223,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 42298,
+		"unit_id" : 333,
+		"knowledge_id" : 1131,
+		"knowledge_name" : "함수의 극한에 대한 성질"
+	},
+	{
+		"problem_id" : 42298,
+		"unit_id" : 333,
+		"knowledge_id" : 1132,
+		"knowledge_name" : "함수의 극한값 구하는 방법"
+	},
+	{
+		"problem_id" : 42298,
+		"unit_id" : 333,
+		"knowledge_id" : 1133,
+		"knowledge_name" : "미정계수의 결정"
+	},
+	{
+		"problem_id" : 73456,
+		"unit_id" : 464,
+		"knowledge_id" : 1255,
+		"knowledge_name" : "독립시행"
+	},
+	{
+		"problem_id" : 73456,
+		"unit_id" : 464,
+		"knowledge_id" : 1256,
+		"knowledge_name" : "독립시행의 확률"
+	},
+	{
+		"problem_id" : 30839,
+		"unit_id" : 309,
+		"knowledge_id" : 1007,
+		"knowledge_name" : "로그의 정의"
+	},
+	{
+		"problem_id" : 30839,
+		"unit_id" : 309,
+		"knowledge_id" : 1008,
+		"knowledge_name" : "log_a N이 정의되기 위한 조건"
+	},
+	{
+		"problem_id" : 31104,
+		"unit_id" : 311,
+		"knowledge_id" : 1018,
+		"knowledge_name" : "지수함수의 뜻"
+	},
+	{
+		"problem_id" : 31104,
+		"unit_id" : 311,
+		"knowledge_id" : 1019,
+		"knowledge_name" : "지수함수 y=a^x의 성질"
+	},
+	{
+		"problem_id" : 73345,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 73500,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73500,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 73519,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 23203,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 23203,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 73260,
+		"unit_id" : 306,
+		"knowledge_id" : 981,
+		"knowledge_name" : "조합"
+	},
+	{
+		"problem_id" : 73260,
+		"unit_id" : 306,
+		"knowledge_id" : 982,
+		"knowledge_name" : "조합의 수의 성질"
+	},
+	{
+		"problem_id" : 73260,
+		"unit_id" : 427,
+		"knowledge_id" : 611,
+		"knowledge_name" : "확률"
+	},
+	{
+		"problem_id" : 73505,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73505,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 33137,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33137,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33137,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33287,
+		"unit_id" : 287,
+		"knowledge_id" : 880,
+		"knowledge_name" : "점에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33287,
+		"unit_id" : 287,
+		"knowledge_id" : 881,
+		"knowledge_name" : "직선에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33287,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 27807,
+		"unit_id" : 438,
+		"knowledge_id" : 648,
+		"knowledge_name" : "이차방정식"
+	},
+	{
+		"problem_id" : 30754,
+		"unit_id" : 326,
+		"knowledge_id" : 1099,
+		"knowledge_name" : "등비수열"
+	},
+	{
+		"problem_id" : 30754,
+		"unit_id" : 326,
+		"knowledge_id" : 1100,
+		"knowledge_name" : "등비수열의 일반항"
+	},
+	{
+		"problem_id" : 30754,
+		"unit_id" : 326,
+		"knowledge_id" : 1101,
+		"knowledge_name" : "등비중항"
+	},
+	{
+		"problem_id" : 30754,
+		"unit_id" : 324,
+		"knowledge_id" : 1093,
+		"knowledge_name" : "수열"
+	},
+	{
+		"problem_id" : 30754,
+		"unit_id" : 324,
+		"knowledge_id" : 1094,
+		"knowledge_name" : "수열의 일반항"
+	},
+	{
+		"problem_id" : 30754,
+		"unit_id" : 324,
+		"knowledge_id" : 1095,
+		"knowledge_name" : "등차수열"
+	},
+	{
+		"problem_id" : 30754,
+		"unit_id" : 324,
+		"knowledge_id" : 1096,
+		"knowledge_name" : "등차중항"
+	},
+	{
+		"problem_id" : 30918,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 31064,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 32877,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 33227,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33227,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33227,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 33227,
+		"unit_id" : 286,
+		"knowledge_id" : 874,
+		"knowledge_name" : "평행이동"
+	},
+	{
+		"problem_id" : 33227,
+		"unit_id" : 286,
+		"knowledge_id" : 875,
+		"knowledge_name" : "점의 평행이동"
+	},
+	{
+		"problem_id" : 33227,
+		"unit_id" : 286,
+		"knowledge_id" : 876,
+		"knowledge_name" : "도형의 평행이동"
+	},
+	{
+		"problem_id" : 33275,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33275,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33275,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 73267,
+		"unit_id" : 306,
+		"knowledge_id" : 981,
+		"knowledge_name" : "조합"
+	},
+	{
+		"problem_id" : 73267,
+		"unit_id" : 306,
+		"knowledge_id" : 982,
+		"knowledge_name" : "조합의 수의 성질"
+	},
+	{
+		"problem_id" : 73267,
+		"unit_id" : 427,
+		"knowledge_id" : 611,
+		"knowledge_name" : "확률"
+	},
+	{
+		"problem_id" : 33116,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33116,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33116,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33107,
+		"unit_id" : 282,
+		"knowledge_id" : 859,
+		"knowledge_name" : "두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33107,
+		"unit_id" : 282,
+		"knowledge_id" : 860,
+		"knowledge_name" : "두 직선의 평행과 수직 조건"
+	},
+	{
+		"problem_id" : 33107,
+		"unit_id" : 282,
+		"knowledge_id" : 861,
+		"knowledge_name" : "표준형과 일반형으로 표현된 두 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33556,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73535,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 30931,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 30931,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 42148,
+		"unit_id" : 336,
+		"knowledge_id" : 1139,
+		"knowledge_name" : "사잇값의 정리"
+	},
+	{
+		"problem_id" : 73513,
+		"unit_id" : 309,
+		"knowledge_id" : 1009,
+		"knowledge_name" : "로그의 성질"
+	},
+	{
+		"problem_id" : 73513,
+		"unit_id" : 309,
+		"knowledge_id" : 1010,
+		"knowledge_name" : "밑의 변환 공식"
+	},
+	{
+		"problem_id" : 73513,
+		"unit_id" : 309,
+		"knowledge_id" : 1011,
+		"knowledge_name" : "로그의 여러 가지 성질"
+	},
+	{
+		"problem_id" : 73513,
+		"unit_id" : 329,
+		"knowledge_id" : 1109,
+		"knowledge_name" : "분수 꼴로 된 수열의 합"
+	},
+	{
+		"problem_id" : 73513,
+		"unit_id" : 329,
+		"knowledge_id" : 1110,
+		"knowledge_name" : "부분분수로의 변형"
+	},
+	{
+		"problem_id" : 73513,
+		"unit_id" : 329,
+		"knowledge_id" : 1111,
+		"knowledge_name" : "무리식을 포함한 수열의 합"
+	},
+	{
+		"problem_id" : 73513,
+		"unit_id" : 329,
+		"knowledge_id" : 1112,
+		"knowledge_name" : "(등차수열)X(등비수열) 꼴의 수열의 합: 멱급수"
+	},
+	{
+		"problem_id" : 23595,
+		"unit_id" : 437,
+		"knowledge_id" : 644,
+		"knowledge_name" : "공통부분이 있는 식의 인수분해"
+	},
+	{
+		"problem_id" : 23595,
+		"unit_id" : 437,
+		"knowledge_id" : 645,
+		"knowledge_name" : "항이 4개인 식의 인수분해"
+	},
+	{
+		"problem_id" : 23595,
+		"unit_id" : 437,
+		"knowledge_id" : 646,
+		"knowledge_name" : "( )( )( )( )+k 꼴의 식의 인수분해"
+	},
+	{
+		"problem_id" : 23595,
+		"unit_id" : 437,
+		"knowledge_id" : 647,
+		"knowledge_name" : "항이 5개 이상인 식의 인수분해"
+	},
+	{
+		"problem_id" : 23595,
+		"unit_id" : 265,
+		"knowledge_id" : 784,
+		"knowledge_name" : "인수정리를 이용한 인수분해"
+	},
+	{
+		"problem_id" : 30731,
+		"unit_id" : 324,
+		"knowledge_id" : 1093,
+		"knowledge_name" : "수열"
+	},
+	{
+		"problem_id" : 30731,
+		"unit_id" : 324,
+		"knowledge_id" : 1094,
+		"knowledge_name" : "수열의 일반항"
+	},
+	{
+		"problem_id" : 30731,
+		"unit_id" : 324,
+		"knowledge_id" : 1095,
+		"knowledge_name" : "등차수열"
+	},
+	{
+		"problem_id" : 30731,
+		"unit_id" : 324,
+		"knowledge_id" : 1096,
+		"knowledge_name" : "등차중항"
+	},
+	{
+		"problem_id" : 32853,
+		"unit_id" : 422,
+		"knowledge_id" : 595,
+		"knowledge_name" : "삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 32853,
+		"unit_id" : 422,
+		"knowledge_id" : 596,
+		"knowledge_name" : "삼각형의 무게중심과 넓이"
+	},
+	{
+		"problem_id" : 32853,
+		"unit_id" : 422,
+		"knowledge_id" : 597,
+		"knowledge_name" : "평행사변형에서 삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 73327,
+		"unit_id" : 320,
+		"knowledge_id" : 1072,
+		"knowledge_name" : "삼각함수가 포함된 방정식"
+	},
+	{
+		"problem_id" : 73476,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73476,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 23673,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23673,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 27190,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 27268,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 73488,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73488,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 30706,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 30706,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 42172,
+		"unit_id" : 344,
+		"knowledge_id" : 1175,
+		"knowledge_name" : "방정식의 실근의 개수"
+	},
+	{
+		"problem_id" : 42172,
+		"unit_id" : 344,
+		"knowledge_id" : 1176,
+		"knowledge_name" : "삼차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 73826,
+		"unit_id" : 469,
+		"knowledge_id" : 1275,
+		"knowledge_name" : "모평균, 모분산, 모표준편차"
+	},
+	{
+		"problem_id" : 73826,
+		"unit_id" : 469,
+		"knowledge_id" : 1276,
+		"knowledge_name" : "표본평균, 표본분산, 표본표준편차"
+	},
+	{
+		"problem_id" : 73826,
+		"unit_id" : 469,
+		"knowledge_id" : 1277,
+		"knowledge_name" : "표본평균의 평균, 분산, 표준편차"
+	},
+	{
+		"problem_id" : 73826,
+		"unit_id" : 469,
+		"knowledge_id" : 1278,
+		"knowledge_name" : "표본평균의 분포"
+	},
+	{
+		"problem_id" : 73826,
+		"unit_id" : 468,
+		"knowledge_id" : 1270,
+		"knowledge_name" : "표준정규분포"
+	},
+	{
+		"problem_id" : 73826,
+		"unit_id" : 468,
+		"knowledge_id" : 1271,
+		"knowledge_name" : "정규분포의 표준화"
+	},
+	{
+		"problem_id" : 23245,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 23245,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 27361,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27361,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27361,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27361,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27361,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27361,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 33122,
+		"unit_id" : 281,
+		"knowledge_id" : 854,
+		"knowledge_name" : "직선의 방정식 구하기"
+	},
+	{
+		"problem_id" : 33122,
+		"unit_id" : 281,
+		"knowledge_id" : 855,
+		"knowledge_name" : "좌표축에 평행 또는 수직인 직선의 방정식"
+	},
+	{
+		"problem_id" : 33122,
+		"unit_id" : 281,
+		"knowledge_id" : 856,
+		"knowledge_name" : "일차방정식 ax+by+c=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 73309,
+		"unit_id" : 316,
+		"knowledge_id" : 1032,
+		"knowledge_name" : "로그의 진수에 미지수가 있는 방정식과 로그함수의 관계"
+	},
+	{
+		"problem_id" : 73309,
+		"unit_id" : 316,
+		"knowledge_id" : 1033,
+		"knowledge_name" : "로그의 진수 또는 밑에 미지수가 있는 방정식의 풀이"
+	},
+	{
+		"problem_id" : 73509,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73509,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 32054,
+		"unit_id" : 278,
+		"knowledge_id" : 841,
+		"knowledge_name" : "연립이차부등식"
+	},
+	{
+		"problem_id" : 32054,
+		"unit_id" : 278,
+		"knowledge_id" : 842,
+		"knowledge_name" : "연립이차부등식의 풀이"
+	},
+	{
+		"problem_id" : 33086,
+		"unit_id" : 281,
+		"knowledge_id" : 857,
+		"knowledge_name" : "정점을 지나는 직선"
+	},
+	{
+		"problem_id" : 33086,
+		"unit_id" : 281,
+		"knowledge_id" : 858,
+		"knowledge_name" : "두 직선의 교점을 지나는 직선"
+	},
+	{
+		"problem_id" : 23598,
+		"unit_id" : 437,
+		"knowledge_id" : 644,
+		"knowledge_name" : "공통부분이 있는 식의 인수분해"
+	},
+	{
+		"problem_id" : 23598,
+		"unit_id" : 437,
+		"knowledge_id" : 645,
+		"knowledge_name" : "항이 4개인 식의 인수분해"
+	},
+	{
+		"problem_id" : 23598,
+		"unit_id" : 437,
+		"knowledge_id" : 646,
+		"knowledge_name" : "( )( )( )( )+k 꼴의 식의 인수분해"
+	},
+	{
+		"problem_id" : 23598,
+		"unit_id" : 437,
+		"knowledge_id" : 647,
+		"knowledge_name" : "항이 5개 이상인 식의 인수분해"
+	},
+	{
+		"problem_id" : 23598,
+		"unit_id" : 265,
+		"knowledge_id" : 784,
+		"knowledge_name" : "인수정리를 이용한 인수분해"
+	},
+	{
+		"problem_id" : 31111,
+		"unit_id" : 449,
+		"knowledge_id" : 683,
+		"knowledge_name" : "삼각형의 넓이"
+	},
+	{
+		"problem_id" : 32859,
+		"unit_id" : 422,
+		"knowledge_id" : 595,
+		"knowledge_name" : "삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 32859,
+		"unit_id" : 422,
+		"knowledge_id" : 596,
+		"knowledge_name" : "삼각형의 무게중심과 넓이"
+	},
+	{
+		"problem_id" : 32859,
+		"unit_id" : 422,
+		"knowledge_id" : 597,
+		"knowledge_name" : "평행사변형에서 삼각형의 무게중심"
+	},
+	{
+		"problem_id" : 33278,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33278,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33278,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 33278,
+		"unit_id" : 286,
+		"knowledge_id" : 874,
+		"knowledge_name" : "평행이동"
+	},
+	{
+		"problem_id" : 33278,
+		"unit_id" : 286,
+		"knowledge_id" : 875,
+		"knowledge_name" : "점의 평행이동"
+	},
+	{
+		"problem_id" : 33278,
+		"unit_id" : 286,
+		"knowledge_id" : 876,
+		"knowledge_name" : "도형의 평행이동"
+	},
+	{
+		"problem_id" : 73331,
+		"unit_id" : 319,
+		"knowledge_id" : 1066,
+		"knowledge_name" : "일반각에 대한 삼각함수의 성질"
+	},
+	{
+		"problem_id" : 73331,
+		"unit_id" : 319,
+		"knowledge_id" : 1067,
+		"knowledge_name" : "삼각함수표의 사용"
+	},
+	{
+		"problem_id" : 73367,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 73367,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 27379,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27379,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27379,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27379,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27379,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27379,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 27696,
+		"unit_id" : 273,
+		"knowledge_id" : 814,
+		"knowledge_name" : "삼차방정식과 사차방정식"
+	},
+	{
+		"problem_id" : 27696,
+		"unit_id" : 273,
+		"knowledge_id" : 815,
+		"knowledge_name" : "인수정리를 이용한 삼, 사차방정식의 풀이"
+	},
+	{
+		"problem_id" : 27696,
+		"unit_id" : 269,
+		"knowledge_id" : 797,
+		"knowledge_name" : "판별식"
+	},
+	{
+		"problem_id" : 27696,
+		"unit_id" : 269,
+		"knowledge_id" : 798,
+		"knowledge_name" : "이차방정식의 근의 판별"
+	},
+	{
+		"problem_id" : 27696,
+		"unit_id" : 269,
+		"knowledge_id" : 799,
+		"knowledge_name" : "이차식이 완전제곱식이 되기 위한 조건"
+	},
+	{
+		"problem_id" : 73544,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73544,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 73506,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73506,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 73506,
+		"unit_id" : 327,
+		"knowledge_id" : 1102,
+		"knowledge_name" : "등비수열의 합"
+	},
+	{
+		"problem_id" : 73667,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 30975,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 30975,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 33532,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 42001,
+		"unit_id" : 344,
+		"knowledge_id" : 1177,
+		"knowledge_name" : "부등식에의 활용"
+	},
+	{
+		"problem_id" : 73330,
+		"unit_id" : 319,
+		"knowledge_id" : 1064,
+		"knowledge_name" : "평행이동한 삼각함수의 그래프"
+	},
+	{
+		"problem_id" : 73330,
+		"unit_id" : 319,
+		"knowledge_id" : 1065,
+		"knowledge_name" : "절댓값 기호가 포함된 삼각함수의 주기와 최대, 최소"
+	},
+	{
+		"problem_id" : 27349,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 27813,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27813,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 32898,
+		"unit_id" : 280,
+		"knowledge_id" : 847,
+		"knowledge_name" : "선분의 내분점"
+	},
+	{
+		"problem_id" : 32898,
+		"unit_id" : 280,
+		"knowledge_id" : 848,
+		"knowledge_name" : "수직선 위의 선분의 내분점"
+	},
+	{
+		"problem_id" : 32898,
+		"unit_id" : 280,
+		"knowledge_id" : 849,
+		"knowledge_name" : "좌표평면 위의 선분의 내분점"
+	},
+	{
+		"problem_id" : 33457,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33529,
+		"unit_id" : 450,
+		"knowledge_id" : 686,
+		"knowledge_name" : "현의 수직이등분선"
+	},
+	{
+		"problem_id" : 33529,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73426,
+		"unit_id" : 319,
+		"knowledge_id" : 1064,
+		"knowledge_name" : "평행이동한 삼각함수의 그래프"
+	},
+	{
+		"problem_id" : 73426,
+		"unit_id" : 319,
+		"knowledge_id" : 1065,
+		"knowledge_name" : "절댓값 기호가 포함된 삼각함수의 주기와 최대, 최소"
+	},
+	{
+		"problem_id" : 31105,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 33562,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73270,
+		"unit_id" : 306,
+		"knowledge_id" : 981,
+		"knowledge_name" : "조합"
+	},
+	{
+		"problem_id" : 73270,
+		"unit_id" : 306,
+		"knowledge_id" : 982,
+		"knowledge_name" : "조합의 수의 성질"
+	},
+	{
+		"problem_id" : 73270,
+		"unit_id" : 427,
+		"knowledge_id" : 611,
+		"knowledge_name" : "확률"
+	},
+	{
+		"problem_id" : 27391,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 33329,
+		"unit_id" : 287,
+		"knowledge_id" : 880,
+		"knowledge_name" : "점에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33329,
+		"unit_id" : 287,
+		"knowledge_id" : 881,
+		"knowledge_name" : "직선에 대한 대칭이동"
+	},
+	{
+		"problem_id" : 33329,
+		"unit_id" : 371,
+		"knowledge_id" : 421,
+		"knowledge_name" : "두 점 사이의 거리"
+	},
+	{
+		"problem_id" : 33347,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33347,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33347,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 33347,
+		"unit_id" : 286,
+		"knowledge_id" : 874,
+		"knowledge_name" : "평행이동"
+	},
+	{
+		"problem_id" : 33347,
+		"unit_id" : 286,
+		"knowledge_id" : 875,
+		"knowledge_name" : "점의 평행이동"
+	},
+	{
+		"problem_id" : 33347,
+		"unit_id" : 286,
+		"knowledge_id" : 876,
+		"knowledge_name" : "도형의 평행이동"
+	},
+	{
+		"problem_id" : 27765,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27765,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 30860,
+		"unit_id" : 319,
+		"knowledge_id" : 1066,
+		"knowledge_name" : "일반각에 대한 삼각함수의 성질"
+	},
+	{
+		"problem_id" : 30860,
+		"unit_id" : 319,
+		"knowledge_id" : 1067,
+		"knowledge_name" : "삼각함수표의 사용"
+	},
+	{
+		"problem_id" : 33547,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33547,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33547,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33547,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 42042,
+		"unit_id" : 335,
+		"knowledge_id" : 1135,
+		"knowledge_name" : "함수의 연속과 불연속"
+	},
+	{
+		"problem_id" : 42042,
+		"unit_id" : 335,
+		"knowledge_id" : 1136,
+		"knowledge_name" : "구간과 연속함수"
+	},
+	{
+		"problem_id" : 42213,
+		"unit_id" : 335,
+		"knowledge_id" : 1135,
+		"knowledge_name" : "함수의 연속과 불연속"
+	},
+	{
+		"problem_id" : 42213,
+		"unit_id" : 335,
+		"knowledge_id" : 1136,
+		"knowledge_name" : "구간과 연속함수"
+	},
+	{
+		"problem_id" : 73467,
+		"unit_id" : 466,
+		"knowledge_id" : 1261,
+		"knowledge_name" : "이산확률변수의 평균(기댓값)"
+	},
+	{
+		"problem_id" : 73467,
+		"unit_id" : 466,
+		"knowledge_id" : 1262,
+		"knowledge_name" : "이산확률변수의 분산과 표준편차"
+	},
+	{
+		"problem_id" : 73467,
+		"unit_id" : 466,
+		"knowledge_id" : 1263,
+		"knowledge_name" : "이산확률변수 aX+b의 평균, 분산, 표준편차"
+	},
+	{
+		"problem_id" : 73514,
+		"unit_id" : 309,
+		"knowledge_id" : 1009,
+		"knowledge_name" : "로그의 성질"
+	},
+	{
+		"problem_id" : 73514,
+		"unit_id" : 309,
+		"knowledge_id" : 1010,
+		"knowledge_name" : "밑의 변환 공식"
+	},
+	{
+		"problem_id" : 73514,
+		"unit_id" : 309,
+		"knowledge_id" : 1011,
+		"knowledge_name" : "로그의 여러 가지 성질"
+	},
+	{
+		"problem_id" : 73514,
+		"unit_id" : 329,
+		"knowledge_id" : 1109,
+		"knowledge_name" : "분수 꼴로 된 수열의 합"
+	},
+	{
+		"problem_id" : 73514,
+		"unit_id" : 329,
+		"knowledge_id" : 1110,
+		"knowledge_name" : "부분분수로의 변형"
+	},
+	{
+		"problem_id" : 73514,
+		"unit_id" : 329,
+		"knowledge_id" : 1111,
+		"knowledge_name" : "무리식을 포함한 수열의 합"
+	},
+	{
+		"problem_id" : 73514,
+		"unit_id" : 329,
+		"knowledge_id" : 1112,
+		"knowledge_name" : "(등차수열)X(등비수열) 꼴의 수열의 합: 멱급수"
+	},
+	{
+		"problem_id" : 27870,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27870,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 42041,
+		"unit_id" : 333,
+		"knowledge_id" : 1131,
+		"knowledge_name" : "함수의 극한에 대한 성질"
+	},
+	{
+		"problem_id" : 42041,
+		"unit_id" : 333,
+		"knowledge_id" : 1132,
+		"knowledge_name" : "함수의 극한값 구하는 방법"
+	},
+	{
+		"problem_id" : 42041,
+		"unit_id" : 333,
+		"knowledge_id" : 1133,
+		"knowledge_name" : "미정계수의 결정"
+	},
+	{
+		"problem_id" : 73526,
+		"unit_id" : 330,
+		"knowledge_id" : 1114,
+		"knowledge_name" : "수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 73526,
+		"unit_id" : 330,
+		"knowledge_id" : 1115,
+		"knowledge_name" : "등차수열과 등비수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 27717,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27717,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 33269,
+		"unit_id" : 287,
+		"knowledge_id" : 877,
+		"knowledge_name" : "대칭이동"
+	},
+	{
+		"problem_id" : 33269,
+		"unit_id" : 287,
+		"knowledge_id" : 878,
+		"knowledge_name" : "점의 대칭이동"
+	},
+	{
+		"problem_id" : 33269,
+		"unit_id" : 287,
+		"knowledge_id" : 879,
+		"knowledge_name" : "도형의 대칭이동"
+	},
+	{
+		"problem_id" : 32945,
+		"unit_id" : 281,
+		"knowledge_id" : 854,
+		"knowledge_name" : "직선의 방정식 구하기"
+	},
+	{
+		"problem_id" : 32945,
+		"unit_id" : 281,
+		"knowledge_id" : 855,
+		"knowledge_name" : "좌표축에 평행 또는 수직인 직선의 방정식"
+	},
+	{
+		"problem_id" : 32945,
+		"unit_id" : 281,
+		"knowledge_id" : 856,
+		"knowledge_name" : "일차방정식 ax+by+c=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33520,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33520,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33520,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33520,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 30719,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 30719,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 73366,
+		"unit_id" : 314,
+		"knowledge_id" : 1027,
+		"knowledge_name" : "로그함수의 뜻"
+	},
+	{
+		"problem_id" : 73366,
+		"unit_id" : 314,
+		"knowledge_id" : 1028,
+		"knowledge_name" : "로그함수 y=log_a x의 성질"
+	},
+	{
+		"problem_id" : 23430,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23430,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 23643,
+		"unit_id" : 264,
+		"knowledge_id" : 775,
+		"knowledge_name" : "나머지정리"
+	},
+	{
+		"problem_id" : 23643,
+		"unit_id" : 264,
+		"knowledge_id" : 776,
+		"knowledge_name" : "인수정리"
+	},
+	{
+		"problem_id" : 73264,
+		"unit_id" : 427,
+		"knowledge_id" : 611,
+		"knowledge_name" : "확률"
+	},
+	{
+		"problem_id" : 73269,
+		"unit_id" : 427,
+		"knowledge_id" : 611,
+		"knowledge_name" : "확률"
+	},
+	{
+		"problem_id" : 73269,
+		"unit_id" : 458,
+		"knowledge_id" : 1237,
+		"knowledge_name" : "같은 것이 있는 순열의 수"
+	},
+	{
+		"problem_id" : 73450,
+		"unit_id" : 463,
+		"knowledge_id" : 1251,
+		"knowledge_name" : "조건부확률"
+	},
+	{
+		"problem_id" : 73525,
+		"unit_id" : 330,
+		"knowledge_id" : 1116,
+		"knowledge_name" : "여러 가지 수열의 귀납적 정의"
+	},
+	{
+		"problem_id" : 23221,
+		"unit_id" : 261,
+		"knowledge_id" : 765,
+		"knowledge_name" : "곱셈 공식"
+	},
+	{
+		"problem_id" : 23221,
+		"unit_id" : 261,
+		"knowledge_id" : 766,
+		"knowledge_name" : "곱셈 공식의 변형"
+	},
+	{
+		"problem_id" : 23616,
+		"unit_id" : 263,
+		"knowledge_id" : 772,
+		"knowledge_name" : "항등식의 성질"
+	},
+	{
+		"problem_id" : 23616,
+		"unit_id" : 263,
+		"knowledge_id" : 773,
+		"knowledge_name" : "미정계수법 (계수비교법, 수치대입법)"
+	},
+	{
+		"problem_id" : 30841,
+		"unit_id" : 308,
+		"knowledge_id" : 1003,
+		"knowledge_name" : "지수의 확장"
+	},
+	{
+		"problem_id" : 30841,
+		"unit_id" : 308,
+		"knowledge_id" : 1004,
+		"knowledge_name" : "지수법칙 - 지수가 정수인 경우"
+	},
+	{
+		"problem_id" : 30841,
+		"unit_id" : 308,
+		"knowledge_id" : 1005,
+		"knowledge_name" : "지수법칙 - 지수가 유리수인 경우"
+	},
+	{
+		"problem_id" : 30841,
+		"unit_id" : 308,
+		"knowledge_id" : 1006,
+		"knowledge_name" : "지수법칙 - 지수가 실수인 경우"
+	},
+	{
+		"problem_id" : 33526,
+		"unit_id" : 450,
+		"knowledge_id" : 686,
+		"knowledge_name" : "현의 수직이등분선"
+	},
+	{
+		"problem_id" : 33526,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 33592,
+		"unit_id" : 284,
+		"knowledge_id" : 864,
+		"knowledge_name" : "원의 정의"
+	},
+	{
+		"problem_id" : 33592,
+		"unit_id" : 284,
+		"knowledge_id" : 865,
+		"knowledge_name" : "원의 방정식"
+	},
+	{
+		"problem_id" : 33592,
+		"unit_id" : 284,
+		"knowledge_id" : 866,
+		"knowledge_name" : "이차방정식 x^2+y^2+Ax+By+C=0이 나타내는 도형"
+	},
+	{
+		"problem_id" : 33592,
+		"unit_id" : 284,
+		"knowledge_id" : 867,
+		"knowledge_name" : "좌표축에 접하는 원의 방정식"
+	},
+	{
+		"problem_id" : 73626,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73626,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 73626,
+		"unit_id" : 325,
+		"knowledge_id" : 1098,
+		"knowledge_name" : "수열의 합과 일반항 사이의 관계"
+	},
+	{
+		"problem_id" : 27331,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27331,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27331,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27331,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27331,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27331,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 27343,
+		"unit_id" : 271,
+		"knowledge_id" : 804,
+		"knowledge_name" : "이차함수의 그래프와 이차방정식의 해"
+	},
+	{
+		"problem_id" : 27343,
+		"unit_id" : 271,
+		"knowledge_id" : 805,
+		"knowledge_name" : "이차함수 그래프와 x축의 위치관계"
+	},
+	{
+		"problem_id" : 27343,
+		"unit_id" : 271,
+		"knowledge_id" : 806,
+		"knowledge_name" : "이차함수의 그래프와 직선의 교점"
+	},
+	{
+		"problem_id" : 27343,
+		"unit_id" : 271,
+		"knowledge_id" : 807,
+		"knowledge_name" : "이차함수의 그래프와 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 27343,
+		"unit_id" : 270,
+		"knowledge_id" : 800,
+		"knowledge_name" : "이차방정식의 근과 계수의 관계"
+	},
+	{
+		"problem_id" : 27343,
+		"unit_id" : 270,
+		"knowledge_id" : 801,
+		"knowledge_name" : "두 수를 근으로 하는 이차방정식"
+	},
+	{
+		"problem_id" : 73328,
+		"unit_id" : 320,
+		"knowledge_id" : 1072,
+		"knowledge_name" : "삼각함수가 포함된 방정식"
+	},
+	{
+		"problem_id" : 73457,
+		"unit_id" : 464,
+		"knowledge_id" : 1253,
+		"knowledge_name" : "사건의 독립과 종속"
+	},
+	{
+		"problem_id" : 73457,
+		"unit_id" : 464,
+		"knowledge_id" : 1254,
+		"knowledge_name" : "두 사건이 서로 독립일 조건"
+	},
+	{
+		"problem_id" : 73508,
+		"unit_id" : 328,
+		"knowledge_id" : 1105,
+		"knowledge_name" : "합의 기호 ∑의 뜻"
+	},
+	{
+		"problem_id" : 73508,
+		"unit_id" : 328,
+		"knowledge_id" : 1106,
+		"knowledge_name" : "∑의 기본 성질"
+	},
+	{
+		"problem_id" : 73538,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73538,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 27831,
+		"unit_id" : 438,
+		"knowledge_id" : 648,
+		"knowledge_name" : "이차방정식"
+	},
+	{
+		"problem_id" : 33571,
+		"unit_id" : 285,
+		"knowledge_id" : 870,
+		"knowledge_name" : "원과 직선의 위치 관계"
+	},
+	{
+		"problem_id" : 73502,
+		"unit_id" : 328,
+		"knowledge_id" : 1107,
+		"knowledge_name" : "자연수의 거듭제곱의 합"
+	},
+	{
+		"problem_id" : 73502,
+		"unit_id" : 328,
+		"knowledge_id" : 1108,
+		"knowledge_name" : "∑를 이용하여 수열의 합을 구하는 방법"
+	},
+	{
+		"problem_id" : 73545,
+		"unit_id" : 322,
+		"knowledge_id" : 1076,
+		"knowledge_name" : "코사인법칙"
+	},
+	{
+		"problem_id" : 73545,
+		"unit_id" : 322,
+		"knowledge_id" : 1077,
+		"knowledge_name" : "코사인법칙의 변형"
+	},
+	{
+		"problem_id" : 27355,
+		"unit_id" : 272,
+		"knowledge_id" : 810,
+		"knowledge_name" : "제한된 범위에서의 이차함수의 최대, 최소"
+	},
+	{
+		"problem_id" : 30911,
+		"unit_id" : 318,
+		"knowledge_id" : 1059,
+		"knowledge_name" : "삼각함수의 정의"
+	},
+	{
+		"problem_id" : 30911,
+		"unit_id" : 318,
+		"knowledge_id" : 1060,
+		"knowledge_name" : "삼각함수의 값의 부호"
+	},
+	{
+		"problem_id" : 73447,
+		"unit_id" : 463,
+		"knowledge_id" : 1251,
+		"knowledge_name" : "조건부확률"
+	},
+	{
+		"problem_id" : 73735,
+		"unit_id" : 461,
+		"knowledge_id" : 1250,
+		"knowledge_name" : "여사건의 확률"
+	}
+]}

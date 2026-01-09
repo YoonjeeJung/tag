@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaTeX to KaTeX Renderer</title>
+
+    <!-- KaTeX CSS and JS from CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+
+    <style>
+      /* --- 기존 스타일 그대로 --- */
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; padding: 20px; line-height: 1.6; }
+      .container { max-width: 1400px; margin: 0 auto; background: white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); overflow: hidden; }
+      .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px 30px; text-align: center; }
+      .header h1 { font-size: 2rem; margin-bottom: 8px; }
+      .header p { opacity: 0.9; font-size: 1.1rem; }
+      .main-content { display: grid; grid-template-columns: 1fr 1fr; height: calc(100vh - 200px); min-height: 600px; }
+      .input-section { border-right: 1px solid #e0e0e0; display: flex; flex-direction: column; }
+      .output-section { display: flex; flex-direction: column; }
+      .section-header { background: #f8f9fa; padding: 15px 20px; border-bottom: 1px solid #e0e0e0; font-weight: 600; color: #495057; }
+      #latex-input { flex: 1; border: none; padding: 20px; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.5; resize: none; outline: none; background: #fafafa; }
+      #latex-input:focus { background: white; }
+      .output-content { flex: 1; padding: 20px; overflow-y: auto; background: white; }
+      .toolbar { background: #f8f9fa; padding: 10px 20px; border-bottom: 1px solid #e0e0e0; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+      .btn { padding: 6px 12px; border: 1px solid #ddd; background: white; border-radius: 4px; cursor: pointer; font-size: 12px; transition: all 0.2s; }
+      .btn:hover { background: #e9ecef; }
+      .btn-primary { background: #007bff; color: white; border-color: #007bff; }
+      .btn-primary:hover { background: #0056b3; }
+      .examples { background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 6px; padding: 15px; margin: 10px 20px; font-size: 13px; }
+      .examples h4 { color: #856404; margin-bottom: 8px; }
+      .examples code { background: #fff; padding: 2px 4px; border-radius: 3px; font-family: 'Courier New', monospace; }
+      @media (max-width: 768px) { .main-content { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; } .input-section { border-right: none; border-bottom: 1px solid #e0e0e0; } }
+      .katex { font-size: 1.1em; }
+      .katex-display { margin: 1em 0; }
+
+      /* --- 새로 추가된 간단한 스타일 --- */
+      .file-input { font-size: 12px; }
+      .select-version { padding: 4px 6px; font-size: 12px; }
+      .field-title { font-weight: 600; margin: 0.7em 0 0.3em; }
+      .json-section { border: 1px solid #e0e0e0; border-radius: 6px; padding: 10px; margin-top: 10px; background: #fcfcfc; }
+
+      /* --- ⬇⬇⬇ 추가: 잘림 방지 스크롤/레이아웃 보정 (필수 최소치만) --- */
+      .main-content { min-height: 0; }                 /* 내부 스크롤 허용 위한 보정 */
+      .input-section, .output-section { min-height: 0; }/* flex 자식 스크롤 허용 */
+      #latex-input { overflow-y: auto; }               /* 입력 길어질 때 스크롤 */
+      .output-content { min-height: 0; }               /* 결과 패널 스크롤 안정화 */
+      /* --- ⬆⬆⬆ 추가 끝 --- */
+
+      /* ===== ▼▼▼ 추가: generatable 표시 배지 ===== */
+      .gen-status { padding: 12px 20px; border-bottom: 1px solid #e9ecef; background:#fff; display:flex; align-items:center; gap:12px; }
+      .gen-status .label { font-weight:600; color:#495057; }
+      .gen-status .badge-true,
+      .gen-status .badge-false { padding:4px 10px; border-radius:999px; font-weight:700; letter-spacing:.3px; font-size:12px; }
+      .gen-status .badge-true { background:#e6ffed; color:#0b7a28; border:1px solid #b7f0c4; }
+      .gen-status .badge-false { background:#ffecec; color:#b00020; border:1px solid #ffc9c9; }
+      .hidden { display:none; }
+      /* ===== ▲▲▲ 추가 끝 ===== */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>LaTeX to KaTeX Renderer</h1>
+        <p>실시간으로 LaTeX 수식을 렌더링해보세요</p>
+      </div>
+
+      <div class="examples">
+        <!-- (예시 영역 그대로) -->
+        <h4>사용 예시:</h4>
+        <div>
+          • 인라인 수식: <code>$E = mc^2$</code> 또는 <code>\(E = mc^2\)</code><br>
+          • 블록 수식: <code>$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$</code> 또는 <code>\[\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}\]</code><br>
+          • 분수: <code>\frac{a}{b}</code>, 제곱근: <code>\sqrt{x}</code>, 합: <code>\sum_{i=1}^{n}</code>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="input-section">
+          <div class="section-header">LaTeX 입력 / JSON 업로드</div>
+          <div class="toolbar">
+            <button class="btn btn-primary" onclick="insertExample()">예시 입력</button>
+            <button class="btn" onclick="clearInput()">지우기</button>
+            <button class="btn" onclick="copyOutput()">결과 복사</button>
+
+            <!-- ▼ JSON 파일 업로드 & 버전 선택 UI (새로 추가) ▼ -->
+            <input type="file" id="json-file" accept=".json" class="file-input" />
+            <select id="version-select" class="select-version" style="display:none;"></select>
+            <!-- ▲ 추가 끝 ▲ -->
+          </div>
+          <textarea id="latex-input" placeholder="여기에 LaTeX 코드를 입력하세요... (또는 JSON 파일을 업로드하세요)"></textarea>
+
+          <!-- JSON 구조 미리보기 (선택) -->
+          <div id="json-preview" class="json-section" style="display:none;"></div>
+        </div>
+
+        <div class="output-section">
+          <div class="section-header">렌더링 결과</div>
+          <!-- ===== ▼▼▼ 추가: generatable 표시 영역 ===== -->
+          <div id="gen-status" class="gen-status hidden">
+            <span class="label">Twin 생성 가능 여부:</span>
+            <span id="gen-badge" class="badge-false">UNKNOWN</span>
+          </div>
+          <!-- ===== ▲▲▲ 추가 끝 ===== -->
+          <div class="output-content" id="output">
+            <p style="color: #6c757d; font-style: italic;">왼쪽에 LaTeX 코드를 입력하거나 JSON 파일을 업로드하면 여기에 렌더링된 결과가 표시됩니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      /* ---------- 기존 LaTeX 실시간 렌더링 ---------- */
+      document.addEventListener("DOMContentLoaded", () => {
+        const input = document.getElementById('latex-input');
+        const output = document.getElementById('output');
+
+        function renderLatex(text) {
+          output.innerHTML = text;
+          renderMathInElement(output, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+            ],
+            throwOnError: false,
+            trust: true,
+            ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            ignoredClasses: ['no-katex']
+          });
+        }
+
+        /* 일반 LaTeX textarea 입력용 */
+        function syncTextareaRender() {
+          renderLatex(input.value.replaceAll('\\\\', '\\'));
+          /* ===== ▼▼▼ 추가: 수동 입력 시 generatable 표시 숨김 ===== */
+          updateGeneratableStatus(null);
+          /* ===== ▲▲▲ 추가 끝 ===== */
+        }
+
+        input.addEventListener('input', syncTextareaRender);
+        syncTextareaRender();
+
+        /* ---------- JSON 관련 로직 (새로 추가) ---------- */
+        const jsonFileInput = document.getElementById('json-file');
+        const versionSelect = document.getElementById('version-select');
+        const jsonPreview = document.getElementById('json-preview');
+        let jsonData = null;
+
+        /* ===== ▼▼▼ 추가: generatable 상태 업데이트 함수 ===== */
+        function updateGeneratableStatus(val) {
+          const bar = document.getElementById('gen-status');
+          const badge = document.getElementById('gen-badge');
+          if (val === true) {
+            bar.classList.remove('hidden');
+            badge.textContent = 'GENERATABLE: TRUE';
+            badge.className = 'badge-true';
+          } else if (val === false) {
+            bar.classList.remove('hidden');
+            badge.textContent = 'GENERATABLE: FALSE';
+            badge.className = 'badge-false';
+          } else {
+            bar.classList.add('hidden');
+            badge.textContent = 'UNKNOWN';
+            badge.className = 'badge-false';
+          }
+        }
+        /* ===== ▲▲▲ 추가 끝 ===== */
+
+        /* 파일 읽기 후 파싱 */
+        jsonFileInput.addEventListener('change', (e) => {
+          const file = e.target.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = (evt) => {
+            try {
+              jsonData = JSON.parse(evt.target.result);
+              displayJsonPreview(jsonData);
+              populateVersionSelect(jsonData);
+              versionSelect.style.display = 'inline-block';
+              renderSelectedVersion();   // 첫 렌더
+              /* ===== ▼▼▼ 추가: generatable 배지 반영 ===== */
+              updateGeneratableStatus(jsonData && typeof jsonData.generatable === 'boolean' ? jsonData.generatable : null);
+              /* ===== ▲▲▲ 추가 끝 ===== */
+            } catch (err) {
+              alert('유효한 JSON 파일이 아닙니다.');
+              jsonData = null;
+              versionSelect.style.display = 'none';
+              jsonPreview.style.display = 'none';
+              /* ===== ▼▼▼ 추가: 에러 시 숨김 ===== */
+              updateGeneratableStatus(null);
+              /* ===== ▲▲▲ 추가 끝 ===== */
+            }
+          };
+          reader.readAsText(file, 'utf-8');
+        });
+
+        /* JSON 구조 미리보기 */
+        function displayJsonPreview(data) {
+          jsonPreview.style.display = 'block';
+          jsonPreview.textContent = JSON.stringify(data, null, 2);
+        }
+
+        /* 버전 드롭다운 채우기 */
+        function populateVersionSelect(data) {
+          versionSelect.innerHTML = ''; // clear
+          ['origin_version','instantiated_version'].forEach(key => {
+            if (data[key]) {
+              const opt = document.createElement('option');
+              opt.value = key;
+              opt.textContent = key;
+              versionSelect.appendChild(opt);
+            }
+          });
+          versionSelect.addEventListener('change', renderSelectedVersion);
+        }
+
+        /* 선택된 버전 렌더링 */
+        function renderSelectedVersion() {
+          if (!jsonData) return;
+          const key = versionSelect.value;
+          const block = jsonData[key];
+          if (!block) return;
+
+          const fields = ['question','choice','answer','explanation'];
+          let html = '';
+          fields.forEach(f => {
+            if (block[f]) {
+              html += `<div class="field-title">${f}</div><div>${block[f]}</div>`;
+            }
+          });
+          renderLatex(html);
+          /* 버전 전환 시 generatable은 그대로 유지(배지 변경 없음) */
+        }
+
+        /* 예시 입력·지우기·복사 버튼은 그대로 동작 */
+        window.insertExample = () => {
+          input.value = `$E=mc^2$ 와 같은 예시를 입력했습니다.`;
+          syncTextareaRender();
+        };
+        window.clearInput = () => {
+          input.value = '';
+          syncTextareaRender();
+        };
+        window.copyOutput = () => {
+          const range = document.createRange();
+          range.selectNode(output);
+          window.getSelection().removeAllRanges();
+          window.getSelection().addRange(range);
+          try {
+            document.execCommand('copy');
+            alert('렌더링된 결과가 클립보드에 복사되었습니다!');
+          } catch (err) {
+            alert('복사에 실패했습니다.');
+          }
+          window.getSelection().removeAllRanges();
+        };
+      });
+    </script>
+  </body>
+</html>
