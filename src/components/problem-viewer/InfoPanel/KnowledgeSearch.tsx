@@ -67,7 +67,7 @@ const KnowledgeSearch: React.FC<KnowledgeSearchProps> = ({
   });
 
   return (
-    <div className="mt-4 pt-3 border-t border-gray-200">
+    <div className="mt-4 mb-6">
       <div className="grid grid-cols-[1fr_1fr_1fr_40px] gap-2.5 items-start w-full">
         <div className="flex flex-col gap-1 min-w-0">
           <div className="text-sm text-gray-500 whitespace-nowrap">교육과정</div>

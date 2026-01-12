@@ -34,8 +34,8 @@ const UnitCandidates: React.FC<UnitCandidatesProps> = ({
   }
 
   return (
-    <div className="mb-6 pb-5 border-b border-gray-200">
-      <h3 className="text-gray-600 mb-3 text-lg pb-2 border-b-2 border-indigo-500">단원 후보</h3>
+    <div className="mb-6">
+      <h3 className="text-gray-600 mb-3 text-lg">단원 후보</h3>
 
       {unitCandidates.map((candidate, unitIdx) => {
         const knowledges = candidate.valid_knowledges || candidate.knowledges || [];
