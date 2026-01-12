@@ -13,7 +13,7 @@ const ProblemContent: React.FC<ProblemContentProps> = ({ problemHtml }) => {
     if (contentRef.current) {
       renderKatex(contentRef.current);
     }
-  }, [problemHtml]);
+  });
 
   const hasContent =
     problemHtml.question_html ||

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Dropdown } from '../../common';
+import KatexText from '../../common/KatexText';
 import { BEHAVIOR_AREA_OPTIONS } from '../../../types';
 import { escapeHtml } from '../../../utils/dataUtils';
 
@@ -27,7 +28,7 @@ const BehaviorArea: React.FC<BehaviorAreaProps> = ({
 
   return (
     <div className="mb-6 pb-5 border-b border-gray-200">
-      <h3 className="text-gray-600 mb-3 text-lg pb-2 border-b-2 border-indigo-500">행동 영역</h3>
+      <h3 className="text-gray-600 mb-3 text-lg pb-2 border-b-2 border-indigo-500 font-bold">행동 영역</h3>
       {behaviorArea && (
         <div className="mb-3">
           <div className="font-semibold text-gray-500 mb-1 text-sm">영역</div>
@@ -47,7 +48,7 @@ const BehaviorArea: React.FC<BehaviorAreaProps> = ({
       {behaviorReason && (
         <div className="mb-3">
           <div className="font-semibold text-gray-500 mb-1 text-sm">이유</div>
-          <div className="text-gray-800 p-2 bg-gray-50 rounded leading-relaxed">{escapeHtml(behaviorReason)}</div>
+          <KatexText className="text-gray-800 p-2 bg-gray-50 rounded leading-relaxed">{behaviorReason}</KatexText>
         </div>
       )}
     </div>

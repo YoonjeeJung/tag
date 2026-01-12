@@ -23,6 +23,7 @@ const Dropdown: React.FC<DropdownProps> = ({
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const listRef = useRef<HTMLDivElement>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   const selectedOption = options.find((opt) => opt.value === value);
@@ -53,10 +54,35 @@ const Dropdown: React.FC<DropdownProps> = ({
     }
   }, [isOpen, searchable]);
 
+  const focusFirstItem = () => {
+    const first = listRef.current?.querySelector('[data-dropdown-item]');
+    if (first instanceof HTMLElement) {
+      first.focus();
+    }
+  };
+
   const handleToggle = () => {
     setIsOpen(!isOpen);
     if (!isOpen) {
       setSearchTerm('');
+      // 다음 프레임에 리스트 포커스 시도
+      requestAnimationFrame(focusFirstItem);
+    }
+  };
+
+  const handleButtonKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleToggle();
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (!isOpen) {
+        setIsOpen(true);
+        setSearchTerm('');
+        requestAnimationFrame(focusFirstItem);
+      } else {
+        focusFirstItem();
+      }
     }
   };
 
@@ -72,6 +98,7 @@ const Dropdown: React.FC<DropdownProps> = ({
         type="button"
         className="w-full flex items-center justify-between px-2.5 h-10 border-none rounded-xl bg-indigo-500 text-white text-base cursor-pointer shadow-sm overflow-hidden"
         onClick={handleToggle}
+        onKeyDown={handleButtonKeyDown}
       >
         <span className={`flex-1 whitespace-nowrap overflow-hidden text-ellipsis text-left ${isPlaceholder ? 'italic opacity-80' : ''}`}>
           {displayText}
@@ -79,7 +106,11 @@ const Dropdown: React.FC<DropdownProps> = ({
         <span className={`text-xs ml-2 transition-transform duration-150 ${isOpen ? 'rotate-180' : ''}`}>▼</span>
       </button>
       {isOpen && (
-        <div className="absolute right-0 top-[calc(100%+4px)] bg-white border border-gray-200 rounded-lg shadow-lg min-w-[140px] max-h-[220px] overflow-y-auto z-20">
+        <div
+          ref={listRef}
+          className="absolute right-0 top-[calc(100%+4px)] bg-white border border-gray-200 rounded-lg shadow-lg min-w-[140px] max-h-[220px] overflow-y-auto z-20"
+          role="listbox"
+        >
           {searchable && (
             <input
               ref={searchInputRef}
@@ -92,16 +123,47 @@ const Dropdown: React.FC<DropdownProps> = ({
           )}
           {/* 미선택 옵션 (이탤릭) */}
           <div
+            tabIndex={0}
+            data-dropdown-item
             className="px-3 py-2 text-base cursor-pointer whitespace-nowrap text-gray-500 italic hover:bg-gray-100"
             onClick={() => handleSelect('')}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleSelect('');
+              } else if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                const next = (e.currentTarget.nextElementSibling as HTMLElement | null);
+                next?.focus();
+              }
+            }}
           >
             {placeholder}
           </div>
           {filteredOptions.map((option) => (
             <div
               key={option.value}
+              tabIndex={0}
+              data-dropdown-item
               className="px-3 py-2 text-base cursor-pointer whitespace-nowrap text-gray-800 hover:bg-gray-100"
               onClick={() => handleSelect(option.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  handleSelect(option.value);
+                } else if (e.key === 'ArrowDown') {
+                  e.preventDefault();
+                  const next = (e.currentTarget.nextElementSibling as HTMLElement | null);
+                  next?.focus();
+                } else if (e.key === 'ArrowUp') {
+                  e.preventDefault();
+                  const prev = (e.currentTarget.previousElementSibling as HTMLElement | null);
+                  prev?.focus();
+                } else if (e.key === 'Escape') {
+                  setIsOpen(false);
+                  setSearchTerm('');
+                }
+              }}
             >
               {option.label}
             </div>

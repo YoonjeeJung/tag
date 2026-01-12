@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import type { MergedProblem, UnitKnowledge, UnitInfo, KnowledgeSearchState } from '../../../types';
-import { renderKatex } from '../../../utils/katexUtils';
 import { Button } from '../../common';
 import BehaviorArea from './BehaviorArea';
 import UnitCandidates from './UnitCandidates';
@@ -44,21 +43,13 @@ const InfoPanel: React.FC<InfoPanelProps> = ({
   onRemoveUnitAdded,
   onSave,
 }) => {
-  const contentRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (contentRef.current) {
-      renderKatex(contentRef.current);
-    }
-  }, [problem]);
-
   return (
     <div className="flex flex-col min-h-0">
       <div className="bg-gray-50 py-4 px-5 border-b border-gray-200 font-semibold text-gray-600">문제 정보</div>
-      <div className="flex-1 p-5 overflow-y-auto bg-white min-h-0" ref={contentRef}>
+      <div className="flex-1 p-5 overflow-y-auto bg-white min-h-0">
         {/* 문제 정보 */}
         <div className="mb-6 pb-5 border-b border-gray-200">
-          <h3 className="text-gray-600 mb-3 text-lg pb-2 border-b-2 border-indigo-500">문제 정보</h3>
+          <h3 className="text-gray-600 mb-3 text-lg pb-2 border-b-2 border-indigo-500 font-bold">문제 정보</h3>
           <div className="mb-3">
             <div className="font-semibold text-gray-500 mb-1 text-sm">문항ID</div>
             <div className="text-gray-800 p-2 bg-gray-50 rounded leading-relaxed">{problem.problem_id}</div>
@@ -82,19 +73,17 @@ const InfoPanel: React.FC<InfoPanelProps> = ({
           onSetUnitNecessity={onSetUnitNecessity}
           onSetKnowledgeNecessity={onSetKnowledgeNecessity}
           onRemoveUnitAdded={onRemoveUnitAdded}
+          knowledgeSearchElement={
+            <KnowledgeSearch
+              unitKnowledgeList={unitKnowledgeList}
+              searchState={knowledgeSearchState}
+              onSelectCurriculum={onSelectCurriculum}
+              onSelectUnit={onSelectUnit}
+              onSelectKnowledge={onSelectKnowledge}
+              onAdd={onAddUnitFromSearch}
+            />
+          }
         />
-
-        {/* 지식 검색 */}
-        {(problem.unit_candidates.length > 0 || problem.unit_added.length > 0) && (
-          <KnowledgeSearch
-            unitKnowledgeList={unitKnowledgeList}
-            searchState={knowledgeSearchState}
-            onSelectCurriculum={onSelectCurriculum}
-            onSelectUnit={onSelectUnit}
-            onSelectKnowledge={onSelectKnowledge}
-            onAdd={onAddUnitFromSearch}
-          />
-        )}
 
         {/* 기준 섹션 */}
         <CriteriaSection criteria={problem.criteria} unitsData={unitsData} />

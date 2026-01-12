@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FileDropZone, Button } from '../common';
 import type { SelectedFiles } from '../../types';
 
@@ -19,6 +19,25 @@ const FileUploadSection: React.FC<FileUploadSectionProps> = ({
   isLoading,
   loadingMessage,
 }) => {
+  // Enter 키로도 "데이터 로드하기" 실행 (입력 필드/버튼 포커스 시에는 무시)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const tag = (target?.tagName || '').toLowerCase();
+      const isEditable = target?.isContentEditable;
+      if (tag === 'input' || tag === 'textarea' || tag === 'select' || isEditable) {
+        return;
+      }
+      if (e.key === 'Enter' && canLoad && !isLoading) {
+        e.preventDefault();
+        onLoad();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [canLoad, isLoading, onLoad]);
+
   const getFileStatus = (file: File | null, required: boolean) => {
     if (file) {
       return { text: `✓ ${file.name}`, className: 'bg-green-100 text-green-800' };

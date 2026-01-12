@@ -56,8 +56,8 @@ const CriteriaSection: React.FC<CriteriaSectionProps> = ({ criteria, unitsData }
   return (
     <>
       {categoryNames.length > 0 && (
-        <div className="mb-6 pt-5 border-t border-gray-200">
-          <h3 className="text-indigo-500 mb-3 text-lg pb-2 border-b-2 border-indigo-500">통합 유형</h3>
+        <div className="mb-6">
+          <h3 className="text-indigo-500 mb-3 text-lg pb-2 border-b-2 border-indigo-500 font-bold">통합 유형</h3>
           {categoryNames.map((name, idx) => (
             <div key={idx} className="text-gray-800 p-2 bg-gray-50 rounded leading-relaxed mb-2">
               {escapeHtml(name)}
@@ -68,7 +68,7 @@ const CriteriaSection: React.FC<CriteriaSectionProps> = ({ criteria, unitsData }
 
       {Object.keys(unitGroups).length > 0 && (
         <div className="mb-6 pt-5 border-t border-gray-200">
-          <h3 className="text-indigo-500 mb-3 text-lg pb-2 border-b-2 border-indigo-500">DB 기준</h3>
+          <h3 className="text-indigo-500 mb-3 text-lg pb-2 border-b-2 border-indigo-500 font-bold">DB 기준</h3>
           {Object.values(unitGroups).map((unit) => (
             <div key={unit.unit_id} className="p-2.5 mb-2.5 border border-gray-200 rounded-md bg-gray-50">
               <div className="flex justify-between items-center mb-2">
