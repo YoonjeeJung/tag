@@ -1,0 +1,3191 @@
+{
+"# key word pseudo\nSELECT p.id AS problem_id, cc.custom_code  FROM problem p\nJOIN custom_code cc ON cc.problem_id = p.id\njoin category_base_relation cbr on p.category_base_id = cbr.category_base_id \njoin category c on cbr.category_id = c.id\njoin unit u on c.unit_id = u.id\njoin curriculum c2 on u.curriculum_id = c2.id and c2.standard_education =1 and c2.type = 1\nWHERE cc.custom_code REGEXP '^K_'\n\tAND p.lab_difficulty >=5\nORDER BY p.id": [
+	{
+		"problem_id" : 14952,
+		"custom_code" : "K_20_09_1_17"
+	},
+	{
+		"problem_id" : 14953,
+		"custom_code" : "K_17_09_1_18"
+	},
+	{
+		"problem_id" : 15903,
+		"custom_code" : "K_20_11_1_0_16"
+	},
+	{
+		"problem_id" : 15909,
+		"custom_code" : "K_19_11_1_0_16"
+	},
+	{
+		"problem_id" : 15910,
+		"custom_code" : "K_10_09_1_0_10"
+	},
+	{
+		"problem_id" : 15911,
+		"custom_code" : "K_12_11_1_0_28"
+	},
+	{
+		"problem_id" : 15912,
+		"custom_code" : "K_11_09_1_0_29"
+	},
+	{
+		"problem_id" : 15914,
+		"custom_code" : "K_19_11_1_0_28"
+	},
+	{
+		"problem_id" : 15918,
+		"custom_code" : "K_18_11_1_0_20"
+	},
+	{
+		"problem_id" : 15919,
+		"custom_code" : "K_05_06_1_0_17"
+	},
+	{
+		"problem_id" : 15920,
+		"custom_code" : "K_13_06_1_0_17"
+	},
+	{
+		"problem_id" : 15921,
+		"custom_code" : "K_16_03_2_1_11"
+	},
+	{
+		"problem_id" : 15922,
+		"custom_code" : "K_18_11_1_0_28"
+	},
+	{
+		"problem_id" : 15926,
+		"custom_code" : "K_18_11_1_0_30"
+	},
+	{
+		"problem_id" : 15930,
+		"custom_code" : "K_17_11_1_0_28"
+	},
+	{
+		"problem_id" : 15934,
+		"custom_code" : "K_16_11_1_0_15"
+	},
+	{
+		"problem_id" : 15938,
+		"custom_code" : "K_16_11_1_0_19"
+	},
+	{
+		"problem_id" : 15942,
+		"custom_code" : "K_16_11_1_0_29"
+	},
+	{
+		"problem_id" : 15943,
+		"custom_code" : "K_21_03_2_0_19"
+	},
+	{
+		"problem_id" : 15947,
+		"custom_code" : "K_21_03_2_0_20"
+	},
+	{
+		"problem_id" : 15948,
+		"custom_code" : "K_15_11_2_2_19"
+	},
+	{
+		"problem_id" : 15951,
+		"custom_code" : "K_21_03_2_0_28"
+	},
+	{
+		"problem_id" : 15956,
+		"custom_code" : "K_20_03_2_0_19"
+	},
+	{
+		"problem_id" : 15960,
+		"custom_code" : "K_20_03_2_0_28"
+	},
+	{
+		"problem_id" : 15962,
+		"custom_code" : "K_14_11_1_0_15"
+	},
+	{
+		"problem_id" : 15963,
+		"custom_code" : "K_09_09_1_0_18"
+	},
+	{
+		"problem_id" : 15964,
+		"custom_code" : "K_19_03_2_1_16"
+	},
+	{
+		"problem_id" : 15968,
+		"custom_code" : "K_19_03_2_1_18"
+	},
+	{
+		"problem_id" : 15969,
+		"custom_code" : "K_16_03_2_1_26"
+	},
+	{
+		"problem_id" : 15970,
+		"custom_code" : "K_17_06_2_2_16"
+	},
+	{
+		"problem_id" : 15971,
+		"custom_code" : "K_09_09_1_0_26"
+	},
+	{
+		"problem_id" : 15972,
+		"custom_code" : "K_19_03_2_1_21"
+	},
+	{
+		"problem_id" : 15976,
+		"custom_code" : "K_19_03_2_2_20"
+	},
+	{
+		"problem_id" : 15980,
+		"custom_code" : "K_19_03_2_2_21"
+	},
+	{
+		"problem_id" : 15984,
+		"custom_code" : "K_17_03_2_1_15"
+	},
+	{
+		"problem_id" : 15985,
+		"custom_code" : "K_18_06_2_2_27"
+	},
+	{
+		"problem_id" : 15987,
+		"custom_code" : "K_15_09_2_1_17"
+	},
+	{
+		"problem_id" : 15988,
+		"custom_code" : "K_17_03_2_1_28"
+	},
+	{
+		"problem_id" : 15992,
+		"custom_code" : "K_17_03_2_2_19"
+	},
+	{
+		"problem_id" : 15996,
+		"custom_code" : "K_17_03_2_2_20"
+	},
+	{
+		"problem_id" : 17603,
+		"custom_code" : "K_18_03_2_2_21"
+	},
+	{
+		"problem_id" : 17607,
+		"custom_code" : "K_19_11_1_0_21"
+	},
+	{
+		"problem_id" : 17613,
+		"custom_code" : "K_19_03_2_2_30"
+	},
+	{
+		"problem_id" : 17617,
+		"custom_code" : "K_20_11_1_0_21"
+	},
+	{
+		"problem_id" : 17621,
+		"custom_code" : "K_20_11_1_0_29"
+	},
+	{
+		"problem_id" : 17625,
+		"custom_code" : "K_21_03_2_0_30"
+	},
+	{
+		"problem_id" : 17649,
+		"custom_code" : "K_18_03_2_1_20"
+	},
+	{
+		"problem_id" : 17653,
+		"custom_code" : "K_19_03_2_2_19"
+	},
+	{
+		"problem_id" : 17657,
+		"custom_code" : "K_19_03_2_2_28"
+	},
+	{
+		"problem_id" : 17661,
+		"custom_code" : "K_20_03_2_0_17"
+	},
+	{
+		"problem_id" : 17665,
+		"custom_code" : "K_20_03_2_0_29"
+	},
+	{
+		"problem_id" : 17669,
+		"custom_code" : "K_20_03_2_0_30"
+	},
+	{
+		"problem_id" : 17673,
+		"custom_code" : "K_21_03_2_0_18"
+	},
+	{
+		"problem_id" : 17676,
+		"custom_code" : "K_21_03_2_0_21"
+	},
+	{
+		"problem_id" : 18369,
+		"custom_code" : "K_16_03_1_0_30"
+	},
+	{
+		"problem_id" : 18371,
+		"custom_code" : "K_16_03_1_0_16"
+	},
+	{
+		"problem_id" : 18373,
+		"custom_code" : "K_19_03_1_0_19"
+	},
+	{
+		"problem_id" : 18389,
+		"custom_code" : "K_21_03_1_0_29"
+	},
+	{
+		"problem_id" : 18399,
+		"custom_code" : "K_21_03_1_0_21"
+	},
+	{
+		"problem_id" : 23107,
+		"custom_code" : "K_14_09_1_0_24"
+	},
+	{
+		"problem_id" : 23203,
+		"custom_code" : "K_14_06_1_0_26"
+	},
+	{
+		"problem_id" : 23209,
+		"custom_code" : "K_13_06_1_0_16"
+	},
+	{
+		"problem_id" : 23215,
+		"custom_code" : "K_15_06_1_0_18"
+	},
+	{
+		"problem_id" : 23218,
+		"custom_code" : "K_17_06_1_0_29"
+	},
+	{
+		"problem_id" : 23221,
+		"custom_code" : "K_11_09_1_0_30"
+	},
+	{
+		"problem_id" : 23245,
+		"custom_code" : "K_07_09_1_0_27"
+	},
+	{
+		"problem_id" : 23248,
+		"custom_code" : "K_13_06_1_0_28"
+	},
+	{
+		"problem_id" : 23418,
+		"custom_code" : "K_17_11_1_0_20"
+	},
+	{
+		"problem_id" : 23427,
+		"custom_code" : "K_19_03_2_1_29"
+	},
+	{
+		"problem_id" : 23430,
+		"custom_code" : "K_15_09_1_0_19"
+	},
+	{
+		"problem_id" : 23466,
+		"custom_code" : "K_19_06_1_0_28"
+	},
+	{
+		"problem_id" : 23469,
+		"custom_code" : "K_17_11_1_0_14"
+	},
+	{
+		"problem_id" : 23472,
+		"custom_code" : "K_17_03_2_2_27"
+	},
+	{
+		"problem_id" : 23475,
+		"custom_code" : "K_20_06_1_0_21"
+	},
+	{
+		"problem_id" : 23478,
+		"custom_code" : "K_16_06_1_0_20"
+	},
+	{
+		"problem_id" : 23574,
+		"custom_code" : "K_10_09_1_0_27"
+	},
+	{
+		"problem_id" : 23592,
+		"custom_code" : "K_10_06_1_0_26"
+	},
+	{
+		"problem_id" : 23595,
+		"custom_code" : "K_18_11_1_0_16"
+	},
+	{
+		"problem_id" : 23598,
+		"custom_code" : "K_19_11_1_0_17"
+	},
+	{
+		"problem_id" : 23613,
+		"custom_code" : "K_18_06_1_0_21"
+	},
+	{
+		"problem_id" : 23616,
+		"custom_code" : "K_18_06_1_0_29"
+	},
+	{
+		"problem_id" : 23619,
+		"custom_code" : "K_16_11_1_0_28"
+	},
+	{
+		"problem_id" : 23622,
+		"custom_code" : "K_17_06_1_0_30"
+	},
+	{
+		"problem_id" : 23625,
+		"custom_code" : "K_06_09_1_0_18"
+	},
+	{
+		"problem_id" : 23628,
+		"custom_code" : "K_13_06_1_0_30"
+	},
+	{
+		"problem_id" : 23631,
+		"custom_code" : "K_09_11_1_0_30"
+	},
+	{
+		"problem_id" : 23634,
+		"custom_code" : "K_14_06_1_0_21"
+	},
+	{
+		"problem_id" : 23637,
+		"custom_code" : "K_17_09_1_0_17"
+	},
+	{
+		"problem_id" : 23640,
+		"custom_code" : "K_18_06_1_0_30"
+	},
+	{
+		"problem_id" : 23643,
+		"custom_code" : "K_12_09_1_0_19"
+	},
+	{
+		"problem_id" : 23649,
+		"custom_code" : "K_15_06_1_0_29"
+	},
+	{
+		"problem_id" : 23673,
+		"custom_code" : "K_18_11_1_0_18"
+	},
+	{
+		"problem_id" : 23685,
+		"custom_code" : "K_17_09_1_0_19"
+	},
+	{
+		"problem_id" : 26895,
+		"custom_code" : "K_19_03_2_1_20"
+	},
+	{
+		"problem_id" : 26915,
+		"custom_code" : "K_05_11_1_0_27"
+	},
+	{
+		"problem_id" : 26962,
+		"custom_code" : "K_20_03_1_0_20"
+	},
+	{
+		"problem_id" : 27049,
+		"custom_code" : "K_07_11_1_0_14"
+	},
+	{
+		"problem_id" : 27054,
+		"custom_code" : "K_18_06_1_0_19"
+	},
+	{
+		"problem_id" : 27066,
+		"custom_code" : "K_17_11_1_0_18"
+	},
+	{
+		"problem_id" : 27109,
+		"custom_code" : "K_07_06_1_0_18"
+	},
+	{
+		"problem_id" : 27187,
+		"custom_code" : "K_19_06_1_0_29"
+	},
+	{
+		"problem_id" : 27190,
+		"custom_code" : "K_16_06_1_0_27"
+	},
+	{
+		"problem_id" : 27193,
+		"custom_code" : "K_20_06_1_0_28"
+	},
+	{
+		"problem_id" : 27196,
+		"custom_code" : "K_19_11_1_0_20"
+	},
+	{
+		"problem_id" : 27214,
+		"custom_code" : "K_20_06_1_0_20"
+	},
+	{
+		"problem_id" : 27220,
+		"custom_code" : "K_14_06_1_0_19"
+	},
+	{
+		"problem_id" : 27223,
+		"custom_code" : "K_07_05_1_0_18"
+	},
+	{
+		"problem_id" : 27226,
+		"custom_code" : "K_20_06_1_0_18"
+	},
+	{
+		"problem_id" : 27229,
+		"custom_code" : "K_17_06_1_0_20"
+	},
+	{
+		"problem_id" : 27268,
+		"custom_code" : "K_17_09_1_0_29"
+	},
+	{
+		"problem_id" : 27280,
+		"custom_code" : "K_20_06_1_0_17"
+	},
+	{
+		"problem_id" : 27283,
+		"custom_code" : "K_20_06_1_0_19"
+	},
+	{
+		"problem_id" : 27286,
+		"custom_code" : "K_20_06_1_0_27"
+	},
+	{
+		"problem_id" : 27292,
+		"custom_code" : "K_14_06_1_0_14"
+	},
+	{
+		"problem_id" : 27331,
+		"custom_code" : "K_14_06_1_0_30"
+	},
+	{
+		"problem_id" : 27334,
+		"custom_code" : "K_18_11_1_0_29"
+	},
+	{
+		"problem_id" : 27340,
+		"custom_code" : "K_15_09_1_0_29"
+	},
+	{
+		"problem_id" : 27343,
+		"custom_code" : "K_15_06_1_0_14"
+	},
+	{
+		"problem_id" : 27346,
+		"custom_code" : "K_19_06_1_0_21"
+	},
+	{
+		"problem_id" : 27349,
+		"custom_code" : "K_14_09_1_0_30"
+	},
+	{
+		"problem_id" : 27352,
+		"custom_code" : "K_18_09_1_0_30"
+	},
+	{
+		"problem_id" : 27355,
+		"custom_code" : "K_16_09_1_0_29"
+	},
+	{
+		"problem_id" : 27358,
+		"custom_code" : "K_17_03_2_1_30"
+	},
+	{
+		"problem_id" : 27361,
+		"custom_code" : "K_16_11_1_0_17"
+	},
+	{
+		"problem_id" : 27364,
+		"custom_code" : "K_18_09_1_0_20"
+	},
+	{
+		"problem_id" : 27367,
+		"custom_code" : "K_14_06_1_0_15"
+	},
+	{
+		"problem_id" : 27370,
+		"custom_code" : "K_13_11_1_0_29"
+	},
+	{
+		"problem_id" : 27373,
+		"custom_code" : "K_14_09_1_0_12"
+	},
+	{
+		"problem_id" : 27376,
+		"custom_code" : "K_16_09_1_0_21"
+	},
+	{
+		"problem_id" : 27379,
+		"custom_code" : "K_14_11_1_0_26"
+	},
+	{
+		"problem_id" : 27382,
+		"custom_code" : "K_13_11_1_0_28"
+	},
+	{
+		"problem_id" : 27391,
+		"custom_code" : "K_15_06_1_0_19"
+	},
+	{
+		"problem_id" : 27409,
+		"custom_code" : "K_15_06_1_0_20"
+	},
+	{
+		"problem_id" : 27594,
+		"custom_code" : "K_13_11_1_0_26"
+	},
+	{
+		"problem_id" : 27618,
+		"custom_code" : "K_13_06_1_0_21"
+	},
+	{
+		"problem_id" : 27660,
+		"custom_code" : "K_07_11_1_0_19"
+	},
+	{
+		"problem_id" : 27696,
+		"custom_code" : "K_19_06_1_0_19"
+	},
+	{
+		"problem_id" : 27717,
+		"custom_code" : "K_13_09_1_0_29"
+	},
+	{
+		"problem_id" : 27729,
+		"custom_code" : "K_19_11_1_0_18"
+	},
+	{
+		"problem_id" : 27765,
+		"custom_code" : "K_17_06_1_0_19"
+	},
+	{
+		"problem_id" : 27783,
+		"custom_code" : "K_09_09_1_0_12"
+	},
+	{
+		"problem_id" : 27807,
+		"custom_code" : "K_16_06_1_0_19"
+	},
+	{
+		"problem_id" : 27813,
+		"custom_code" : "K_13_09_1_0_19"
+	},
+	{
+		"problem_id" : 27816,
+		"custom_code" : "K_20_06_1_0_30"
+	},
+	{
+		"problem_id" : 27819,
+		"custom_code" : "K_08_09_1_0_26"
+	},
+	{
+		"problem_id" : 27822,
+		"custom_code" : "K_15_06_1_0_30"
+	},
+	{
+		"problem_id" : 27828,
+		"custom_code" : "K_12_11_1_0_21"
+	},
+	{
+		"problem_id" : 27831,
+		"custom_code" : "K_20_06_1_0_29"
+	},
+	{
+		"problem_id" : 27834,
+		"custom_code" : "K_14_06_1_0_20"
+	},
+	{
+		"problem_id" : 27837,
+		"custom_code" : "K_10_09_1_0_21"
+	},
+	{
+		"problem_id" : 27855,
+		"custom_code" : "K_15_06_1_0_28"
+	},
+	{
+		"problem_id" : 27867,
+		"custom_code" : "K_12_11_1_0_25"
+	},
+	{
+		"problem_id" : 27870,
+		"custom_code" : "K_10_09_1_0_18"
+	},
+	{
+		"problem_id" : 30706,
+		"custom_code" : "K_17_03_2_1_29"
+	},
+	{
+		"problem_id" : 30719,
+		"custom_code" : "K_17_06_2_1_21"
+	},
+	{
+		"problem_id" : 30730,
+		"custom_code" : "K_17_06_2_2_28"
+	},
+	{
+		"problem_id" : 30731,
+		"custom_code" : "K_17_06_2_2_29"
+	},
+	{
+		"problem_id" : 30737,
+		"custom_code" : "K_17_09_2_1_28"
+	},
+	{
+		"problem_id" : 30745,
+		"custom_code" : "K_17_09_2_2_21"
+	},
+	{
+		"problem_id" : 30754,
+		"custom_code" : "K_17_11_2_2_18"
+	},
+	{
+		"problem_id" : 30764,
+		"custom_code" : "K_18_03_2_1_30"
+	},
+	{
+		"problem_id" : 30770,
+		"custom_code" : "K_18_03_2_2_30"
+	},
+	{
+		"problem_id" : 30799,
+		"custom_code" : "K_18_09_2_2_28"
+	},
+	{
+		"problem_id" : 30830,
+		"custom_code" : "K_19_06_2_1_19"
+	},
+	{
+		"problem_id" : 30832,
+		"custom_code" : "K_19_06_2_1_21"
+	},
+	{
+		"problem_id" : 30839,
+		"custom_code" : "K_19_06_2_1_28"
+	},
+	{
+		"problem_id" : 30840,
+		"custom_code" : "K_19_06_2_1_29"
+	},
+	{
+		"problem_id" : 30841,
+		"custom_code" : "K_19_06_2_1_30"
+	},
+	{
+		"problem_id" : 30860,
+		"custom_code" : "K_19_06_2_2_21"
+	},
+	{
+		"problem_id" : 30868,
+		"custom_code" : "K_19_06_2_2_29"
+	},
+	{
+		"problem_id" : 30869,
+		"custom_code" : "K_19_06_2_2_30"
+	},
+	{
+		"problem_id" : 30886,
+		"custom_code" : "K_19_09_2_1_20"
+	},
+	{
+		"problem_id" : 30887,
+		"custom_code" : "K_19_09_2_1_21"
+	},
+	{
+		"problem_id" : 30894,
+		"custom_code" : "K_19_09_2_1_29"
+	},
+	{
+		"problem_id" : 30910,
+		"custom_code" : "K_19_09_2_2_19"
+	},
+	{
+		"problem_id" : 30911,
+		"custom_code" : "K_19_09_2_2_20"
+	},
+	{
+		"problem_id" : 30918,
+		"custom_code" : "K_19_09_2_2_29"
+	},
+	{
+		"problem_id" : 30929,
+		"custom_code" : "K_19_11_2_1_15"
+	},
+	{
+		"problem_id" : 30930,
+		"custom_code" : "K_19_11_2_1_16"
+	},
+	{
+		"problem_id" : 30931,
+		"custom_code" : "K_19_11_2_1_17"
+	},
+	{
+		"problem_id" : 30938,
+		"custom_code" : "K_19_11_2_1_30"
+	},
+	{
+		"problem_id" : 30949,
+		"custom_code" : "K_19_11_2_2_20"
+	},
+	{
+		"problem_id" : 30950,
+		"custom_code" : "K_19_11_2_2_21"
+	},
+	{
+		"problem_id" : 30955,
+		"custom_code" : "K_19_11_2_2_28"
+	},
+	{
+		"problem_id" : 30975,
+		"custom_code" : "K_20_06_2_0_20"
+	},
+	{
+		"problem_id" : 30976,
+		"custom_code" : "K_20_06_2_0_21"
+	},
+	{
+		"problem_id" : 30984,
+		"custom_code" : "K_20_06_2_0_29"
+	},
+	{
+		"problem_id" : 30985,
+		"custom_code" : "K_20_06_2_0_30"
+	},
+	{
+		"problem_id" : 31001,
+		"custom_code" : "K_20_09_2_0_18"
+	},
+	{
+		"problem_id" : 31002,
+		"custom_code" : "K_20_09_2_0_19"
+	},
+	{
+		"problem_id" : 31004,
+		"custom_code" : "K_20_09_2_0_21"
+	},
+	{
+		"problem_id" : 31012,
+		"custom_code" : "K_20_09_2_0_29"
+	},
+	{
+		"problem_id" : 31029,
+		"custom_code" : "K_20_11_2_0_21"
+	},
+	{
+		"problem_id" : 31035,
+		"custom_code" : "K_20_11_2_0_30"
+	},
+	{
+		"problem_id" : 31054,
+		"custom_code" : "K_21_06_2_0_19"
+	},
+	{
+		"problem_id" : 31055,
+		"custom_code" : "K_21_06_2_0_20"
+	},
+	{
+		"problem_id" : 31056,
+		"custom_code" : "K_21_06_2_0_21"
+	},
+	{
+		"problem_id" : 31063,
+		"custom_code" : "K_21_06_2_0_28"
+	},
+	{
+		"problem_id" : 31064,
+		"custom_code" : "K_21_06_2_0_29"
+	},
+	{
+		"problem_id" : 31065,
+		"custom_code" : "K_21_06_2_0_30"
+	},
+	{
+		"problem_id" : 31083,
+		"custom_code" : "K_21_09_2_0_19"
+	},
+	{
+		"problem_id" : 31084,
+		"custom_code" : "K_21_09_2_0_20"
+	},
+	{
+		"problem_id" : 31085,
+		"custom_code" : "K_21_09_2_0_21"
+	},
+	{
+		"problem_id" : 31092,
+		"custom_code" : "K_21_09_2_0_29"
+	},
+	{
+		"problem_id" : 31104,
+		"custom_code" : "K_21_11_2_0_20"
+	},
+	{
+		"problem_id" : 31105,
+		"custom_code" : "K_21_11_2_0_21"
+	},
+	{
+		"problem_id" : 31111,
+		"custom_code" : "K_21_11_2_0_29"
+	},
+	{
+		"problem_id" : 31925,
+		"custom_code" : "K_14_11_1_0_27"
+	},
+	{
+		"problem_id" : 31937,
+		"custom_code" : "K_19_06_1_0_30"
+	},
+	{
+		"problem_id" : 31955,
+		"custom_code" : "K_15_09_1_0_14"
+	},
+	{
+		"problem_id" : 31982,
+		"custom_code" : "K_18_03_2_1_21"
+	},
+	{
+		"problem_id" : 32021,
+		"custom_code" : "K_18_09_1_0_18"
+	},
+	{
+		"problem_id" : 32042,
+		"custom_code" : "K_14_11_1_0_29"
+	},
+	{
+		"problem_id" : 32054,
+		"custom_code" : "K_20_09_1_0_28"
+	},
+	{
+		"problem_id" : 32063,
+		"custom_code" : "K_11_11_1_0_26"
+	},
+	{
+		"problem_id" : 32090,
+		"custom_code" : "K_18_03_2_2_20"
+	},
+	{
+		"problem_id" : 32096,
+		"custom_code" : "K_17_06_1_0_21"
+	},
+	{
+		"problem_id" : 32760,
+		"custom_code" : "K_20_09_1_0_16"
+	},
+	{
+		"problem_id" : 32808,
+		"custom_code" : "K_08_10_1_0_21"
+	},
+	{
+		"problem_id" : 32814,
+		"custom_code" : "K_18_03_2_1_19"
+	},
+	{
+		"problem_id" : 32832,
+		"custom_code" : "K_12_11_1_0_17"
+	},
+	{
+		"problem_id" : 32847,
+		"custom_code" : "K_10_09_1_0_28"
+	},
+	{
+		"problem_id" : 32853,
+		"custom_code" : "K_10_10_1_0_18"
+	},
+	{
+		"problem_id" : 32856,
+		"custom_code" : "K_06_11_1_0_17"
+	},
+	{
+		"problem_id" : 32859,
+		"custom_code" : "K_08_11_1_0_17"
+	},
+	{
+		"problem_id" : 32874,
+		"custom_code" : "K_17_09_1_0_21"
+	},
+	{
+		"problem_id" : 32877,
+		"custom_code" : "K_07_09_1_0_15"
+	},
+	{
+		"problem_id" : 32880,
+		"custom_code" : "K_08_09_1_0_13"
+	},
+	{
+		"problem_id" : 32883,
+		"custom_code" : "K_09_11_1_0_28"
+	},
+	{
+		"problem_id" : 32898,
+		"custom_code" : "K_06_09_1_0_20"
+	},
+	{
+		"problem_id" : 32907,
+		"custom_code" : "K_18_03_1_0_29"
+	},
+	{
+		"problem_id" : 32910,
+		"custom_code" : "K_15_09_1_0_28"
+	},
+	{
+		"problem_id" : 32945,
+		"custom_code" : "K_09_03_2_0_14"
+	},
+	{
+		"problem_id" : 32948,
+		"custom_code" : "K_08_11_1_0_26"
+	},
+	{
+		"problem_id" : 33059,
+		"custom_code" : "K_14_11_1_0_14"
+	},
+	{
+		"problem_id" : 33074,
+		"custom_code" : "K_15_11_1_0_20"
+	},
+	{
+		"problem_id" : 33083,
+		"custom_code" : "K_20_03_2_0_18"
+	},
+	{
+		"problem_id" : 33086,
+		"custom_code" : "K_15_03_2_2_20"
+	},
+	{
+		"problem_id" : 33089,
+		"custom_code" : "K_20_09_1_0_29"
+	},
+	{
+		"problem_id" : 33092,
+		"custom_code" : "K_15_03_2_2_26"
+	},
+	{
+		"problem_id" : 33095,
+		"custom_code" : "K_19_09_1_0_29"
+	},
+	{
+		"problem_id" : 33098,
+		"custom_code" : "K_19_11_1_0_29"
+	},
+	{
+		"problem_id" : 33101,
+		"custom_code" : "K_14_09_1_0_19"
+	},
+	{
+		"problem_id" : 33104,
+		"custom_code" : "K_20_09_1_0_19"
+	},
+	{
+		"problem_id" : 33107,
+		"custom_code" : "K_16_03_2_2_21"
+	},
+	{
+		"problem_id" : 33113,
+		"custom_code" : "K_16_11_1_0_30"
+	},
+	{
+		"problem_id" : 33116,
+		"custom_code" : "K_12_09_1_0_30"
+	},
+	{
+		"problem_id" : 33122,
+		"custom_code" : "K_12_03_2_0_11"
+	},
+	{
+		"problem_id" : 33131,
+		"custom_code" : "K_18_09_1_0_28"
+	},
+	{
+		"problem_id" : 33134,
+		"custom_code" : "K_17_03_2_1_19"
+	},
+	{
+		"problem_id" : 33137,
+		"custom_code" : "K_16_09_1_0_20"
+	},
+	{
+		"problem_id" : 33143,
+		"custom_code" : "K_17_09_1_0_16"
+	},
+	{
+		"problem_id" : 33146,
+		"custom_code" : "K_20_09_1_0_30"
+	},
+	{
+		"problem_id" : 33164,
+		"custom_code" : "K_19_09_1_0_19"
+	},
+	{
+		"problem_id" : 33167,
+		"custom_code" : "K_20_03_2_0_21"
+	},
+	{
+		"problem_id" : 33218,
+		"custom_code" : "K_19_03_2_1_28"
+	},
+	{
+		"problem_id" : 33227,
+		"custom_code" : "K_16_03_2_2_28"
+	},
+	{
+		"problem_id" : 33269,
+		"custom_code" : "K_18_03_2_1_28"
+	},
+	{
+		"problem_id" : 33272,
+		"custom_code" : "K_15_03_2_2_18"
+	},
+	{
+		"problem_id" : 33275,
+		"custom_code" : "K_16_03_2_1_27"
+	},
+	{
+		"problem_id" : 33278,
+		"custom_code" : "K_19_03_2_1_19"
+	},
+	{
+		"problem_id" : 33287,
+		"custom_code" : "K_12_11_1_0_19"
+	},
+	{
+		"problem_id" : 33290,
+		"custom_code" : "K_17_11_1_0_16"
+	},
+	{
+		"problem_id" : 33323,
+		"custom_code" : "K_17_03_2_2_28"
+	},
+	{
+		"problem_id" : 33326,
+		"custom_code" : "K_15_03_2_2_21"
+	},
+	{
+		"problem_id" : 33329,
+		"custom_code" : "K_05_11_1_0_15"
+	},
+	{
+		"problem_id" : 33332,
+		"custom_code" : "K_17_11_1_0_30"
+	},
+	{
+		"problem_id" : 33344,
+		"custom_code" : "K_18_11_1_0_19"
+	},
+	{
+		"problem_id" : 33347,
+		"custom_code" : "K_18_03_2_2_27"
+	},
+	{
+		"problem_id" : 33371,
+		"custom_code" : "K_16_09_1_0_30"
+	},
+	{
+		"problem_id" : 33374,
+		"custom_code" : "K_14_11_1_0_21"
+	},
+	{
+		"problem_id" : 33424,
+		"custom_code" : "K_14_09_1_0_29"
+	},
+	{
+		"problem_id" : 33430,
+		"custom_code" : "K_15_03_2_1_21"
+	},
+	{
+		"problem_id" : 33445,
+		"custom_code" : "K_14_09_1_0_28"
+	},
+	{
+		"problem_id" : 33451,
+		"custom_code" : "K_09_11_1_0_29"
+	},
+	{
+		"problem_id" : 33457,
+		"custom_code" : "K_19_09_1_0_21"
+	},
+	{
+		"problem_id" : 33484,
+		"custom_code" : "K_17_11_1_0_21"
+	},
+	{
+		"problem_id" : 33487,
+		"custom_code" : "K_19_03_2_2_29"
+	},
+	{
+		"problem_id" : 33493,
+		"custom_code" : "K_14_09_1_0_21"
+	},
+	{
+		"problem_id" : 33499,
+		"custom_code" : "K_18_11_1_0_26"
+	},
+	{
+		"problem_id" : 33505,
+		"custom_code" : "K_20_09_1_0_27"
+	},
+	{
+		"problem_id" : 33511,
+		"custom_code" : "K_13_03_2_2_19"
+	},
+	{
+		"problem_id" : 33514,
+		"custom_code" : "K_07_11_1_0_28"
+	},
+	{
+		"problem_id" : 33520,
+		"custom_code" : "K_05_05_2_1_08"
+	},
+	{
+		"problem_id" : 33523,
+		"custom_code" : "K_09_06_2_2_11"
+	},
+	{
+		"problem_id" : 33526,
+		"custom_code" : "K_08_11_1_0_30"
+	},
+	{
+		"problem_id" : 33529,
+		"custom_code" : "K_19_09_1_0_28"
+	},
+	{
+		"problem_id" : 33532,
+		"custom_code" : "K_17_03_2_2_29"
+	},
+	{
+		"problem_id" : 33535,
+		"custom_code" : "K_10_03_2_0_15"
+	},
+	{
+		"problem_id" : 33538,
+		"custom_code" : "K_20_09_1_0_21"
+	},
+	{
+		"problem_id" : 33541,
+		"custom_code" : "K_19_03_2_1_27"
+	},
+	{
+		"problem_id" : 33547,
+		"custom_code" : "K_16_09_1_0_28"
+	},
+	{
+		"problem_id" : 33550,
+		"custom_code" : "K_06_03_2_0_21"
+	},
+	{
+		"problem_id" : 33553,
+		"custom_code" : "K_12_00_2_0_27"
+	},
+	{
+		"problem_id" : 33556,
+		"custom_code" : "K_16_03_2_1_21"
+	},
+	{
+		"problem_id" : 33559,
+		"custom_code" : "K_17_09_1_0_30"
+	},
+	{
+		"problem_id" : 33562,
+		"custom_code" : "K_19_09_1_0_30"
+	},
+	{
+		"problem_id" : 33565,
+		"custom_code" : "K_19_11_1_0_30"
+	},
+	{
+		"problem_id" : 33568,
+		"custom_code" : "K_20_09_1_0_20"
+	},
+	{
+		"problem_id" : 33571,
+		"custom_code" : "K_18_11_1_0_21"
+	},
+	{
+		"problem_id" : 33574,
+		"custom_code" : "K_18_09_1_0_21"
+	},
+	{
+		"problem_id" : 33589,
+		"custom_code" : "K_15_03_2_1_19"
+	},
+	{
+		"problem_id" : 33592,
+		"custom_code" : "K_17_09_1_0_20"
+	},
+	{
+		"problem_id" : 33598,
+		"custom_code" : "K_17_03_2_2_18"
+	},
+	{
+		"problem_id" : 33601,
+		"custom_code" : "K_18_09_1_0_29"
+	},
+	{
+		"problem_id" : 41989,
+		"custom_code" : "K_18_09_3_2_20"
+	},
+	{
+		"problem_id" : 41992,
+		"custom_code" : "K_18_09_3_2_29"
+	},
+	{
+		"problem_id" : 41993,
+		"custom_code" : "K_18_09_3_2_30"
+	},
+	{
+		"problem_id" : 41997,
+		"custom_code" : "K_18_11_3_2_20"
+	},
+	{
+		"problem_id" : 42001,
+		"custom_code" : "K_18_11_3_2_29"
+	},
+	{
+		"problem_id" : 42039,
+		"custom_code" : "K_20_11_2_0_20"
+	},
+	{
+		"problem_id" : 42041,
+		"custom_code" : "K_20_11_2_0_28"
+	},
+	{
+		"problem_id" : 42042,
+		"custom_code" : "K_20_11_2_0_29"
+	},
+	{
+		"problem_id" : 42131,
+		"custom_code" : "K_17_06_2_2_21"
+	},
+	{
+		"problem_id" : 42134,
+		"custom_code" : "K_17_06_2_2_30"
+	},
+	{
+		"problem_id" : 42141,
+		"custom_code" : "K_17_09_2_1_19"
+	},
+	{
+		"problem_id" : 42142,
+		"custom_code" : "K_17_09_2_1_21"
+	},
+	{
+		"problem_id" : 42144,
+		"custom_code" : "K_17_09_2_1_30"
+	},
+	{
+		"problem_id" : 42148,
+		"custom_code" : "K_17_09_2_2_20"
+	},
+	{
+		"problem_id" : 42150,
+		"custom_code" : "K_17_09_2_2_30"
+	},
+	{
+		"problem_id" : 42159,
+		"custom_code" : "K_17_11_2_1_20"
+	},
+	{
+		"problem_id" : 42163,
+		"custom_code" : "K_17_11_2_1_30"
+	},
+	{
+		"problem_id" : 42172,
+		"custom_code" : "K_17_11_2_2_21"
+	},
+	{
+		"problem_id" : 42174,
+		"custom_code" : "K_17_11_2_2_29"
+	},
+	{
+		"problem_id" : 42180,
+		"custom_code" : "K_18_06_3_2_20"
+	},
+	{
+		"problem_id" : 42182,
+		"custom_code" : "K_18_06_3_2_30"
+	},
+	{
+		"problem_id" : 42187,
+		"custom_code" : "K_18_06_2_1_30"
+	},
+	{
+		"problem_id" : 42194,
+		"custom_code" : "K_18_06_2_2_30"
+	},
+	{
+		"problem_id" : 42202,
+		"custom_code" : "K_18_09_2_1_21"
+	},
+	{
+		"problem_id" : 42206,
+		"custom_code" : "K_18_09_2_1_30"
+	},
+	{
+		"problem_id" : 42213,
+		"custom_code" : "K_18_09_2_2_30"
+	},
+	{
+		"problem_id" : 42221,
+		"custom_code" : "K_18_11_2_1_18"
+	},
+	{
+		"problem_id" : 42223,
+		"custom_code" : "K_18_11_2_1_21"
+	},
+	{
+		"problem_id" : 42226,
+		"custom_code" : "K_18_11_2_1_28"
+	},
+	{
+		"problem_id" : 42227,
+		"custom_code" : "K_18_11_2_1_30"
+	},
+	{
+		"problem_id" : 42233,
+		"custom_code" : "K_18_11_2_2_21"
+	},
+	{
+		"problem_id" : 42256,
+		"custom_code" : "K_19_11_2_1_20"
+	},
+	{
+		"problem_id" : 42257,
+		"custom_code" : "K_19_11_2_1_21"
+	},
+	{
+		"problem_id" : 42260,
+		"custom_code" : "K_19_11_2_1_29"
+	},
+	{
+		"problem_id" : 42271,
+		"custom_code" : "K_19_11_2_2_30"
+	},
+	{
+		"problem_id" : 42298,
+		"custom_code" : "K_21_11_2_0_28"
+	},
+	{
+		"problem_id" : 42299,
+		"custom_code" : "K_21_11_2_0_30"
+	},
+	{
+		"problem_id" : 73243,
+		"custom_code" : "K_21_10_3_3_30"
+	},
+	{
+		"problem_id" : 73244,
+		"custom_code" : "K_19_09_3_1_17"
+	},
+	{
+		"problem_id" : 73252,
+		"custom_code" : "K_23_09_3_0_21"
+	},
+	{
+		"problem_id" : 73253,
+		"custom_code" : "K_22_10_3_0_21"
+	},
+	{
+		"problem_id" : 73254,
+		"custom_code" : "K_21_06_3_1_18"
+	},
+	{
+		"problem_id" : 73255,
+		"custom_code" : "K_22_11_3_0_09"
+	},
+	{
+		"problem_id" : 73260,
+		"custom_code" : "K_22_10_3_3_27"
+	},
+	{
+		"problem_id" : 73262,
+		"custom_code" : "K_23_09_3_3_28"
+	},
+	{
+		"problem_id" : 73263,
+		"custom_code" : "K_21_09_3_2_19"
+	},
+	{
+		"problem_id" : 73264,
+		"custom_code" : "K_19_06_3_1_18"
+	},
+	{
+		"problem_id" : 73267,
+		"custom_code" : "K_21_09_3_1_19"
+	},
+	{
+		"problem_id" : 73269,
+		"custom_code" : "K_20_06_3_1_27"
+	},
+	{
+		"problem_id" : 73270,
+		"custom_code" : "K_20_09_3_1_18"
+	},
+	{
+		"problem_id" : 73271,
+		"custom_code" : "K_20_09_3_2_20"
+	},
+	{
+		"problem_id" : 73273,
+		"custom_code" : "K_21_06_3_1_19"
+	},
+	{
+		"problem_id" : 73281,
+		"custom_code" : "K_21_06_3_2_21"
+	},
+	{
+		"problem_id" : 73282,
+		"custom_code" : "K_20_04_3_2_20"
+	},
+	{
+		"problem_id" : 73308,
+		"custom_code" : "K_20_10_3_2_21"
+	},
+	{
+		"problem_id" : 73309,
+		"custom_code" : "K_20_07_3_1_27"
+	},
+	{
+		"problem_id" : 73313,
+		"custom_code" : "K_22_03_3_0_21"
+	},
+	{
+		"problem_id" : 73320,
+		"custom_code" : "K_22_04_3_0_11"
+	},
+	{
+		"problem_id" : 73327,
+		"custom_code" : "K_22_10_3_0_12"
+	},
+	{
+		"problem_id" : 73328,
+		"custom_code" : "K_22_06_3_0_15"
+	},
+	{
+		"problem_id" : 73329,
+		"custom_code" : "K_21_10_3_0_11"
+	},
+	{
+		"problem_id" : 73330,
+		"custom_code" : "K_21_09_3_1_21"
+	},
+	{
+		"problem_id" : 73331,
+		"custom_code" : "K_20_04_3_1_21"
+	},
+	{
+		"problem_id" : 73332,
+		"custom_code" : "K_22_03_3_0_15"
+	},
+	{
+		"problem_id" : 73333,
+		"custom_code" : "K_22_04_3_0_15"
+	},
+	{
+		"problem_id" : 73335,
+		"custom_code" : "K_22_07_3_0_14"
+	},
+	{
+		"problem_id" : 73336,
+		"custom_code" : "K_23_09_3_0_13"
+	},
+	{
+		"problem_id" : 73337,
+		"custom_code" : "K_22_10_3_0_13"
+	},
+	{
+		"problem_id" : 73338,
+		"custom_code" : "K_22_11_3_0_15"
+	},
+	{
+		"problem_id" : 73339,
+		"custom_code" : "K_21_10_3_0_21"
+	},
+	{
+		"problem_id" : 73340,
+		"custom_code" : "K_20_03_3_1_19"
+	},
+	{
+		"problem_id" : 73341,
+		"custom_code" : "K_20_03_3_2_29"
+	},
+	{
+		"problem_id" : 73342,
+		"custom_code" : "K_20_10_3_1_17"
+	},
+	{
+		"problem_id" : 73343,
+		"custom_code" : "K_20_10_3_2_19"
+	},
+	{
+		"problem_id" : 73345,
+		"custom_code" : "K_20_04_3_1_19"
+	},
+	{
+		"problem_id" : 73347,
+		"custom_code" : "K_22_03_3_0_13"
+	},
+	{
+		"problem_id" : 73353,
+		"custom_code" : "K_22_10_3_0_15"
+	},
+	{
+		"problem_id" : 73354,
+		"custom_code" : "K_21_07_3_0_21"
+	},
+	{
+		"problem_id" : 73355,
+		"custom_code" : "K_19_03_3_2_29"
+	},
+	{
+		"problem_id" : 73356,
+		"custom_code" : "K_19_07_3_2_29"
+	},
+	{
+		"problem_id" : 73357,
+		"custom_code" : "K_20_03_3_2_17"
+	},
+	{
+		"problem_id" : 73358,
+		"custom_code" : "K_21_06_3_2_18"
+	},
+	{
+		"problem_id" : 73359,
+		"custom_code" : "K_21_06_3_1_26"
+	},
+	{
+		"problem_id" : 73360,
+		"custom_code" : "K_22_09_3_0_21"
+	},
+	{
+		"problem_id" : 73366,
+		"custom_code" : "K_21_04_3_0_15"
+	},
+	{
+		"problem_id" : 73367,
+		"custom_code" : "K_19_10_3_1_14"
+	},
+	{
+		"problem_id" : 73369,
+		"custom_code" : "K_20_10_3_1_15"
+	},
+	{
+		"problem_id" : 73379,
+		"custom_code" : "K_21_10_3_0_08"
+	},
+	{
+		"problem_id" : 73386,
+		"custom_code" : "K_20_04_3_1_28"
+	},
+	{
+		"problem_id" : 73393,
+		"custom_code" : "K_23_11_3_0_21"
+	},
+	{
+		"problem_id" : 73426,
+		"custom_code" : "K_20_03_3_1_28"
+	},
+	{
+		"problem_id" : 73444,
+		"custom_code" : "K_19_06_3_1_28"
+	},
+	{
+		"problem_id" : 73445,
+		"custom_code" : "K_19_10_3_1_15"
+	},
+	{
+		"problem_id" : 73447,
+		"custom_code" : "K_21_07_3_3_29"
+	},
+	{
+		"problem_id" : 73450,
+		"custom_code" : "K_21_10_3_3_28"
+	},
+	{
+		"problem_id" : 73451,
+		"custom_code" : "K_23_06_3_3_30"
+	},
+	{
+		"problem_id" : 73452,
+		"custom_code" : "K_22_07_3_3_30"
+	},
+	{
+		"problem_id" : 73454,
+		"custom_code" : "K_22_10_3_3_30"
+	},
+	{
+		"problem_id" : 73456,
+		"custom_code" : "K_19_09_3_1_15"
+	},
+	{
+		"problem_id" : 73457,
+		"custom_code" : "K_19_11_3_1_27"
+	},
+	{
+		"problem_id" : 73458,
+		"custom_code" : "K_19_11_3_2_18"
+	},
+	{
+		"problem_id" : 73459,
+		"custom_code" : "K_20_10_3_2_29"
+	},
+	{
+		"problem_id" : 73460,
+		"custom_code" : "K_20_11_3_1_20"
+	},
+	{
+		"problem_id" : 73462,
+		"custom_code" : "K_22_11_3_3_30"
+	},
+	{
+		"problem_id" : 73467,
+		"custom_code" : "K_22_09_3_3_29"
+	},
+	{
+		"problem_id" : 73474,
+		"custom_code" : "K_22_07_3_3_29"
+	},
+	{
+		"problem_id" : 73475,
+		"custom_code" : "K_22_10_3_3_28"
+	},
+	{
+		"problem_id" : 73476,
+		"custom_code" : "K_19_11_3_1_15"
+	},
+	{
+		"problem_id" : 73477,
+		"custom_code" : "K_19_07_3_1_16"
+	},
+	{
+		"problem_id" : 73479,
+		"custom_code" : "K_18_07_3_1_16"
+	},
+	{
+		"problem_id" : 73480,
+		"custom_code" : "K_18_07_3_2_28"
+	},
+	{
+		"problem_id" : 73482,
+		"custom_code" : "K_22_11_3_3_29"
+	},
+	{
+		"problem_id" : 73483,
+		"custom_code" : "K_20_07_3_1_14"
+	},
+	{
+		"problem_id" : 73484,
+		"custom_code" : "K_20_07_3_2_18"
+	},
+	{
+		"problem_id" : 73485,
+		"custom_code" : "K_20_11_3_1_18"
+	},
+	{
+		"problem_id" : 73488,
+		"custom_code" : "K_22_04_3_0_21"
+	},
+	{
+		"problem_id" : 73489,
+		"custom_code" : "K_23_06_3_0_12"
+	},
+	{
+		"problem_id" : 73492,
+		"custom_code" : "K_22_07_3_0_21"
+	},
+	{
+		"problem_id" : 73496,
+		"custom_code" : "K_22_11_3_0_21"
+	},
+	{
+		"problem_id" : 73497,
+		"custom_code" : "K_22_06_3_0_13"
+	},
+	{
+		"problem_id" : 73498,
+		"custom_code" : "K_21_10_3_0_14"
+	},
+	{
+		"problem_id" : 73500,
+		"custom_code" : "K_18_04_3_2_20"
+	},
+	{
+		"problem_id" : 73501,
+		"custom_code" : "K_18_04_3_2_28"
+	},
+	{
+		"problem_id" : 73502,
+		"custom_code" : "K_21_04_3_0_14"
+	},
+	{
+		"problem_id" : 73503,
+		"custom_code" : "K_19_09_3_2_29"
+	},
+	{
+		"problem_id" : 73504,
+		"custom_code" : "K_19_11_3_2_29"
+	},
+	{
+		"problem_id" : 73505,
+		"custom_code" : "K_20_03_3_1_29"
+	},
+	{
+		"problem_id" : 73506,
+		"custom_code" : "K_20_06_3_2_28"
+	},
+	{
+		"problem_id" : 73507,
+		"custom_code" : "K_20_07_3_1_17"
+	},
+	{
+		"problem_id" : 73508,
+		"custom_code" : "K_20_07_3_2_17"
+	},
+	{
+		"problem_id" : 73509,
+		"custom_code" : "K_20_07_3_2_27"
+	},
+	{
+		"problem_id" : 73511,
+		"custom_code" : "K_20_10_3_1_29"
+	},
+	{
+		"problem_id" : 73513,
+		"custom_code" : "K_20_11_3_2_17"
+	},
+	{
+		"problem_id" : 73514,
+		"custom_code" : "K_21_06_3_1_21"
+	},
+	{
+		"problem_id" : 73515,
+		"custom_code" : "K_20_04_3_1_17"
+	},
+	{
+		"problem_id" : 73516,
+		"custom_code" : "K_23_06_3_0_13"
+	},
+	{
+		"problem_id" : 73517,
+		"custom_code" : "K_22_03_3_0_20"
+	},
+	{
+		"problem_id" : 73518,
+		"custom_code" : "K_22_04_3_0_12"
+	},
+	{
+		"problem_id" : 73519,
+		"custom_code" : "K_23_06_3_0_15"
+	},
+	{
+		"problem_id" : 73521,
+		"custom_code" : "K_23_09_3_0_15"
+	},
+	{
+		"problem_id" : 73523,
+		"custom_code" : "K_22_09_3_0_15"
+	},
+	{
+		"problem_id" : 73524,
+		"custom_code" : "K_21_11_3_1_21"
+	},
+	{
+		"problem_id" : 73525,
+		"custom_code" : "K_21_11_3_2_21"
+	},
+	{
+		"problem_id" : 73526,
+		"custom_code" : "K_21_11_3_1_16"
+	},
+	{
+		"problem_id" : 73527,
+		"custom_code" : "K_21_07_3_0_13"
+	},
+	{
+		"problem_id" : 73528,
+		"custom_code" : "K_21_09_3_2_21"
+	},
+	{
+		"problem_id" : 73531,
+		"custom_code" : "K_21_04_3_0_21"
+	},
+	{
+		"problem_id" : 73532,
+		"custom_code" : "K_20_04_3_1_30"
+	},
+	{
+		"problem_id" : 73533,
+		"custom_code" : "K_20_07_3_2_21"
+	},
+	{
+		"problem_id" : 73534,
+		"custom_code" : "K_20_10_3_2_18"
+	},
+	{
+		"problem_id" : 73535,
+		"custom_code" : "K_20_11_3_2_21"
+	},
+	{
+		"problem_id" : 73538,
+		"custom_code" : "K_22_06_3_0_12"
+	},
+	{
+		"problem_id" : 73540,
+		"custom_code" : "K_21_07_3_0_20"
+	},
+	{
+		"problem_id" : 73544,
+		"custom_code" : "K_21_03_3_0_15"
+	},
+	{
+		"problem_id" : 73545,
+		"custom_code" : "K_21_03_3_0_21"
+	},
+	{
+		"problem_id" : 73610,
+		"custom_code" : "K_22_09_3_0_13"
+	},
+	{
+		"problem_id" : 73616,
+		"custom_code" : "K_18_03_3_2_30"
+	},
+	{
+		"problem_id" : 73626,
+		"custom_code" : "K_21_06_3_2_28"
+	},
+	{
+		"problem_id" : 73640,
+		"custom_code" : "K_23_11_3_0_13"
+	},
+	{
+		"problem_id" : 73653,
+		"custom_code" : "K_19_10_3_2_29"
+	},
+	{
+		"problem_id" : 73657,
+		"custom_code" : "K_20_10_3_1_19"
+	},
+	{
+		"problem_id" : 73667,
+		"custom_code" : "K_23_11_3_0_15"
+	},
+	{
+		"problem_id" : 73699,
+		"custom_code" : "K_18_03_3_1_18"
+	},
+	{
+		"problem_id" : 73700,
+		"custom_code" : "K_18_04_3_2_29"
+	},
+	{
+		"problem_id" : 73734,
+		"custom_code" : "K_21_06_3_2_29"
+	},
+	{
+		"problem_id" : 73735,
+		"custom_code" : "K_22_06_3_3_30"
+	},
+	{
+		"problem_id" : 73739,
+		"custom_code" : "K_20_07_3_1_20"
+	},
+	{
+		"problem_id" : 73741,
+		"custom_code" : "K_20_10_3_1_16"
+	},
+	{
+		"problem_id" : 73772,
+		"custom_code" : "K_19_10_3_2_15"
+	},
+	{
+		"problem_id" : 73803,
+		"custom_code" : "K_20_07_3_1_16"
+	},
+	{
+		"problem_id" : 73804,
+		"custom_code" : "K_20_07_3_2_16"
+	},
+	{
+		"problem_id" : 73816,
+		"custom_code" : "K_21_07_3_3_28"
+	},
+	{
+		"problem_id" : 73826,
+		"custom_code" : "K_22_09_3_3_27"
+	},
+	{
+		"problem_id" : 73845,
+		"custom_code" : "K_23_11_3_3_29"
+	},
+	{
+		"problem_id" : 73846,
+		"custom_code" : "K_23_11_3_3_30"
+	},
+	{
+		"problem_id" : 75806,
+		"custom_code" : "K_20_11_3_1_13"
+	},
+	{
+		"problem_id" : 75819,
+		"custom_code" : "K_20_09_3_1_21"
+	},
+	{
+		"problem_id" : 75846,
+		"custom_code" : "K_22_03_3_5_27"
+	},
+	{
+		"problem_id" : 75847,
+		"custom_code" : "K_22_03_3_5_28"
+	},
+	{
+		"problem_id" : 75848,
+		"custom_code" : "K_22_03_3_5_29"
+	},
+	{
+		"problem_id" : 75849,
+		"custom_code" : "K_22_03_3_5_30"
+	},
+	{
+		"problem_id" : 75852,
+		"custom_code" : "K_22_04_3_5_28"
+	},
+	{
+		"problem_id" : 75854,
+		"custom_code" : "K_23_06_3_5_29"
+	},
+	{
+		"problem_id" : 75855,
+		"custom_code" : "K_22_07_3_5_28"
+	},
+	{
+		"problem_id" : 75857,
+		"custom_code" : "K_23_09_3_5_28"
+	},
+	{
+		"problem_id" : 75859,
+		"custom_code" : "K_22_11_3_5_28"
+	},
+	{
+		"problem_id" : 75860,
+		"custom_code" : "K_22_06_3_5_28"
+	},
+	{
+		"problem_id" : 75861,
+		"custom_code" : "K_22_06_3_5_29"
+	},
+	{
+		"problem_id" : 75862,
+		"custom_code" : "K_21_10_3_5_29"
+	},
+	{
+		"problem_id" : 75863,
+		"custom_code" : "K_21_07_3_5_28"
+	},
+	{
+		"problem_id" : 75864,
+		"custom_code" : "K_18_04_3_1_28"
+	},
+	{
+		"problem_id" : 75865,
+		"custom_code" : "K_18_07_3_1_28"
+	},
+	{
+		"problem_id" : 75866,
+		"custom_code" : "K_18_10_3_1_27"
+	},
+	{
+		"problem_id" : 75867,
+		"custom_code" : "K_21_04_3_5_30"
+	},
+	{
+		"problem_id" : 75868,
+		"custom_code" : "K_19_07_3_1_28"
+	},
+	{
+		"problem_id" : 75869,
+		"custom_code" : "K_21_03_3_5_29"
+	},
+	{
+		"problem_id" : 75870,
+		"custom_code" : "K_21_03_3_5_30"
+	},
+	{
+		"problem_id" : 75871,
+		"custom_code" : "K_19_11_3_1_28"
+	},
+	{
+		"problem_id" : 75874,
+		"custom_code" : "K_20_11_3_1_17"
+	},
+	{
+		"problem_id" : 75875,
+		"custom_code" : "K_23_11_3_5_28"
+	},
+	{
+		"problem_id" : 75964,
+		"custom_code" : "K_20_07_3_2_28"
+	},
+	{
+		"problem_id" : 75966,
+		"custom_code" : "K_20_10_3_2_20"
+	},
+	{
+		"problem_id" : 76000,
+		"custom_code" : "K_22_04_3_5_29"
+	},
+	{
+		"problem_id" : 76001,
+		"custom_code" : "K_22_04_3_5_30"
+	},
+	{
+		"problem_id" : 76003,
+		"custom_code" : "K_23_06_3_5_28"
+	},
+	{
+		"problem_id" : 76008,
+		"custom_code" : "K_22_10_3_5_29"
+	},
+	{
+		"problem_id" : 76009,
+		"custom_code" : "K_22_09_3_5_28"
+	},
+	{
+		"problem_id" : 76010,
+		"custom_code" : "K_18_04_3_1_18"
+	},
+	{
+		"problem_id" : 76011,
+		"custom_code" : "K_21_04_3_5_28"
+	},
+	{
+		"problem_id" : 76012,
+		"custom_code" : "K_19_06_3_1_19"
+	},
+	{
+		"problem_id" : 76017,
+		"custom_code" : "K_23_06_3_5_30"
+	},
+	{
+		"problem_id" : 76019,
+		"custom_code" : "K_21_04_3_5_29"
+	},
+	{
+		"problem_id" : 76020,
+		"custom_code" : "K_19_11_3_1_29"
+	},
+	{
+		"problem_id" : 76021,
+		"custom_code" : "K_20_09_3_1_19"
+	},
+	{
+		"problem_id" : 76062,
+		"custom_code" : "K_20_03_3_2_21"
+	},
+	{
+		"problem_id" : 76080,
+		"custom_code" : "K_22_07_3_5_29"
+	},
+	{
+		"problem_id" : 76082,
+		"custom_code" : "K_23_09_3_5_30"
+	},
+	{
+		"problem_id" : 76083,
+		"custom_code" : "K_22_10_3_5_28"
+	},
+	{
+		"problem_id" : 76084,
+		"custom_code" : "K_19_06_3_1_29"
+	},
+	{
+		"problem_id" : 76085,
+		"custom_code" : "K_19_07_3_1_29"
+	},
+	{
+		"problem_id" : 76086,
+		"custom_code" : "K_19_09_3_1_16"
+	},
+	{
+		"problem_id" : 76087,
+		"custom_code" : "K_22_11_3_5_29"
+	},
+	{
+		"problem_id" : 76088,
+		"custom_code" : "K_22_09_3_5_30"
+	},
+	{
+		"problem_id" : 76089,
+		"custom_code" : "K_22_06_3_5_30"
+	},
+	{
+		"problem_id" : 76090,
+		"custom_code" : "K_21_10_3_5_28"
+	},
+	{
+		"problem_id" : 76091,
+		"custom_code" : "K_21_07_3_5_30"
+	},
+	{
+		"problem_id" : 76092,
+		"custom_code" : "K_18_07_3_1_29"
+	},
+	{
+		"problem_id" : 76094,
+		"custom_code" : "K_20_06_3_1_18"
+	},
+	{
+		"problem_id" : 76096,
+		"custom_code" : "K_20_06_3_1_29"
+	},
+	{
+		"problem_id" : 76097,
+		"custom_code" : "K_20_11_3_1_19"
+	},
+	{
+		"problem_id" : 76098,
+		"custom_code" : "K_23_11_3_5_29"
+	},
+	{
+		"problem_id" : 76105,
+		"custom_code" : "K_22_07_3_5_30"
+	},
+	{
+		"problem_id" : 76108,
+		"custom_code" : "K_22_10_3_5_30"
+	},
+	{
+		"problem_id" : 76109,
+		"custom_code" : "K_19_07_3_1_19"
+	},
+	{
+		"problem_id" : 76110,
+		"custom_code" : "K_19_10_3_1_19"
+	},
+	{
+		"problem_id" : 76111,
+		"custom_code" : "K_19_11_3_1_19"
+	},
+	{
+		"problem_id" : 76112,
+		"custom_code" : "K_20_11_3_1_27"
+	},
+	{
+		"problem_id" : 76113,
+		"custom_code" : "K_22_09_3_5_29"
+	},
+	{
+		"problem_id" : 76114,
+		"custom_code" : "K_21_10_3_5_30"
+	},
+	{
+		"problem_id" : 76115,
+		"custom_code" : "K_21_07_3_5_29"
+	},
+	{
+		"problem_id" : 76116,
+		"custom_code" : "K_18_07_3_1_17"
+	},
+	{
+		"problem_id" : 76117,
+		"custom_code" : "K_23_11_3_5_30"
+	},
+	{
+		"problem_id" : 76124,
+		"custom_code" : "K_23_09_3_5_29"
+	},
+	{
+		"problem_id" : 76125,
+		"custom_code" : "K_18_10_3_1_29"
+	},
+	{
+		"problem_id" : 76126,
+		"custom_code" : "K_22_11_3_5_30"
+	},
+	{
+		"problem_id" : 76128,
+		"custom_code" : "K_22_03_3_0_12"
+	},
+	{
+		"problem_id" : 76130,
+		"custom_code" : "K_23_06_3_0_22"
+	},
+	{
+		"problem_id" : 76133,
+		"custom_code" : "K_22_10_3_0_11"
+	},
+	{
+		"problem_id" : 76135,
+		"custom_code" : "K_19_06_3_2_29"
+	},
+	{
+		"problem_id" : 76137,
+		"custom_code" : "K_19_10_3_2_14"
+	},
+	{
+		"problem_id" : 76138,
+		"custom_code" : "K_19_11_3_2_21"
+	},
+	{
+		"problem_id" : 76139,
+		"custom_code" : "K_21_03_3_0_20"
+	},
+	{
+		"problem_id" : 76140,
+		"custom_code" : "K_20_04_3_2_21"
+	},
+	{
+		"problem_id" : 76142,
+		"custom_code" : "K_22_11_3_0_12"
+	},
+	{
+		"problem_id" : 76144,
+		"custom_code" : "K_18_04_3_2_30"
+	},
+	{
+		"problem_id" : 76146,
+		"custom_code" : "K_23_11_3_0_14"
+	},
+	{
+		"problem_id" : 76151,
+		"custom_code" : "K_22_04_3_0_14"
+	},
+	{
+		"problem_id" : 76155,
+		"custom_code" : "K_22_10_3_0_09"
+	},
+	{
+		"problem_id" : 76156,
+		"custom_code" : "K_21_09_3_2_30"
+	},
+	{
+		"problem_id" : 76158,
+		"custom_code" : "K_19_06_3_2_30"
+	},
+	{
+		"problem_id" : 76159,
+		"custom_code" : "K_21_03_3_0_12"
+	},
+	{
+		"problem_id" : 76160,
+		"custom_code" : "K_20_11_3_2_20"
+	},
+	{
+		"problem_id" : 76164,
+		"custom_code" : "K_21_11_3_2_30"
+	},
+	{
+		"problem_id" : 76165,
+		"custom_code" : "K_21_11_3_2_17"
+	},
+	{
+		"problem_id" : 76168,
+		"custom_code" : "K_22_04_3_0_20"
+	},
+	{
+		"problem_id" : 76174,
+		"custom_code" : "K_20_03_3_1_21"
+	},
+	{
+		"problem_id" : 76175,
+		"custom_code" : "K_20_09_3_2_30"
+	},
+	{
+		"problem_id" : 76176,
+		"custom_code" : "K_23_11_3_0_22"
+	},
+	{
+		"problem_id" : 76177,
+		"custom_code" : "K_18_10_3_2_30"
+	},
+	{
+		"problem_id" : 76182,
+		"custom_code" : "K_21_10_3_0_13"
+	},
+	{
+		"problem_id" : 76183,
+		"custom_code" : "K_21_07_3_0_22"
+	},
+	{
+		"problem_id" : 76188,
+		"custom_code" : "K_22_06_3_0_14"
+	},
+	{
+		"problem_id" : 76189,
+		"custom_code" : "K_21_10_3_0_22"
+	},
+	{
+		"problem_id" : 76190,
+		"custom_code" : "K_18_10_3_2_20"
+	},
+	{
+		"problem_id" : 76191,
+		"custom_code" : "K_19_09_3_2_30"
+	},
+	{
+		"problem_id" : 76195,
+		"custom_code" : "K_21_06_3_2_30"
+	},
+	{
+		"problem_id" : 76199,
+		"custom_code" : "K_22_11_3_0_22"
+	},
+	{
+		"problem_id" : 76200,
+		"custom_code" : "K_22_07_3_0_13"
+	},
+	{
+		"problem_id" : 76202,
+		"custom_code" : "K_22_03_3_0_22"
+	},
+	{
+		"problem_id" : 76204,
+		"custom_code" : "K_22_04_3_0_22"
+	},
+	{
+		"problem_id" : 76205,
+		"custom_code" : "K_23_06_3_0_14"
+	},
+	{
+		"problem_id" : 76207,
+		"custom_code" : "K_22_07_3_0_15"
+	},
+	{
+		"problem_id" : 76208,
+		"custom_code" : "K_22_07_3_0_20"
+	},
+	{
+		"problem_id" : 76209,
+		"custom_code" : "K_23_09_3_0_14"
+	},
+	{
+		"problem_id" : 76211,
+		"custom_code" : "K_22_10_3_0_14"
+	},
+	{
+		"problem_id" : 76215,
+		"custom_code" : "K_22_09_3_0_14"
+	},
+	{
+		"problem_id" : 76217,
+		"custom_code" : "K_22_06_3_0_20"
+	},
+	{
+		"problem_id" : 76218,
+		"custom_code" : "K_21_10_3_0_15"
+	},
+	{
+		"problem_id" : 76219,
+		"custom_code" : "K_21_07_3_0_15"
+	},
+	{
+		"problem_id" : 76224,
+		"custom_code" : "K_21_04_3_0_22"
+	},
+	{
+		"problem_id" : 76225,
+		"custom_code" : "K_19_07_3_2_30"
+	},
+	{
+		"problem_id" : 76226,
+		"custom_code" : "K_19_09_3_2_21"
+	},
+	{
+		"problem_id" : 76227,
+		"custom_code" : "K_20_03_3_1_30"
+	},
+	{
+		"problem_id" : 76228,
+		"custom_code" : "K_21_03_3_0_22"
+	},
+	{
+		"problem_id" : 76231,
+		"custom_code" : "K_20_07_3_2_20"
+	},
+	{
+		"problem_id" : 76232,
+		"custom_code" : "K_20_07_3_2_30"
+	},
+	{
+		"problem_id" : 76234,
+		"custom_code" : "K_20_10_3_2_30"
+	},
+	{
+		"problem_id" : 76236,
+		"custom_code" : "K_19_10_3_2_30"
+	},
+	{
+		"problem_id" : 76244,
+		"custom_code" : "K_22_10_3_0_20"
+	},
+	{
+		"problem_id" : 76245,
+		"custom_code" : "K_21_10_3_0_12"
+	},
+	{
+		"problem_id" : 76247,
+		"custom_code" : "K_20_03_3_1_20"
+	},
+	{
+		"problem_id" : 76249,
+		"custom_code" : "K_20_06_3_2_20"
+	},
+	{
+		"problem_id" : 76250,
+		"custom_code" : "K_20_09_3_2_16"
+	},
+	{
+		"problem_id" : 76264,
+		"custom_code" : "K_23_09_3_0_20"
+	},
+	{
+		"problem_id" : 76272,
+		"custom_code" : "K_19_11_3_2_17"
+	},
+	{
+		"problem_id" : 76275,
+		"custom_code" : "K_20_03_3_2_30"
+	},
+	{
+		"problem_id" : 76276,
+		"custom_code" : "K_20_07_3_2_19"
+	},
+	{
+		"problem_id" : 76278,
+		"custom_code" : "K_22_11_3_0_14"
+	},
+	{
+		"problem_id" : 76279,
+		"custom_code" : "K_21_10_3_0_20"
+	},
+	{
+		"problem_id" : 76281,
+		"custom_code" : "K_18_07_3_2_20"
+	},
+	{
+		"problem_id" : 76282,
+		"custom_code" : "K_18_10_3_2_29"
+	},
+	{
+		"problem_id" : 76283,
+		"custom_code" : "K_23_06_3_0_20"
+	},
+	{
+		"problem_id" : 76284,
+		"custom_code" : "K_21_11_3_2_20"
+	},
+	{
+		"problem_id" : 76285,
+		"custom_code" : "K_22_03_3_0_14"
+	},
+	{
+		"problem_id" : 76290,
+		"custom_code" : "K_23_09_3_0_22"
+	},
+	{
+		"problem_id" : 76291,
+		"custom_code" : "K_22_10_3_0_22"
+	},
+	{
+		"problem_id" : 76294,
+		"custom_code" : "K_22_09_3_0_20"
+	},
+	{
+		"problem_id" : 76295,
+		"custom_code" : "K_22_06_3_0_22"
+	},
+	{
+		"problem_id" : 76298,
+		"custom_code" : "K_19_06_3_2_21"
+	},
+	{
+		"problem_id" : 76299,
+		"custom_code" : "K_19_07_3_2_21"
+	},
+	{
+		"problem_id" : 76301,
+		"custom_code" : "K_19_11_3_2_30"
+	},
+	{
+		"problem_id" : 76303,
+		"custom_code" : "K_20_03_3_2_28"
+	},
+	{
+		"problem_id" : 76304,
+		"custom_code" : "K_20_06_3_2_30"
+	},
+	{
+		"problem_id" : 76308,
+		"custom_code" : "K_20_11_3_2_30"
+	},
+	{
+		"problem_id" : 76310,
+		"custom_code" : "K_20_04_3_2_30"
+	},
+	{
+		"problem_id" : 76312,
+		"custom_code" : "K_18_07_3_2_30"
+	},
+	{
+		"problem_id" : 76313,
+		"custom_code" : "K_22_07_3_0_22"
+	},
+	{
+		"problem_id" : 76314,
+		"custom_code" : "K_22_09_3_0_22"
+	},
+	{
+		"problem_id" : 91908,
+		"custom_code" : "K_18_03_3_1_21"
+	},
+	{
+		"problem_id" : 91909,
+		"custom_code" : "K_18_10_3_1_21"
+	},
+	{
+		"problem_id" : 91910,
+		"custom_code" : "K_21_07_3_4_29"
+	},
+	{
+		"problem_id" : 91911,
+		"custom_code" : "K_21_11_3_1_28"
+	},
+	{
+		"problem_id" : 91912,
+		"custom_code" : "K_21_10_3_4_30"
+	},
+	{
+		"problem_id" : 91913,
+		"custom_code" : "K_22_06_3_4_30"
+	},
+	{
+		"problem_id" : 91916,
+		"custom_code" : "K_23_09_3_4_29"
+	},
+	{
+		"problem_id" : 91921,
+		"custom_code" : "K_23_11_3_4_29"
+	},
+	{
+		"problem_id" : 91931,
+		"custom_code" : "K_18_10_3_1_30"
+	},
+	{
+		"problem_id" : 91932,
+		"custom_code" : "K_18_03_3_1_30"
+	},
+	{
+		"problem_id" : 91933,
+		"custom_code" : "K_22_10_3_4_28"
+	},
+	{
+		"problem_id" : 91934,
+		"custom_code" : "K_18_07_3_1_30"
+	},
+	{
+		"problem_id" : 91935,
+		"custom_code" : "k_18_03_3_1_20"
+	},
+	{
+		"problem_id" : 91937,
+		"custom_code" : "K_19_03_3_1_21"
+	},
+	{
+		"problem_id" : 91938,
+		"custom_code" : "K_18_04_3_1_30"
+	},
+	{
+		"problem_id" : 91939,
+		"custom_code" : "K_21_07_3_4_30"
+	},
+	{
+		"problem_id" : 91940,
+		"custom_code" : "K_21_11_3_1_20"
+	},
+	{
+		"problem_id" : 91941,
+		"custom_code" : "K_21_10_3_4_29"
+	},
+	{
+		"problem_id" : 91942,
+		"custom_code" : "K_22_09_3_4_30"
+	},
+	{
+		"problem_id" : 91943,
+		"custom_code" : "K_22_09_3_4_28"
+	},
+	{
+		"problem_id" : 91944,
+		"custom_code" : "K_22_11_3_4_30"
+	},
+	{
+		"problem_id" : 91945,
+		"custom_code" : "K_20_10_3_1_30"
+	},
+	{
+		"problem_id" : 91947,
+		"custom_code" : "K_20_07_3_1_30"
+	},
+	{
+		"problem_id" : 91948,
+		"custom_code" : "K_20_06_3_1_30"
+	},
+	{
+		"problem_id" : 91949,
+		"custom_code" : "K_20_06_3_1_20"
+	},
+	{
+		"problem_id" : 91950,
+		"custom_code" : "K_19_10_3_1_30"
+	},
+	{
+		"problem_id" : 91951,
+		"custom_code" : "K_19_10_3_1_20"
+	},
+	{
+		"problem_id" : 91952,
+		"custom_code" : "K_19_09_3_1_21"
+	},
+	{
+		"problem_id" : 91953,
+		"custom_code" : "K_19_07_3_1_20"
+	},
+	{
+		"problem_id" : 91954,
+		"custom_code" : "K_19_06_3_1_30"
+	},
+	{
+		"problem_id" : 91956,
+		"custom_code" : "K_21_09_3_1_20"
+	},
+	{
+		"problem_id" : 91957,
+		"custom_code" : "K_21_09_3_1_18"
+	},
+	{
+		"problem_id" : 91958,
+		"custom_code" : "K_22_10_3_4_30"
+	},
+	{
+		"problem_id" : 91959,
+		"custom_code" : "K_23_09_3_4_30"
+	},
+	{
+		"problem_id" : 91961,
+		"custom_code" : "K_22_07_3_4_28"
+	},
+	{
+		"problem_id" : 91963,
+		"custom_code" : "K_19_11_3_1_21"
+	},
+	{
+		"problem_id" : 91965,
+		"custom_code" : "K_18_04_3_1_21"
+	},
+	{
+		"problem_id" : 91966,
+		"custom_code" : "K_20_09_3_1_30"
+	},
+	{
+		"problem_id" : 91968,
+		"custom_code" : "K_20_11_3_1_21"
+	},
+	{
+		"problem_id" : 91971,
+		"custom_code" : "K_22_09_3_4_29"
+	},
+	{
+		"problem_id" : 91972,
+		"custom_code" : "K_23_11_3_4_30"
+	},
+	{
+		"problem_id" : 91973,
+		"custom_code" : "K_19_03_3_1_30"
+	},
+	{
+		"problem_id" : 91976,
+		"custom_code" : "K_18_07_3_1_19"
+	},
+	{
+		"problem_id" : 91977,
+		"custom_code" : "K_21_11_3_1_30"
+	},
+	{
+		"problem_id" : 91978,
+		"custom_code" : "K_20_10_3_1_20"
+	},
+	{
+		"problem_id" : 91980,
+		"custom_code" : "K_19_09_3_1_30"
+	},
+	{
+		"problem_id" : 91981,
+		"custom_code" : "K_19_06_3_1_21"
+	},
+	{
+		"problem_id" : 91982,
+		"custom_code" : "K_19_04_3_1_20"
+	},
+	{
+		"problem_id" : 91983,
+		"custom_code" : "K_21_09_3_1_30"
+	},
+	{
+		"problem_id" : 91984,
+		"custom_code" : "K_22_07_3_4_30"
+	},
+	{
+		"problem_id" : 91985,
+		"custom_code" : "K_23_06_3_4_30"
+	},
+	{
+		"problem_id" : 91986,
+		"custom_code" : "K_23_06_3_4_28"
+	},
+	{
+		"problem_id" : 91987,
+		"custom_code" : "K_20_07_3_1_21"
+	},
+	{
+		"problem_id" : 91988,
+		"custom_code" : "K_19_11_3_1_20"
+	},
+	{
+		"problem_id" : 91990,
+		"custom_code" : "K_22_11_3_4_28"
+	},
+	{
+		"problem_id" : 91991,
+		"custom_code" : "K_19_11_3_1_30"
+	},
+	{
+		"problem_id" : 91992,
+		"custom_code" : "K_19_10_3_1_21"
+	},
+	{
+		"problem_id" : 91993,
+		"custom_code" : "K_19_07_3_1_30"
+	},
+	{
+		"problem_id" : 91995,
+		"custom_code" : "K_20_11_3_1_30"
+	},
+	{
+		"problem_id" : 91996,
+		"custom_code" : "K_19_04_3_1_30"
+	},
+	{
+		"problem_id" : 91997,
+		"custom_code" : "K_19_04_3_1_21"
+	},
+	{
+		"problem_id" : 91998,
+		"custom_code" : "K_20_06_3_1_21"
+	},
+	{
+		"problem_id" : 92000,
+		"custom_code" : "K_22_06_3_4_29"
+	},
+	{
+		"problem_id" : 92001,
+		"custom_code" : "K_18_04_3_1_20"
+	},
+	{
+		"problem_id" : 92003,
+		"custom_code" : "K_22_11_3_4_29"
+	},
+	{
+		"problem_id" : 92004,
+		"custom_code" : "K_20_10_3_1_21"
+	},
+	{
+		"problem_id" : 92006,
+		"custom_code" : "K_23_11_3_4_28"
+	},
+	{
+		"problem_id" : 92007,
+		"custom_code" : "K_21_06_3_1_28"
+	},
+	{
+		"problem_id" : 92010,
+		"custom_code" : "K_18_07_3_1_21"
+	},
+	{
+		"problem_id" : 92011,
+		"custom_code" : "K_21_07_3_4_28"
+	},
+	{
+		"problem_id" : 92013,
+		"custom_code" : "K_21_10_3_4_28"
+	},
+	{
+		"problem_id" : 92014,
+		"custom_code" : "K_22_06_3_4_28"
+	},
+	{
+		"problem_id" : 92015,
+		"custom_code" : "K_20_09_3_1_20"
+	},
+	{
+		"problem_id" : 92016,
+		"custom_code" : "K_20_07_3_1_29"
+	},
+	{
+		"problem_id" : 92017,
+		"custom_code" : "K_20_06_3_1_28"
+	},
+	{
+		"problem_id" : 92018,
+		"custom_code" : "K_19_11_3_1_18"
+	},
+	{
+		"problem_id" : 92019,
+		"custom_code" : "K_19_09_3_1_20"
+	},
+	{
+		"problem_id" : 92022,
+		"custom_code" : "K_19_06_3_1_16"
+	},
+	{
+		"problem_id" : 92023,
+		"custom_code" : "K_19_04_3_1_19"
+	},
+	{
+		"problem_id" : 92025,
+		"custom_code" : "K_21_09_3_1_28"
+	},
+	{
+		"problem_id" : 92026,
+		"custom_code" : "K_22_10_3_4_29"
+	},
+	{
+		"problem_id" : 92027,
+		"custom_code" : "K_23_09_3_4_28"
+	},
+	{
+		"problem_id" : 92028,
+		"custom_code" : "K_22_07_3_4_29"
+	},
+	{
+		"problem_id" : 92029,
+		"custom_code" : "K_23_06_3_4_29"
+	},
+	{
+		"problem_id" : 92030,
+		"custom_code" : "K_22_04_3_4_30"
+	},
+	{
+		"problem_id" : 92034,
+		"custom_code" : "K_19_04_3_1_29"
+	},
+	{
+		"problem_id" : 92035,
+		"custom_code" : "K_21_04_3_4_29"
+	},
+	{
+		"problem_id" : 92036,
+		"custom_code" : "K_22_04_3_4_29"
+	},
+	{
+		"problem_id" : 92039,
+		"custom_code" : "K_21_06_3_1_30"
+	},
+	{
+		"problem_id" : 92086,
+		"custom_code" : "K_19_03_3_2_19"
+	},
+	{
+		"problem_id" : 92087,
+		"custom_code" : "K_18_10_3_2_19"
+	},
+	{
+		"problem_id" : 92088,
+		"custom_code" : "K_18_07_3_2_19"
+	},
+	{
+		"problem_id" : 92090,
+		"custom_code" : "K_18_03_3_2_19"
+	},
+	{
+		"problem_id" : 92091,
+		"custom_code" : "K_21_07_3_4_26"
+	},
+	{
+		"problem_id" : 92092,
+		"custom_code" : "K_21_11_3_1_14"
+	},
+	{
+		"problem_id" : 92094,
+		"custom_code" : "K_22_09_3_4_27"
+	},
+	{
+		"problem_id" : 92095,
+		"custom_code" : "K_20_11_3_2_18"
+	},
+	{
+		"problem_id" : 92096,
+		"custom_code" : "K_19_06_3_2_18"
+	},
+	{
+		"problem_id" : 92097,
+		"custom_code" : "K_20_10_3_1_18"
+	},
+	{
+		"problem_id" : 92098,
+		"custom_code" : "K_20_07_3_1_18"
+	},
+	{
+		"problem_id" : 92099,
+		"custom_code" : "K_20_04_3_1_18"
+	},
+	{
+		"problem_id" : 92102,
+		"custom_code" : "K_19_09_3_2_19"
+	},
+	{
+		"problem_id" : 92103,
+		"custom_code" : "K_19_07_3_2_19"
+	},
+	{
+		"problem_id" : 92104,
+		"custom_code" : "K_21_04_3_4_28"
+	},
+	{
+		"problem_id" : 92106,
+		"custom_code" : "K_23_11_3_4_27"
+	},
+	{
+		"problem_id" : 92107,
+		"custom_code" : "K_22_10_3_4_27"
+	},
+	{
+		"problem_id" : 92108,
+		"custom_code" : "K_23_09_3_4_27"
+	},
+	{
+		"problem_id" : 92109,
+		"custom_code" : "K_22_07_3_4_27"
+	},
+	{
+		"problem_id" : 92111,
+		"custom_code" : "K_23_06_3_4_26"
+	},
+	{
+		"problem_id" : 92112,
+		"custom_code" : "K_22_04_3_4_28"
+	},
+	{
+		"problem_id" : 92115,
+		"custom_code" : "K_19_03_3_2_30"
+	},
+	{
+		"problem_id" : 92119,
+		"custom_code" : "K_21_11_3_1_18"
+	},
+	{
+		"problem_id" : 92120,
+		"custom_code" : "K_21_03_3_4_30"
+	},
+	{
+		"problem_id" : 92121,
+		"custom_code" : "K_21_03_3_4_29"
+	},
+	{
+		"problem_id" : 92123,
+		"custom_code" : "K_19_04_3_2_21"
+	},
+	{
+		"problem_id" : 92124,
+		"custom_code" : "K_21_04_3_4_30"
+	},
+	{
+		"problem_id" : 92130,
+		"custom_code" : "K_22_03_3_4_30"
+	},
+	{
+		"problem_id" : 92131,
+		"custom_code" : "K_22_03_3_4_29"
+	},
+	{
+		"problem_id" : 92173,
+		"custom_code" : "K_18_07_3_1_20"
+	},
+	{
+		"problem_id" : 92315,
+		"custom_code" : "K_21_06_3_1_20"
+	},
+	{
+		"problem_id" : 92318,
+		"custom_code" : "K_20_06_3_2_17"
+	},
+	{
+		"problem_id" : 92323,
+		"custom_code" : "K_20_07_3_1_28"
+	},
+	{
+		"problem_id" : 92325,
+		"custom_code" : "K_22_07_3_3_28"
+	},
+	{
+		"problem_id" : 92326,
+		"custom_code" : "K_23_06_3_3_29"
+	},
+	{
+		"problem_id" : 92327,
+		"custom_code" : "K_22_10_3_3_29"
+	},
+	{
+		"problem_id" : 92328,
+		"custom_code" : "K_22_03_3_3_29"
+	},
+	{
+		"problem_id" : 92332,
+		"custom_code" : "K_20_10_3_2_27"
+	},
+	{
+		"problem_id" : 92336,
+		"custom_code" : "K_20_04_3_1_29"
+	},
+	{
+		"problem_id" : 92340,
+		"custom_code" : "K_19_06_3_2_20"
+	},
+	{
+		"problem_id" : 92341,
+		"custom_code" : "K_19_06_3_1_20"
+	},
+	{
+		"problem_id" : 92342,
+		"custom_code" : "K_19_04_3_2_29"
+	},
+	{
+		"problem_id" : 92343,
+		"custom_code" : "K_21_04_3_3_30"
+	},
+	{
+		"problem_id" : 92344,
+		"custom_code" : "K_21_09_3_2_29"
+	},
+	{
+		"problem_id" : 92345,
+		"custom_code" : "K_21_09_3_1_29"
+	},
+	{
+		"problem_id" : 92350,
+		"custom_code" : "K_18_04_3_2_21"
+	},
+	{
+		"problem_id" : 92351,
+		"custom_code" : "K_21_11_3_1_29"
+	},
+	{
+		"problem_id" : 92352,
+		"custom_code" : "K_22_09_3_3_30"
+	},
+	{
+		"problem_id" : 92356,
+		"custom_code" : "K_20_09_3_2_29"
+	},
+	{
+		"problem_id" : 92357,
+		"custom_code" : "K_20_09_3_1_28"
+	},
+	{
+		"problem_id" : 92358,
+		"custom_code" : "K_19_03_3_1_18"
+	},
+	{
+		"problem_id" : 92360,
+		"custom_code" : "K_21_07_3_3_30"
+	},
+	{
+		"problem_id" : 92361,
+		"custom_code" : "K_21_06_3_1_29"
+	},
+	{
+		"problem_id" : 92362,
+		"custom_code" : "K_18_03_3_1_29"
+	},
+	{
+		"problem_id" : 92363,
+		"custom_code" : "K_20_10_3_1_28"
+	},
+	{
+		"problem_id" : 92364,
+		"custom_code" : "K_20_07_3_2_29"
+	},
+	{
+		"problem_id" : 92380,
+		"custom_code" : "K_20_04_3_1_20"
+	},
+	{
+		"problem_id" : 92381,
+		"custom_code" : "K_18_04_3_1_29"
+	},
+	{
+		"problem_id" : 92382,
+		"custom_code" : "K_22_09_3_3_28"
+	},
+	{
+		"problem_id" : 92383,
+		"custom_code" : "K_23_09_3_3_30"
+	},
+	{
+		"problem_id" : 92384,
+		"custom_code" : "K_22_04_3_3_30"
+	},
+	{
+		"problem_id" : 92386,
+		"custom_code" : "K_22_11_3_3_28"
+	},
+	{
+		"problem_id" : 92387,
+		"custom_code" : "K_21_03_3_3_28"
+	},
+	{
+		"problem_id" : 92388,
+		"custom_code" : "K_22_06_3_3_29"
+	},
+	{
+		"problem_id" : 92389,
+		"custom_code" : "K_22_06_3_3_28"
+	},
+	{
+		"problem_id" : 92390,
+		"custom_code" : "K_22_04_3_3_29"
+	},
+	{
+		"problem_id" : 92391,
+		"custom_code" : "K_22_03_3_3_30"
+	},
+	{
+		"problem_id" : 92392,
+		"custom_code" : "K_22_04_3_3_27"
+	},
+	{
+		"problem_id" : 92404,
+		"custom_code" : "K_20_04_3_2_29"
+	},
+	{
+		"problem_id" : 92407,
+		"custom_code" : "K_21_03_3_3_30"
+	},
+	{
+		"problem_id" : 92408,
+		"custom_code" : "K_20_03_3_1_27"
+	},
+	{
+		"problem_id" : 92410,
+		"custom_code" : "K_21_04_3_3_29"
+	},
+	{
+		"problem_id" : 92412,
+		"custom_code" : "K_19_03_3_1_29"
+	},
+	{
+		"problem_id" : 92414,
+		"custom_code" : "K_21_10_3_3_29"
+	},
+	{
+		"problem_id" : 92523,
+		"custom_code" : "K_22_06_3_0_21"
+	}
+]}

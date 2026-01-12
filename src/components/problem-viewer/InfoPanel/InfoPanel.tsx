@@ -45,14 +45,22 @@ const InfoPanel: React.FC<InfoPanelProps> = ({
 }) => {
   return (
     <div className="flex flex-col min-h-0">
-      <div className="bg-gray-50 py-4 px-5 border-b border-gray-200 font-semibold text-gray-600">문제 정보</div>
+      <div className="bg-gray-50 py-4 px-5 border-b border-gray-200 font-semibold text-gray-600">문항 정보</div>
       <div className="flex-1 p-5 overflow-y-auto bg-white min-h-0">
         {/* 문제 정보 */}
         <div className="mb-6 pb-5 border-b border-gray-200">
-          <h3 className="text-gray-600 mb-3 text-lg pb-2 border-b-2 border-indigo-500 font-bold">문제 정보</h3>
-          <div className="mb-3">
-            <div className="font-semibold text-gray-500 mb-1 text-sm">문항ID</div>
-            <div className="text-gray-800 p-2 bg-gray-50 rounded leading-relaxed">{problem.problem_id}</div>
+          <h3 className="text-gray-600 mb-3 text-lg pb-2 border-b-2 border-indigo-500 font-bold">문항 정보</h3>
+          <div className="mb-3 flex gap-4">
+            <div className="flex-1">
+              <div className="font-semibold text-gray-500 mb-1 text-sm">문항ID</div>
+              <div className="text-gray-800 p-2 bg-gray-50 rounded leading-relaxed">{problem.problem_id}</div>
+            </div>
+            <div className="flex-1">
+              <div className="font-semibold text-gray-500 mb-1 text-sm">원코드</div>
+              <div className="text-gray-800 p-2 bg-gray-50 rounded leading-relaxed">
+                {problem.custom_code || '-'}
+              </div>
+            </div>
           </div>
         </div>
 

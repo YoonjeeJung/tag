@@ -38,6 +38,7 @@ export interface Criteria {
 export interface MergedProblem {
   problem_id: number;
   problem_html: ProblemHtml;
+  custom_code?: string;
   behavior_area?: string;
   behavior_reason?: string;
   behavior_area_confirmed?: string;
@@ -50,6 +51,7 @@ export interface MergedProblem {
 // 원본 Results 데이터
 export interface ResultData {
   problem_id: number;
+  custom_code?: string;
   behavior_area?: string;
   behavior_reason?: string;
   behavior_area_confirmed?: string;

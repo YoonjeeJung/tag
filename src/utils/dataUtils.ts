@@ -8,6 +8,28 @@ import type {
   UnitCandidate,
 } from '../types';
 
+// custom_code.json 파싱 결과를 맵으로 변환
+export const buildCustomCodeMap = (data: unknown): Record<number, string> => {
+  const map: Record<number, string> = {};
+
+  if (!data) return map;
+
+  // custom_code.json 구조: { "sql...": [ { problem_id, custom_code }, ... ] }
+  const values = Array.isArray(data) ? data : Object.values(data as Record<string, unknown>)[0];
+  if (Array.isArray(values)) {
+    values.forEach((item) => {
+      if (item && typeof item === 'object') {
+        const { problem_id, custom_code } = item as { problem_id?: number; custom_code?: string };
+        if (typeof problem_id === 'number' && typeof custom_code === 'string') {
+          map[problem_id] = custom_code;
+        }
+      }
+    });
+  }
+
+  return map;
+};
+
 // Unit 정보 맵 생성
 export const createUnitsMap = (unitKnowledgeList: UnitKnowledge[]): Record<number, UnitInfo> => {
   const unitsData: Record<number, UnitInfo> = {};
@@ -30,7 +52,8 @@ export const mergeData = (
   resultsData: ResultData[],
   combinedInputData: CombinedInputData[],
   criteriaData: Criteria[],
-  unitsData: Record<number, UnitInfo>
+  unitsData: Record<number, UnitInfo>,
+  customCodeMap: Record<number, string> = {}
 ): MergedProblem[] => {
   // combined_input.jsonl 맵
   const combinedMap: Record<number, CombinedInputData> = {};
@@ -83,6 +106,7 @@ export const mergeData = (
     return {
       problem_id: problemId,
       problem_html: combined.problem_html || {},
+      custom_code: result.custom_code || customCodeMap[problemId],
       behavior_area: result.behavior_area,
       behavior_reason: result.behavior_reason,
       behavior_area_confirmed: result.behavior_area_confirmed || '',

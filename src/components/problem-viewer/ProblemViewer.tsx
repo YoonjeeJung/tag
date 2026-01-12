@@ -5,7 +5,7 @@ import NavigationBar from './NavigationBar';
 import ProblemContent from './ProblemContent';
 import { InfoPanel } from './InfoPanel';
 import { useProblemData, useFileHandling } from '../../hooks';
-import { createUnitsMap, mergeData, convertToResultsData } from '../../utils/dataUtils';
+import { createUnitsMap, mergeData, convertToResultsData, buildCustomCodeMap } from '../../utils/dataUtils';
 import { isFileSystemAccessSupported } from '../../utils/fileUtils';
 
 const ProblemViewer: React.FC = () => {
@@ -54,11 +54,26 @@ const ProblemViewer: React.FC = () => {
       if (result) {
         const { combinedInputData, resultsData, criteriaData, unitKnowledgeList: ukList } = result;
 
+        // custom_code.json은 public에 내장되어 있으므로 fetch로 불러온다.
+        let customCodeMap: Record<number, string> = {};
+        const customCodeUrl = `${import.meta.env.BASE_URL}custom_code.json`;
+        try {
+          const response = await fetch(customCodeUrl);
+          if (response.ok) {
+            const json = await response.json();
+            customCodeMap = buildCustomCodeMap(json);
+          } else {
+            console.warn('custom_code.json 로드 실패:', response.statusText);
+          }
+        } catch (err) {
+          console.error('custom_code.json 파싱 실패:', err);
+        }
+
         const unitMap = createUnitsMap(ukList);
         setUnitsData(unitMap);
         setUnitKnowledgeList(ukList);
 
-        const merged = mergeData(resultsData, combinedInputData, criteriaData, unitMap);
+        const merged = mergeData(resultsData, combinedInputData, criteriaData, unitMap, customCodeMap);
         setMergedData(merged);
 
         setIsDataLoaded(true);
